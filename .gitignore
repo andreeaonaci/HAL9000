@@ -1,0 +1,14 @@
+
+*.exe
+*.bin
+
+bin/*
+temp/*
+VM/*
+postbuild/paths.cmd
+*.result
+*.outcome
+
+postbuild/paths.cmd
+PXE/Tests.module
+tests/*
