@@ -28,6 +28,8 @@ MutexAcquire(
     INOUT       PMUTEX      Mutex
 )
 {
+    LOG("MutexAcquire started");
+    //__halt();
     INTR_STATE dummyState;
     INTR_STATE oldState;
     PTHREAD pCurrentThread = GetCurrentThread();
@@ -45,6 +47,8 @@ MutexAcquire(
 
     oldState = CpuIntrDisable();
 
+    //__halt();
+
     LockAcquire(&Mutex->MutexLock, &dummyState);
 
     // Priority donation if the current thread has a higher priority than the mutex holder
@@ -61,7 +65,8 @@ MutexAcquire(
 
     while (Mutex->Holder != pCurrentThread)
     {
-        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
+        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
+        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
         ThreadTakeBlockLock();
         LockRelease(&Mutex->MutexLock, dummyState);
         ThreadBlock();
@@ -73,6 +78,8 @@ MutexAcquire(
     LockRelease(&Mutex->MutexLock, dummyState);
 
     CpuIntrSetState(oldState);
+    LOG("MutexAcquire finished");
+    //__halt();
 }
 RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
 REQUIRES_EXCL_LOCK(*Mutex)

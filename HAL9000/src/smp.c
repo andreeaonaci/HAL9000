@@ -379,6 +379,7 @@ SmpSendGenericIpi(
     IN      BOOLEAN                 WaitForHandling
     )
 {
+    LOG("SmpSendGenericIpi started");
     SMP_DESTINATION dest = { 0 };
 
     return SmpSendGenericIpiEx(BroadcastFunction,
@@ -386,9 +387,10 @@ SmpSendGenericIpi(
                                FreeFunction,
                                FreeContext,
                                WaitForHandling,
-                               SmpIpiSendToAllExcludingSelf,
+                               SmpIpiSendToAllIncludingSelf,
                                dest
                                );
+    //LOG("SmpSendGenericIpi finished");
 }
 
 STATUS
