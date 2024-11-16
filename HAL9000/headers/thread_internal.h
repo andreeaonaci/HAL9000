@@ -40,10 +40,6 @@ typedef struct _THREAD
     TID                     Id;
     char*                   Name;
 
-    //bagat de la mine
-    QWORD lastScheduledTime;
-    THREAD_PRIORITY OriginalPriority;
-
     // Currently the thread priority is not used for anything
     THREAD_PRIORITY         Priority;
     THREAD_STATE            State;
@@ -94,8 +90,6 @@ typedef struct _THREAD
     PVOID                   UserStack;
 
     struct _PROCESS*        Process;
-
-    TID parentTid;
 } THREAD, *PTHREAD;
 
 //******************************************************************************

@@ -160,6 +160,11 @@ CpuMuValidateConfiguration(
     void
     )
 {
+    // Comment/remove this assert at your own risk, as HAL9000 wasn't tested on AMD CPUs and might or might not have
+    // subtle bugs that we don't know about, which could result in you spending a lot of time debugging your code, only
+    // to find out that the bug was caused by the fact that you have an AMD CPU.
+    ASSERT_INFO(CpuIsIntel(), "HAL9000 can run only on Intel CPUs! (this probably means that you have an AMD CPU)");
+
     ASSERT_INFO( m_cpuMuData.FeatureInformation.edx.APIC, "We cannot wake up APs without APIC!");
 
     ASSERT_INFO( m_cpuMuData.FeatureInformation.edx.MSR, "We cannot do anything without MSRs!");

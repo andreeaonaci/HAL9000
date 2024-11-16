@@ -59,25 +59,6 @@ SystemPreinit(
     ProcessSystemPreinit();
 }
 
-static
-STATUS
-(__cdecl _HelloIpi)(
-    IN_OPT PVOID Context
-    )
-{
-    UNREFERENCED_PARAMETER(Context);
-
-    // Get the index of the current processor
-    PCPU* pCpu = GetCurrentPcpu();
-    int processorIndexInt = (int)pCpu->ApicId;
-
-    // Check if the processor index is odd
-    if (processorIndexInt % 2 != 0) {
-        LOGP("Hello\n");
-    }
-    return STATUS_SUCCESS;
-}
-
 STATUS
 SystemInit(
     IN  ASM_PARAMETERS*     Parameters
@@ -90,7 +71,7 @@ SystemInit(
     pCpu = NULL;
 
     LogSystemInit(LogLevelInfo,
-                  LogComponentInterrupt | LogComponentIo | LogComponentAcpi | LogComponentUserMode,
+                  LogComponentInterrupt | LogComponentIo | LogComponentAcpi,
                   TRUE
                   );
 
@@ -227,6 +208,10 @@ SystemInit(
     }
     LOGL("CpuMuAllocAndInitCpu succeeded\n");
 
+    // warning C4055: 'type cast': from data pointer to function pointer
+#pragma warning(suppress:4055)
+    ((PFUNC_AssertFunction)&status)("C is very cool!\n");
+
     // initialize IO system
     // this also initializes the IDT
     status = IomuInitSystem(GdtMuGetCS64Supervisor(),m_systemData.NumberOfTssStacks );
@@ -331,13 +316,6 @@ SystemInit(
     }
 
     LOGL("Network stack successfully initialized\n");
-
-    status = SmpSendGenericIpi(_HelloIpi, NULL, NULL, NULL, FALSE);
-    if (!SUCCEEDED(status))
-    {
-        LOG_FUNC_ERROR("SmpSendGenericIpi", status);
-        return status;
-    }
 
     return status;
 }
