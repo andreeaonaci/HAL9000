@@ -1,7 +1,6 @@
 #include "HAL9000.h"
 #include "ex_event.h"
 #include "thread_internal.h"
-#include "thread.h"
 
 #include "cpumu.h"
 
@@ -45,13 +44,14 @@ ExEventSignal(
 
     LockAcquire(&Event->EventLock, &oldState);
     _InterlockedExchange8(&Event->Signaled, TRUE);
-    
+
     for(pEntry = RemoveHeadList(&Event->WaitingList);
         pEntry != &Event->WaitingList;
         pEntry = RemoveHeadList(&Event->WaitingList)
             )
     {
-        PTHREAD pThreadToSignal = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
+        PTHREAD pThreadToSignal = //(PTHREAD)0xFFFF'7000'0000'3000ULL;
+             CONTAINING_RECORD(pEntry, THREAD, ReadyList);
         ThreadUnblock(pThreadToSignal);
 
         if (ExEventTypeSynchronization == Event->EventType)
@@ -81,8 +81,6 @@ ExEventWaitForSignal(
     INOUT   EX_EVENT*      Event
     )
 {
-    LOG("ExEventWaitForSignal started");
-    //__halt();
     PTHREAD pCurrentThread;
     INTR_STATE dummyState;
     INTR_STATE oldState;
@@ -97,12 +95,13 @@ ExEventWaitForSignal(
     newState = ExEventTypeNotification == Event->EventType;
 
     oldState = CpuIntrDisable();
+    
     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
     {
         LockAcquire(&Event->EventLock, &dummyState);
-        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
-        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
         ThreadTakeBlockLock();
+        
         LockRelease(&Event->EventLock, dummyState);
         ThreadBlock();
 
@@ -114,8 +113,6 @@ ExEventWaitForSignal(
             break;
         }
     }
-    LOG("ExEventWaitForSignal finished");
-    //__halt();
+
     CpuIntrSetState(oldState);
-    //LOG("ExEventWaitForSignal finished");
 }
