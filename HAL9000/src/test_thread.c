@@ -404,7 +404,7 @@ void
 
     pNewContext = ExAllocatePoolWithTag(PoolAllocatePanicIfFail, sizeof(PVOID), HEAP_TEST_TAG, 0);
 
-    memcpy(pNewContext, &PrepareContext, sizeof(PVOID));
+    memcpy(pNewContext, (PVOID) & PrepareContext, sizeof(PVOID));
 
     *Context = pNewContext;
 }

@@ -15,7 +15,7 @@ PFUNC_LockIsOwner        LockIsOwner = NULL;
 
 #pragma warning(push)
 // warning C4028: formal parameter 1 different from declaration
-#pragma warning(disable:4028)
+#pragma warning(disable:4113)
 
 void
 LockSystemInit(

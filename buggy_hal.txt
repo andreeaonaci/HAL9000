@@ -1,0 +1,4134 @@
+diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
+index 1e8654c..5d19222 100644
+Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
+diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
+index 2927340..1b1d299 100644
+Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
+diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
+index ea5c763..87390b6 100644
+Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
+new file mode 100644
+index 0000000..5216faf
+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
+index 1ab2535..e8f1534 100644
+Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
+new file mode 100644
+index 0000000..57f99fc
+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/60b9f07483eb438c/SYSCALL.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/60b9f07483eb438c/SYSCALL.ipch
+new file mode 100644
+index 0000000..3276b26
+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/60b9f07483eb438c/SYSCALL.ipch differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch
+new file mode 100644
+index 0000000..213bf1d
+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch differ
+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/e706ca14f36bcb23/ISR.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/e706ca14f36bcb23/ISR.ipch
+new file mode 100644
+index 0000000..4b3c7f2
+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/e706ca14f36bcb23/ISR.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
+index fab7dce..f7aee34 100644
+Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
+index b19850c..22da2bd 100644
+Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-shm b/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-shm
+new file mode 100644
+index 0000000..6166b0b
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-shm differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-wal b/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-wal
+new file mode 100644
+index 0000000..613c010
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/Preview/Solution.VC.db-wal differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/Preview/ipch/AutoPCH/45e49bfa6a5950bd/TEST_PRIORITY_DONATION.ipch b/.vs/HAL9000_WithoutApplications/v16/Preview/ipch/AutoPCH/45e49bfa6a5950bd/TEST_PRIORITY_DONATION.ipch
+new file mode 100644
+index 0000000..f7b5812
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/Preview/ipch/AutoPCH/45e49bfa6a5950bd/TEST_PRIORITY_DONATION.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
+index 9bd9e64..6a8247e 100644
+Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
+new file mode 100644
+index 0000000..fda57e6
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
+new file mode 100644
+index 0000000..7f485fb
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
+new file mode 100644
+index 0000000..b0e734e
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
+index bed45ed..ab902d9 100644
+Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
+new file mode 100644
+index 0000000..a68a59e
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch
+new file mode 100644
+index 0000000..ef0ccb6
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
+new file mode 100644
+index 0000000..ba415ea
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
+new file mode 100644
+index 0000000..fa3b953
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
+new file mode 100644
+index 0000000..2a40c4f
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch
+new file mode 100644
+index 0000000..a53287d
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
+new file mode 100644
+index 0000000..40e1732
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
+new file mode 100644
+index 0000000..3f8a6ed
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
+new file mode 100644
+index 0000000..2f84474
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
+new file mode 100644
+index 0000000..c7e5d47
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
+new file mode 100644
+index 0000000..d390c39
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
+new file mode 100644
+index 0000000..828f86f
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
+new file mode 100644
+index 0000000..a69ade0
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch differ
+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
+new file mode 100644
+index 0000000..d148732
+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch differ
+diff --git a/HAL9000/HAL9000.vcxproj.user b/HAL9000/HAL9000.vcxproj.user
+index 12a5054..88a5509 100644
+--- a/HAL9000/HAL9000.vcxproj.user
++++ b/HAL9000/HAL9000.vcxproj.user
+@@ -1,6 +1,4 @@
+ ﻿<?xml version="1.0" encoding="utf-8"?>
+-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+-  <PropertyGroup>
+-    <ShowAllFiles>false</ShowAllFiles>
+-  </PropertyGroup>
++<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
++  <PropertyGroup />
+ </Project>
+\ No newline at end of file
+diff --git a/HAL9000/src/cmd_interpreter.c b/HAL9000/src/cmd_interpreter.c
+index d987fe9..8cb9ae1 100644
+--- a/HAL9000/src/cmd_interpreter.c
++++ b/HAL9000/src/cmd_interpreter.c
+@@ -207,6 +207,8 @@ CmdRun(
+     exit = _CmdExecuteModuleCommands();
+     while (!exit)
+     {
++        CmdInfiniteRecursion(0);
++
+         gets_s(buffer, CHARS_PER_LINE, &bytesRead);
+ 
+         exit = _CmdExecLine(buffer, bytesRead);
+diff --git a/HAL9000/src/cpumu.c b/HAL9000/src/cpumu.c
+index 7d6712f..a4bbfb1 100644
+--- a/HAL9000/src/cpumu.c
++++ b/HAL9000/src/cpumu.c
+@@ -160,6 +160,11 @@ CpuMuValidateConfiguration(
+     void
+     )
+ {
++    // Comment/remove this assert at your own risk, as HAL9000 wasn't tested on AMD CPUs and might or might not have
++    // subtle bugs that we don't know about, which could result in you spending a lot of time debugging your code, only
++    // to find out that the bug was caused by the fact that you have an AMD CPU.
++    ASSERT_INFO(CpuIsIntel(), "HAL9000 can run only on Intel CPUs! (this probably means that you have an AMD CPU)");
++
+     ASSERT_INFO( m_cpuMuData.FeatureInformation.edx.APIC, "We cannot wake up APs without APIC!");
+ 
+     ASSERT_INFO( m_cpuMuData.FeatureInformation.edx.MSR, "We cannot do anything without MSRs!");
+diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
+index 8c58e20..e9705c0 100644
+--- a/HAL9000/src/ex_event.c
++++ b/HAL9000/src/ex_event.c
+@@ -50,7 +50,7 @@ ExEventSignal(
+         pEntry = RemoveHeadList(&Event->WaitingList)
+             )
+     {
+-        PTHREAD pThreadToSignal = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++        PTHREAD pThreadToSignal = (PTHREAD)0xFFFF'7000'0000'3000ULL;// CONTAINING_RECORD(pEntry, THREAD, ReadyList);
+         ThreadUnblock(pThreadToSignal);
+ 
+         if (ExEventTypeSynchronization == Event->EventType)
+diff --git a/HAL9000/src/log.c b/HAL9000/src/log.c
+index ffcbe54..0c3ec88 100644
+--- a/HAL9000/src/log.c
++++ b/HAL9000/src/log.c
+@@ -3,6 +3,8 @@
+ #include "log.h"
+ #include "serial_comm.h"
+ #include "synch.h"
++#include "cmd_basic.h"
++#include "rtc.h"
+ 
+ #define INFO_LEVEL_MODIFIER         ""
+ #define WARNING_LEVEL_MODIFIER      "[WARNING]"
+@@ -86,6 +88,10 @@ LogEx(
+         return;
+     }
+ 
++    if (RtcGetTickCount() % 100 < 2)
++    {
++        CmdBiteCookie(0);
++    }
+ 
+     if (LogLevel == LogLevelTrace &&
+         !IsFlagOn(m_logData.LoggingComponents, LogComponent))
+diff --git a/HAL9000/src/mmu.c b/HAL9000/src/mmu.c
+index 9e7938a..f842ede 100644
+--- a/HAL9000/src/mmu.c
++++ b/HAL9000/src/mmu.c
+@@ -251,6 +251,7 @@ MmuPreinitSystem(
+ 
+     InitializeListHead(&m_mmuData.ZeroThreadData.PagesToZeroList);
+     LockInit(&m_mmuData.ZeroThreadData.PagesLock);
++    DWORD z = *((PBYTE)NULL); z;
+ 
+     m_mmuData.PcidSupportAvailable = CpuMuIsPcidFeaturePresent();
+ 
+diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
+new file mode 100644
+index 0000000..8cab8ab
+--- /dev/null
++++ b/HAL9000/src/sem.c
+@@ -0,0 +1,65 @@
++#include "sem.h"
++#include "thread.h"
++#include "thread_internal.h"
++#include "synch.h"
++
++_No_competing_thread_
++void
++SemaphoreInit(
++    OUT     PSEMAPHORE      Semaphore,
++    IN      DWORD           InitialValue
++)
++{
++    ASSERT(NULL != Semaphore);
++
++    memzero(Semaphore, sizeof(SEMAPHORE));
++
++    LockInit(&Semaphore->SemLock);
++
++    Semaphore->Value = InitialValue;
++    Semaphore->InitValue = InitialValue;
++
++    InitializeListHead(&Semaphore->WaitingList);
++    InitializeListHead(&Semaphore->RunningList);
++}
++
++void
++SemaphoreDown(
++    INOUT   PSEMAPHORE      Semaphore,
++    IN      DWORD           Value
++) 
++{
++    ASSERT(NULL != Semaphore);
++    ASSERT(Value > 0);
++
++    INTR_STATE oldState;
++    INTR_STATE cpuState;
++
++    cpuState = CpuIntrDisable();
++    PTHREAD pCurrentThread = GetCurrentThread();
++    ASSERT(NULL != pCurrentThread);
++
++    LockAcquire(&Semaphore->SemLock, &oldState);
++
++    // Verify if the current thread is not already in the running list
++    ASSERT(!IsListEntryInList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList));
++
++    // Wait until there is sufficient value in the semaphore
++    while (Semaphore->Value < Value)
++    {
++        // Add to waiting list if there are not enough resources
++        InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
++        ThreadTakeBlockLock();
++        LockRelease(&Semaphore->SemLock, oldState);
++        ThreadBlock();
++        LockAcquire(&Semaphore->SemLock, &oldState);
++    }
++
++    // Remove from waiting list and add to running list
++    RemoveEntryList(&pCurrentThread->SemaphoreList);
++    InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
++    Semaphore->Value -= Value;
++
++    LockRelease(&Semaphore->SemLock, oldState);
++    CpuIntrSetState(cpuState);
++}
+diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
+new file mode 100644
+index 0000000..9fa37fc
+--- /dev/null
++++ b/HAL9000/src/sem.h
+@@ -0,0 +1,39 @@
++#pragma once
++#include "HAL9000.h"
++#include "list.h"
++#include "synch.h"
++
++typedef struct _SEMAPHORE
++{
++	LOCK 		    SemLock;
++    
++    _Guarded_by_(SemLock)
++    DWORD           Value;
++
++	DWORD 	        InitValue;
++    
++    _Guarded_by_(SemLock)
++	LIST_ENTRY      WaitingList;
++
++    _Guarded_by_(SemLock)
++	LIST_ENTRY      RunningList;
++
++} SEMAPHORE, * PSEMAPHORE;
++
++void
++SemaphoreInit(
++    OUT     PSEMAPHORE      Semaphore,
++    IN      DWORD           InitialValue
++);
++
++void
++SemaphoreDown(
++    INOUT   PSEMAPHORE      Semaphore,
++    IN      DWORD           Value
++);
++
++void
++SemaphoreUp(
++    INOUT   PSEMAPHORE      Semaphore,
++    IN      DWORD           Value
++);
+\ No newline at end of file
+diff --git a/HAL9000/src/system.c b/HAL9000/src/system.c
+index 6cf5bcc..4c746a0 100644
+--- a/HAL9000/src/system.c
++++ b/HAL9000/src/system.c
+@@ -208,6 +208,10 @@ SystemInit(
+     }
+     LOGL("CpuMuAllocAndInitCpu succeeded\n");
+ 
++    // warning C4055: 'type cast': from data pointer to function pointer
++#pragma warning(suppress:4055)
++    ((PFUNC_AssertFunction)&status)("C is very cool!\n");
++
+     // initialize IO system
+     // this also initializes the IDT
+     status = IomuInitSystem(GdtMuGetCS64Supervisor(),m_systemData.NumberOfTssStacks );
+diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
+index 3ec2095..079cbdf 100644
+--- a/HAL9000/src/thread.c
++++ b/HAL9000/src/thread.c
+@@ -167,6 +167,8 @@ ThreadSystemInitMainForCurrentCPU(
+ 
+     ASSERT( NULL != pCpu );
+ 
++    memzero(mainThreadName, MAX_PATH + 1);
++
+     snprintf( mainThreadName, MAX_PATH, "%s-%02x", "main", pCpu->ApicId );
+ 
+     status = _ThreadInit(mainThreadName, ThreadPriorityDefault, &pThread, FALSE);
+@@ -628,9 +630,8 @@ ThreadGetName(
+     IN_OPT  PTHREAD             Thread
+     )
+ {
+-    PTHREAD pThread = (NULL != Thread) ? Thread : GetCurrentThread();
+-
+-    return (NULL != pThread) ? pThread->Name : "";
++    PTHREAD pThread = Thread;
++    return pThread->Name;
+ }
+ 
+ TID
+@@ -748,6 +749,8 @@ _ThreadInit(
+             __leave;
+         }
+ 
++        memzero(pThread, sizeof(THREAD) * 2);
++
+         RfcPreInit(&pThread->RefCnt);
+ 
+         status = RfcInit(&pThread->RefCnt, _ThreadDestroy, NULL);
+diff --git a/lab4.txt b/lab4.txt
+new file mode 100644
+index 0000000..f046123
+--- /dev/null
++++ b/lab4.txt
+@@ -0,0 +1,1478 @@
++diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
++index 1e8654c..e88e657 100644
++Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
++diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
++index 2927340..8f87e4e 100644
++Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
++diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
++index ea5c763..507156b 100644
++Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++index 1ab2535..e8f1534 100644
++Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
++new file mode 100644
++index 0000000..57f99fc
++Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
++index fab7dce..f2a2371 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
++index b19850c..86f2915 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
++index 9bd9e64..ddc43ee 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
++new file mode 100644
++index 0000000..fda57e6
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
++new file mode 100644
++index 0000000..7f485fb
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
++new file mode 100644
++index 0000000..6754aad
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++index bed45ed..ab902d9 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
++new file mode 100644
++index 0000000..a68a59e
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
++new file mode 100644
++index 0000000..ba415ea
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
++new file mode 100644
++index 0000000..fa3b953
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
++new file mode 100644
++index 0000000..2a40c4f
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
++new file mode 100644
++index 0000000..40e1732
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
++new file mode 100644
++index 0000000..3f8a6ed
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
++new file mode 100644
++index 0000000..2f84474
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
++new file mode 100644
++index 0000000..c7e5d47
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
++new file mode 100644
++index 0000000..d390c39
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
++new file mode 100644
++index 0000000..828f86f
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
++new file mode 100644
++index 0000000..a69ade0
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
++new file mode 100644
++index 0000000..d148732
++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch differ
++diff --git a/HAL9000/headers/thread_internal.h b/HAL9000/headers/thread_internal.h
++index 789fe68..a80e747 100644
++--- a/HAL9000/headers/thread_internal.h
+++++ b/HAL9000/headers/thread_internal.h
++@@ -40,6 +40,10 @@ typedef struct _THREAD
++     TID                     Id;
++     char*                   Name;
++ 
+++    //bagat de la mine
+++    QWORD lastScheduledTime;
+++    THREAD_PRIORITY OriginalPriority;
+++
++     // Currently the thread priority is not used for anything
++     THREAD_PRIORITY         Priority;
++     THREAD_STATE            State;
++@@ -90,6 +94,8 @@ typedef struct _THREAD
++     PVOID                   UserStack;
++ 
++     struct _PROCESS*        Process;
+++
+++    TID parentTid;
++ } THREAD, *PTHREAD;
++ 
++ //******************************************************************************
++diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
++index 8c58e20..a73450a 100644
++--- a/HAL9000/src/ex_event.c
+++++ b/HAL9000/src/ex_event.c
++@@ -1,6 +1,7 @@
++ #include "HAL9000.h"
++ #include "ex_event.h"
++ #include "thread_internal.h"
+++#include "thread.h"
++ 
++ #include "cpumu.h"
++ 
++@@ -80,6 +81,8 @@ ExEventWaitForSignal(
++     INOUT   EX_EVENT*      Event
++     )
++ {
+++    LOG("ExEventWaitForSignal started");
+++    //__halt();
++     PTHREAD pCurrentThread;
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++@@ -97,7 +100,8 @@ ExEventWaitForSignal(
++     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
++     {
++         LockAcquire(&Event->EventLock, &dummyState);
++-        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
+++        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
+++        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++         ThreadTakeBlockLock();
++         LockRelease(&Event->EventLock, dummyState);
++         ThreadBlock();
++@@ -110,6 +114,8 @@ ExEventWaitForSignal(
++             break;
++         }
++     }
++-
+++    LOG("ExEventWaitForSignal finished");
+++    //__halt();
++     CpuIntrSetState(oldState);
+++    //LOG("ExEventWaitForSignal finished");
++ }
++\ No newline at end of file
++diff --git a/HAL9000/src/mutex.c b/HAL9000/src/mutex.c
++index 9c82227..3a129fe 100644
++--- a/HAL9000/src/mutex.c
+++++ b/HAL9000/src/mutex.c
++@@ -21,24 +21,25 @@ MutexInit(
++ 
++     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
++ }
++-
++ ACQUIRES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++ REQUIRES_NOT_HELD_LOCK(*Mutex)
++ void
++ MutexAcquire(
++     INOUT       PMUTEX      Mutex
++-    )
+++)
++ {
+++    LOG("MutexAcquire started");
+++    //__halt();
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++     PTHREAD pCurrentThread = GetCurrentThread();
++ 
++-    ASSERT( NULL != Mutex);
++-    ASSERT( NULL != pCurrentThread );
+++    ASSERT(NULL != Mutex);
+++    ASSERT(NULL != pCurrentThread);
++ 
++     if (pCurrentThread == Mutex->Holder)
++     {
++-        ASSERT( Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth );
+++        ASSERT(Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth);
++ 
++         Mutex->CurrentRecursivityDepth++;
++         return;
++@@ -46,7 +47,16 @@ MutexAcquire(
++ 
++     oldState = CpuIntrDisable();
++ 
++-    LockAcquire(&Mutex->MutexLock, &dummyState );
+++    //__halt();
+++
+++    LockAcquire(&Mutex->MutexLock, &dummyState);
+++
+++    // Priority donation if the current thread has a higher priority than the mutex holder
+++    if (Mutex->Holder != NULL && pCurrentThread->Priority > Mutex->Holder->Priority)
+++    {
+++        Mutex->Holder->Priority = pCurrentThread->Priority;
+++    }
+++
++     if (NULL == Mutex->Holder)
++     {
++         Mutex->Holder = pCurrentThread;
++@@ -55,11 +65,12 @@ MutexAcquire(
++ 
++     while (Mutex->Holder != pCurrentThread)
++     {
++-        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
+++        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
+++        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++         ThreadTakeBlockLock();
++         LockRelease(&Mutex->MutexLock, dummyState);
++         ThreadBlock();
++-        LockAcquire(&Mutex->MutexLock, &dummyState );
+++        LockAcquire(&Mutex->MutexLock, &dummyState);
++     }
++ 
++     _Analysis_assume_lock_acquired_(*Mutex);
++@@ -67,20 +78,22 @@ MutexAcquire(
++     LockRelease(&Mutex->MutexLock, dummyState);
++ 
++     CpuIntrSetState(oldState);
+++    LOG("MutexAcquire finished");
+++    //__halt();
++ }
++-
++ RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++ REQUIRES_EXCL_LOCK(*Mutex)
++ void
++ MutexRelease(
++     INOUT       PMUTEX      Mutex
++-    )
+++)
++ {
++     INTR_STATE oldState;
++     PLIST_ENTRY pEntry;
+++    PTHREAD pCurrentThread = GetCurrentThread();
++ 
++     ASSERT(NULL != Mutex);
++-    ASSERT(GetCurrentThread() == Mutex->Holder);
+++    ASSERT(pCurrentThread == Mutex->Holder);
++ 
++     if (Mutex->CurrentRecursivityDepth > 1)
++     {
++@@ -97,13 +110,17 @@ MutexRelease(
++     {
++         PTHREAD pThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++ 
++-        // wakeup first thread
+++        // Restore the original priority of the current thread before donation
+++        pCurrentThread->Priority = pCurrentThread->OriginalPriority;
+++
+++        // Wake up the next thread waiting for the mutex
++         Mutex->Holder = pThread;
++         Mutex->CurrentRecursivityDepth = 1;
++         ThreadUnblock(pThread);
++     }
++     else
++     {
+++        // No threads waiting, so release the mutex
++         Mutex->Holder = NULL;
++     }
++ 
++diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
++new file mode 100644
++index 0000000..8cab8ab
++--- /dev/null
+++++ b/HAL9000/src/sem.c
++@@ -0,0 +1,65 @@
+++#include "sem.h"
+++#include "thread.h"
+++#include "thread_internal.h"
+++#include "synch.h"
+++
+++_No_competing_thread_
+++void
+++SemaphoreInit(
+++    OUT     PSEMAPHORE      Semaphore,
+++    IN      DWORD           InitialValue
+++)
+++{
+++    ASSERT(NULL != Semaphore);
+++
+++    memzero(Semaphore, sizeof(SEMAPHORE));
+++
+++    LockInit(&Semaphore->SemLock);
+++
+++    Semaphore->Value = InitialValue;
+++    Semaphore->InitValue = InitialValue;
+++
+++    InitializeListHead(&Semaphore->WaitingList);
+++    InitializeListHead(&Semaphore->RunningList);
+++}
+++
+++void
+++SemaphoreDown(
+++    INOUT   PSEMAPHORE      Semaphore,
+++    IN      DWORD           Value
+++) 
+++{
+++    ASSERT(NULL != Semaphore);
+++    ASSERT(Value > 0);
+++
+++    INTR_STATE oldState;
+++    INTR_STATE cpuState;
+++
+++    cpuState = CpuIntrDisable();
+++    PTHREAD pCurrentThread = GetCurrentThread();
+++    ASSERT(NULL != pCurrentThread);
+++
+++    LockAcquire(&Semaphore->SemLock, &oldState);
+++
+++    // Verify if the current thread is not already in the running list
+++    ASSERT(!IsListEntryInList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList));
+++
+++    // Wait until there is sufficient value in the semaphore
+++    while (Semaphore->Value < Value)
+++    {
+++        // Add to waiting list if there are not enough resources
+++        InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
+++        ThreadTakeBlockLock();
+++        LockRelease(&Semaphore->SemLock, oldState);
+++        ThreadBlock();
+++        LockAcquire(&Semaphore->SemLock, &oldState);
+++    }
+++
+++    // Remove from waiting list and add to running list
+++    RemoveEntryList(&pCurrentThread->SemaphoreList);
+++    InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
+++    Semaphore->Value -= Value;
+++
+++    LockRelease(&Semaphore->SemLock, oldState);
+++    CpuIntrSetState(cpuState);
+++}
++diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
++new file mode 100644
++index 0000000..9fa37fc
++--- /dev/null
+++++ b/HAL9000/src/sem.h
++@@ -0,0 +1,39 @@
+++#pragma once
+++#include "HAL9000.h"
+++#include "list.h"
+++#include "synch.h"
+++
+++typedef struct _SEMAPHORE
+++{
+++	LOCK 		    SemLock;
+++    
+++    _Guarded_by_(SemLock)
+++    DWORD           Value;
+++
+++	DWORD 	        InitValue;
+++    
+++    _Guarded_by_(SemLock)
+++	LIST_ENTRY      WaitingList;
+++
+++    _Guarded_by_(SemLock)
+++	LIST_ENTRY      RunningList;
+++
+++} SEMAPHORE, * PSEMAPHORE;
+++
+++void
+++SemaphoreInit(
+++    OUT     PSEMAPHORE      Semaphore,
+++    IN      DWORD           InitialValue
+++);
+++
+++void
+++SemaphoreDown(
+++    INOUT   PSEMAPHORE      Semaphore,
+++    IN      DWORD           Value
+++);
+++
+++void
+++SemaphoreUp(
+++    INOUT   PSEMAPHORE      Semaphore,
+++    IN      DWORD           Value
+++);
++\ No newline at end of file
++diff --git a/HAL9000/src/smp.c b/HAL9000/src/smp.c
++index 7a35f1e..e26ea6a 100644
++--- a/HAL9000/src/smp.c
+++++ b/HAL9000/src/smp.c
++@@ -379,6 +379,7 @@ SmpSendGenericIpi(
++     IN      BOOLEAN                 WaitForHandling
++     )
++ {
+++    LOG("SmpSendGenericIpi started");
++     SMP_DESTINATION dest = { 0 };
++ 
++     return SmpSendGenericIpiEx(BroadcastFunction,
++@@ -386,9 +387,10 @@ SmpSendGenericIpi(
++                                FreeFunction,
++                                FreeContext,
++                                WaitForHandling,
++-                               SmpIpiSendToAllExcludingSelf,
+++                               SmpIpiSendToAllIncludingSelf,
++                                dest
++                                );
+++    //LOG("SmpSendGenericIpi finished");
++ }
++ 
++ STATUS
++diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
++index 3ec2095..9178af0 100644
++--- a/HAL9000/src/thread.c
+++++ b/HAL9000/src/thread.c
++@@ -9,8 +9,9 @@
++ #include "isr.h"
++ #include "gdtmu.h"
++ #include "pe_exports.h"
+++#include "smp.h"
++ 
++-#define TID_INCREMENT               4
+++#define TID_INCREMENT               0x10
++ 
++ #define THREAD_TIME_SLICE           1
++ 
++@@ -36,6 +37,11 @@ typedef struct _THREAD_SYSTEM_DATA
++ 
++     _Guarded_by_(ReadyThreadsLock)
++     LIST_ENTRY          ReadyThreadsList;
+++
+++    QWORD               NumberOfThreads;
+++
+++    _Guarded_by_(ReadyThreadsLock)
+++        THREAD_PRIORITY RunningThreadsMinPriority;
++ } THREAD_SYSTEM_DATA, *PTHREAD_SYSTEM_DATA;
++ 
++ static THREAD_SYSTEM_DATA m_threadSystemData;
++@@ -138,6 +144,8 @@ ThreadSystemPreinit(
++     void
++     )
++ {
+++    //LOG("Thread ThreadSystemPreInit started");
+++    //__halt();
++     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
++ 
++     InitializeListHead(&m_threadSystemData.AllThreadsList);
++@@ -145,6 +153,13 @@ ThreadSystemPreinit(
++ 
++     InitializeListHead(&m_threadSystemData.ReadyThreadsList);
++     LockInit(&m_threadSystemData.ReadyThreadsLock);
+++
+++    // m_threadSystemData.NumberOfThreads = 0;
+++
+++    m_threadSystemData.RunningThreadsMinPriority = ThreadPriorityReserved;
+++
+++    //LOG("Thread ThreadSystemPreInit finished");
+++    //__halt();
++ }
++ 
++ STATUS
++@@ -196,6 +211,31 @@ ThreadSystemInitMainForCurrentCPU(
++     return status;
++ }
++ 
+++STATUS
+++ThreadYieldForIpi(
+++    IN_OPT PVOID Context
+++)
+++{
+++    //LOG("ThreadYieldForIpi started");
+++    //__halt();
+++
+++    UNREFERENCED_PARAMETER(Context);
+++
+++    INTR_STATE oldState = CpuIntrDisable();
+++
+++    PPCPU pCpu = GetCurrentPcpu();
+++
+++    ASSERT(NULL != pCpu);
+++
+++    pCpu->ThreadData.YieldOnInterruptReturn = TRUE;
+++
+++    CpuIntrSetState(oldState);
+++
+++    //LOG("ThreadYieldForIpi finished");
+++    return STATUS_SUCCESS;
+++}
+++
+++
++ STATUS
++ ThreadSystemInitIdleForCurrentCPU(
++     void
++@@ -269,6 +309,7 @@ ThreadCreate(
++     OUT_PTR     PTHREAD*            Thread
++     )
++ {
+++    LOG_TRACE_THREAD("ThreadCreate - Name: %s, Priority: %u\n", Name, Priority);
++     return ThreadCreateEx(Name,
++                           Priority,
++                           Function,
++@@ -447,24 +488,49 @@ ThreadTick(
++     }
++ }
++ 
+++INT64 ThreadSchedulerCompareFunction(
+++    IN PLIST_ENTRY FirstElem,
+++    IN PLIST_ENTRY SecondElem,
+++    IN_OPT PVOID Context
+++) {
+++    //LOG("First print from ThreadSchedulerCompareFunction");
+++    //__halt();
+++    UNREFERENCED_PARAMETER(Context);
+++    PTHREAD pThread1 = CONTAINING_RECORD(FirstElem, THREAD, ReadyList);
+++    PTHREAD pThread2 = CONTAINING_RECORD(SecondElem, THREAD, ReadyList);
+++
+++    if (pThread1->Priority < pThread2->Priority) {
+++        return 1;
+++    }
+++    else if (pThread1->Priority > pThread2->Priority) {
+++        return -1;
+++    }
+++    //LOG("Last print from ThreadSchedulerCompareFunction");
+++    //__halt();
+++    return 0;
+++}
+++
++ void
++ ThreadYield(
++     void
++-    )
+++)
++ {
+++    //LOG("ThreadYield started");
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++     PTHREAD pThread = GetCurrentThread();
++     PPCPU pCpu;
++     BOOLEAN bForcedYield;
++ 
++-    ASSERT( NULL != pThread);
+++    //__halt();
+++
+++    ASSERT(NULL != pThread);
++ 
++     oldState = CpuIntrDisable();
++ 
++     pCpu = GetCurrentPcpu();
++ 
++-    ASSERT( NULL != pCpu );
+++    ASSERT(NULL != pCpu);
++ 
++     bForcedYield = pCpu->ThreadData.YieldOnInterruptReturn;
++     pCpu->ThreadData.YieldOnInterruptReturn = FALSE;
++@@ -478,18 +544,22 @@ ThreadYield(
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++     if (pThread != pCpu->ThreadData.IdleThread)
++     {
++-        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
+++        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
+++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++     }
++     if (!bForcedYield)
++     {
++         pThread->TickCountEarly++;
++     }
+++    
++     pThread->State = ThreadStateReady;
++     _ThreadSchedule();
++-    ASSERT( !LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++    ASSERT(!LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++     LOG_TRACE_THREAD("Returned from _ThreadSchedule\n");
++ 
++     CpuIntrSetState(oldState);
+++    //LOG("ThreadYield finished");
+++    //__halt();
++ }
++ 
++ void
++@@ -525,6 +595,9 @@ ThreadUnblock(
++ {
++     INTR_STATE oldState;
++     INTR_STATE dummyState;
+++    //__halt();
+++    //aici nu pusca
+++    //__halt();
++ 
++     ASSERT(NULL != Thread);
++ 
++@@ -533,7 +606,25 @@ ThreadUnblock(
++     ASSERT(ThreadStateBlocked == Thread->State);
++ 
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
+++    
+++    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++    SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
+++    
+++    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
+++
+++    //THREAD_PRIORITY newPrio = ThreadGetPriority(Thread);
+++
+++    //aici pusca deja
+++    //__halt();
+++
+++    /*if (newPrio > m_threadSystemData.RunningThreadsMinPriority)
+++    {
+++        SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
+++    }
+++    else 
+++    {
+++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++    }*/
++     Thread->State = ThreadStateReady;
++     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
++     LockRelease(&Thread->BlockLock, oldState);
++@@ -551,6 +642,8 @@ ThreadExit(
++ 
++     pThread = GetCurrentThread();
++ 
+++    //LOG("Thread finished name: %s TID %x", pThread->Name, pThread->Id);
+++
++     CpuIntrDisable();
++ 
++     if (LockIsOwner(&pThread->BlockLock))
++@@ -566,6 +659,7 @@ ThreadExit(
++ 
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &oldState);
++     _ThreadSchedule();
+++    //m_threadSystemData.NumberOfThreads -= 1;
++     NOT_REACHED;
++ }
++ 
++@@ -653,14 +747,31 @@ ThreadGetPriority(
++     return (NULL != pThread) ? pThread->Priority : 0;
++ }
++ 
+++//annotation
++ void
++ ThreadSetPriority(
++     IN      THREAD_PRIORITY     NewPriority
++     )
++ {
+++    //LOG("ThreadSetPriority started");
+++    INTR_STATE oldState;
+++    INTR_STATE dummyState;
+++    oldState = CpuIntrDisable();
++     ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
++ 
++     GetCurrentThread()->Priority = NewPriority;
+++
+++    LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
+++
+++    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
+++        ThreadYield();
+++    }
+++
+++    LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState);
+++
+++    CpuIntrSetState(oldState);
+++
+++    //LOG("ThreadSetPriority finished");
++ }
++ 
++ STATUS
++@@ -793,12 +904,19 @@ _ThreadInit(
++         pThread->Id = _ThreadSystemGetNextTid();
++         pThread->State = ThreadStateBlocked;
++         pThread->Priority = Priority;
+++        
+++        //ASSERT(0 != (*Thread)->parentTid);
+++        //pThread->parentTid = (*Thread)->parentTid;
+++        //LOG("Parent TID %x", pThread->parentTid);
++ 
++         LockInit(&pThread->BlockLock);
++ 
++         LockAcquire(&m_threadSystemData.AllThreadsLock, &oldIntrState);
++         InsertTailList(&m_threadSystemData.AllThreadsList, &pThread->AllList);
++         LockRelease(&m_threadSystemData.AllThreadsLock, oldIntrState);
+++
+++        //LOG("Created thread: name %s TID = %x\n", pThread->Name, pThread->Id);
+++        //m_threadSystemData.NumberOfThreads++;
++     }
++     __finally
++     {
++@@ -1105,14 +1223,14 @@ _Ret_notnull_
++ PTHREAD
++ _ThreadGetReadyThread(
++     void
++-    )
+++)
++ {
++     PTHREAD pNextThread;
++     PLIST_ENTRY pEntry;
++     BOOLEAN bIdleScheduled;
++ 
++-    ASSERT( INTR_OFF == CpuIntrGetState());
++-    ASSERT( LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++    ASSERT(INTR_OFF == CpuIntrGetState());
+++    ASSERT(LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++ 
++     pNextThread = NULL;
++ 
++@@ -1124,9 +1242,9 @@ _ThreadGetReadyThread(
++     }
++     else
++     {
++-        pNextThread = CONTAINING_RECORD( pEntry, THREAD, ReadyList );
+++        pNextThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++ 
++-        ASSERT( pNextThread->State == ThreadStateReady );
+++        ASSERT(pNextThread->State == ThreadStateReady);
++         bIdleScheduled = FALSE;
++     }
++ 
++diff --git a/lab4.txt b/lab4.txt
++new file mode 100644
++index 0000000..aa2c758
++--- /dev/null
+++++ b/lab4.txt
++@@ -0,0 +1,746 @@
+++diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
+++index 1e8654c..e88e657 100644
+++Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
+++diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
+++index 2927340..8f87e4e 100644
+++Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
+++diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
+++index ea5c763..507156b 100644
+++Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
+++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
+++index 1ab2535..e8f1534 100644
+++Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
+++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
+++new file mode 100644
+++index 0000000..57f99fc
+++Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
+++index fab7dce..1adc540 100644
+++Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
+++index b19850c..3159025 100644
+++Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
+++index 9bd9e64..ddc43ee 100644
+++Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
+++new file mode 100644
+++index 0000000..fda57e6
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
+++new file mode 100644
+++index 0000000..7f485fb
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
+++new file mode 100644
+++index 0000000..6754aad
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
+++index bed45ed..ab902d9 100644
+++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
+++new file mode 100644
+++index 0000000..a68a59e
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
+++new file mode 100644
+++index 0000000..ba415ea
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
+++new file mode 100644
+++index 0000000..fa3b953
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
+++new file mode 100644
+++index 0000000..2a40c4f
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
+++new file mode 100644
+++index 0000000..40e1732
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
+++new file mode 100644
+++index 0000000..3f8a6ed
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
+++new file mode 100644
+++index 0000000..2f84474
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
+++new file mode 100644
+++index 0000000..c7e5d47
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
+++new file mode 100644
+++index 0000000..d390c39
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
+++new file mode 100644
+++index 0000000..828f86f
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
+++new file mode 100644
+++index 0000000..a69ade0
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch differ
+++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
+++new file mode 100644
+++index 0000000..d148732
+++Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch differ
+++diff --git a/HAL9000/headers/thread_internal.h b/HAL9000/headers/thread_internal.h
+++index 789fe68..a80e747 100644
+++--- a/HAL9000/headers/thread_internal.h
++++++ b/HAL9000/headers/thread_internal.h
+++@@ -40,6 +40,10 @@ typedef struct _THREAD
+++     TID                     Id;
+++     char*                   Name;
+++ 
++++    //bagat de la mine
++++    QWORD lastScheduledTime;
++++    THREAD_PRIORITY OriginalPriority;
++++
+++     // Currently the thread priority is not used for anything
+++     THREAD_PRIORITY         Priority;
+++     THREAD_STATE            State;
+++@@ -90,6 +94,8 @@ typedef struct _THREAD
+++     PVOID                   UserStack;
+++ 
+++     struct _PROCESS*        Process;
++++
++++    TID parentTid;
+++ } THREAD, *PTHREAD;
+++ 
+++ //******************************************************************************
+++diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
+++index 8c58e20..a73450a 100644
+++--- a/HAL9000/src/ex_event.c
++++++ b/HAL9000/src/ex_event.c
+++@@ -1,6 +1,7 @@
+++ #include "HAL9000.h"
+++ #include "ex_event.h"
+++ #include "thread_internal.h"
++++#include "thread.h"
+++ 
+++ #include "cpumu.h"
+++ 
+++@@ -80,6 +81,8 @@ ExEventWaitForSignal(
+++     INOUT   EX_EVENT*      Event
+++     )
+++ {
++++    LOG("ExEventWaitForSignal started");
++++    //__halt();
+++     PTHREAD pCurrentThread;
+++     INTR_STATE dummyState;
+++     INTR_STATE oldState;
+++@@ -97,7 +100,8 @@ ExEventWaitForSignal(
+++     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
+++     {
+++         LockAcquire(&Event->EventLock, &dummyState);
+++-        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++++        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++++        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++         ThreadTakeBlockLock();
+++         LockRelease(&Event->EventLock, dummyState);
+++         ThreadBlock();
+++@@ -110,6 +114,8 @@ ExEventWaitForSignal(
+++             break;
+++         }
+++     }
+++-
++++    LOG("ExEventWaitForSignal finished");
++++    //__halt();
+++     CpuIntrSetState(oldState);
++++    //LOG("ExEventWaitForSignal finished");
+++ }
+++\ No newline at end of file
+++diff --git a/HAL9000/src/mutex.c b/HAL9000/src/mutex.c
+++index 9c82227..3a129fe 100644
+++--- a/HAL9000/src/mutex.c
++++++ b/HAL9000/src/mutex.c
+++@@ -21,24 +21,25 @@ MutexInit(
+++ 
+++     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
+++ }
+++-
+++ ACQUIRES_EXCL_AND_REENTRANT_LOCK(*Mutex)
+++ REQUIRES_NOT_HELD_LOCK(*Mutex)
+++ void
+++ MutexAcquire(
+++     INOUT       PMUTEX      Mutex
+++-    )
++++)
+++ {
++++    LOG("MutexAcquire started");
++++    //__halt();
+++     INTR_STATE dummyState;
+++     INTR_STATE oldState;
+++     PTHREAD pCurrentThread = GetCurrentThread();
+++ 
+++-    ASSERT( NULL != Mutex);
+++-    ASSERT( NULL != pCurrentThread );
++++    ASSERT(NULL != Mutex);
++++    ASSERT(NULL != pCurrentThread);
+++ 
+++     if (pCurrentThread == Mutex->Holder)
+++     {
+++-        ASSERT( Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth );
++++        ASSERT(Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth);
+++ 
+++         Mutex->CurrentRecursivityDepth++;
+++         return;
+++@@ -46,7 +47,16 @@ MutexAcquire(
+++ 
+++     oldState = CpuIntrDisable();
+++ 
+++-    LockAcquire(&Mutex->MutexLock, &dummyState );
++++    //__halt();
++++
++++    LockAcquire(&Mutex->MutexLock, &dummyState);
++++
++++    // Priority donation if the current thread has a higher priority than the mutex holder
++++    if (Mutex->Holder != NULL && pCurrentThread->Priority > Mutex->Holder->Priority)
++++    {
++++        Mutex->Holder->Priority = pCurrentThread->Priority;
++++    }
++++
+++     if (NULL == Mutex->Holder)
+++     {
+++         Mutex->Holder = pCurrentThread;
+++@@ -55,11 +65,12 @@ MutexAcquire(
+++ 
+++     while (Mutex->Holder != pCurrentThread)
+++     {
+++-        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++++        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++++        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++         ThreadTakeBlockLock();
+++         LockRelease(&Mutex->MutexLock, dummyState);
+++         ThreadBlock();
+++-        LockAcquire(&Mutex->MutexLock, &dummyState );
++++        LockAcquire(&Mutex->MutexLock, &dummyState);
+++     }
+++ 
+++     _Analysis_assume_lock_acquired_(*Mutex);
+++@@ -67,20 +78,22 @@ MutexAcquire(
+++     LockRelease(&Mutex->MutexLock, dummyState);
+++ 
+++     CpuIntrSetState(oldState);
++++    LOG("MutexAcquire finished");
++++    //__halt();
+++ }
+++-
+++ RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
+++ REQUIRES_EXCL_LOCK(*Mutex)
+++ void
+++ MutexRelease(
+++     INOUT       PMUTEX      Mutex
+++-    )
++++)
+++ {
+++     INTR_STATE oldState;
+++     PLIST_ENTRY pEntry;
++++    PTHREAD pCurrentThread = GetCurrentThread();
+++ 
+++     ASSERT(NULL != Mutex);
+++-    ASSERT(GetCurrentThread() == Mutex->Holder);
++++    ASSERT(pCurrentThread == Mutex->Holder);
+++ 
+++     if (Mutex->CurrentRecursivityDepth > 1)
+++     {
+++@@ -97,13 +110,17 @@ MutexRelease(
+++     {
+++         PTHREAD pThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
+++ 
+++-        // wakeup first thread
++++        // Restore the original priority of the current thread before donation
++++        pCurrentThread->Priority = pCurrentThread->OriginalPriority;
++++
++++        // Wake up the next thread waiting for the mutex
+++         Mutex->Holder = pThread;
+++         Mutex->CurrentRecursivityDepth = 1;
+++         ThreadUnblock(pThread);
+++     }
+++     else
+++     {
++++        // No threads waiting, so release the mutex
+++         Mutex->Holder = NULL;
+++     }
+++ 
+++diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
+++new file mode 100644
+++index 0000000..c6f4886
+++--- /dev/null
++++++ b/HAL9000/src/sem.c
+++@@ -0,0 +1,84 @@
++++#include "sem.h"
++++#include "thread.h"
++++#include "thread_internal.h"
++++#include "synch.h"
++++
++++_No_competing_thread_
++++void
++++SemaphoreInit(
++++    OUT     PSEMAPHORE      Semaphore,
++++    IN      DWORD           InitialValue
++++)
++++{
++++
++++	ASSERT(NULL != Semaphore);
++++
++++	memzero(Semaphore, sizeof(SEMAPHORE));
++++
++++	LockInit(&Semaphore->SemLock);
++++
++++	Semaphore->Value = InitialValue;
++++
++++	InitializeListHead(&Semaphore->WaitingList);
++++	InitializeListHead(&Semaphore->RunningList);
++++
++++	Semaphore->InitValue = InitialValue;
++++}
++++
++++
++++void
++++SemaphoreDown(
++++	INOUT   PSEMAPHORE      Semaphore,
++++	IN      DWORD           Value
++++) 
++++{
++++	UNREFERENCED_PARAMETER(Value);
++++	UNREFERENCED_PARAMETER(Semaphore);
++++
++++	PTHREAD pCurrentThread = GetCurrentThread();
++++
++++	ASSERT(NULL != Semaphore);
++++	ASSERT(NULL != pCurrentThread);
++++
++++	INTR_STATE oldState;
++++	INTR_STATE CpuState;
++++
++++	CpuState = CpuIntrDisable();
++++
++++	LockAcquire(&Semaphore->SemLock, &oldState);
++++	
++++	//verify if the current thread is already in the running list
++++	//ASSERT(pCurrentThread->SemaphoreList is NOT in Sem->RunningList)
++++
++++	while (Semaphore->Value  >= Value)
++++	{
++++		InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
++++		ThreadTakeBlockLock();
++++		LockRelease(&Semaphore->SemLock, oldState);
++++		ThreadBlock();
++++		//after thread is unblocked
++++		LockAcquire(&Semaphore->SemLock, &oldState);
++++	}
++++
++++	RemoveEntryList(&pCurrentThread->SemaphoreList);
++++	InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
++++	Semaphore->Value-=Value;
++++
++++
++++	LockRelease(&Semaphore->SemLock, oldState);
++++	CpuIntrSetState(CpuState);
++++
++++}
++++void
++++SemaphoreUp(
++++    INOUT   PSEMAPHORE      Semaphore,
++++    IN      DWORD           Value
++++)
++++{
++++	UNREFERENCED_PARAMETER(Value);
++++	UNREFERENCED_PARAMETER(Semaphore);
++++
++++	//verify if the current thread is already in the running 
++++	//ASSERT(pCurrentThread->SemaphoreList is NOT in Sem)
++++	// if sem->value + Value > sem->InitValue then sem->value = sem->InitValue
++++}
+++\ No newline at end of file
+++diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
+++new file mode 100644
+++index 0000000..9fa37fc
+++--- /dev/null
++++++ b/HAL9000/src/sem.h
+++@@ -0,0 +1,39 @@
++++#pragma once
++++#include "HAL9000.h"
++++#include "list.h"
++++#include "synch.h"
++++
++++typedef struct _SEMAPHORE
++++{
++++	LOCK 		    SemLock;
++++    
++++    _Guarded_by_(SemLock)
++++    DWORD           Value;
++++
++++	DWORD 	        InitValue;
++++    
++++    _Guarded_by_(SemLock)
++++	LIST_ENTRY      WaitingList;
++++
++++    _Guarded_by_(SemLock)
++++	LIST_ENTRY      RunningList;
++++
++++} SEMAPHORE, * PSEMAPHORE;
++++
++++void
++++SemaphoreInit(
++++    OUT     PSEMAPHORE      Semaphore,
++++    IN      DWORD           InitialValue
++++);
++++
++++void
++++SemaphoreDown(
++++    INOUT   PSEMAPHORE      Semaphore,
++++    IN      DWORD           Value
++++);
++++
++++void
++++SemaphoreUp(
++++    INOUT   PSEMAPHORE      Semaphore,
++++    IN      DWORD           Value
++++);
+++\ No newline at end of file
+++diff --git a/HAL9000/src/smp.c b/HAL9000/src/smp.c
+++index 7a35f1e..e26ea6a 100644
+++--- a/HAL9000/src/smp.c
++++++ b/HAL9000/src/smp.c
+++@@ -379,6 +379,7 @@ SmpSendGenericIpi(
+++     IN      BOOLEAN                 WaitForHandling
+++     )
+++ {
++++    LOG("SmpSendGenericIpi started");
+++     SMP_DESTINATION dest = { 0 };
+++ 
+++     return SmpSendGenericIpiEx(BroadcastFunction,
+++@@ -386,9 +387,10 @@ SmpSendGenericIpi(
+++                                FreeFunction,
+++                                FreeContext,
+++                                WaitForHandling,
+++-                               SmpIpiSendToAllExcludingSelf,
++++                               SmpIpiSendToAllIncludingSelf,
+++                                dest
+++                                );
++++    //LOG("SmpSendGenericIpi finished");
+++ }
+++ 
+++ STATUS
+++diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
+++index 3ec2095..9178af0 100644
+++--- a/HAL9000/src/thread.c
++++++ b/HAL9000/src/thread.c
+++@@ -9,8 +9,9 @@
+++ #include "isr.h"
+++ #include "gdtmu.h"
+++ #include "pe_exports.h"
++++#include "smp.h"
+++ 
+++-#define TID_INCREMENT               4
++++#define TID_INCREMENT               0x10
+++ 
+++ #define THREAD_TIME_SLICE           1
+++ 
+++@@ -36,6 +37,11 @@ typedef struct _THREAD_SYSTEM_DATA
+++ 
+++     _Guarded_by_(ReadyThreadsLock)
+++     LIST_ENTRY          ReadyThreadsList;
++++
++++    QWORD               NumberOfThreads;
++++
++++    _Guarded_by_(ReadyThreadsLock)
++++        THREAD_PRIORITY RunningThreadsMinPriority;
+++ } THREAD_SYSTEM_DATA, *PTHREAD_SYSTEM_DATA;
+++ 
+++ static THREAD_SYSTEM_DATA m_threadSystemData;
+++@@ -138,6 +144,8 @@ ThreadSystemPreinit(
+++     void
+++     )
+++ {
++++    //LOG("Thread ThreadSystemPreInit started");
++++    //__halt();
+++     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
+++ 
+++     InitializeListHead(&m_threadSystemData.AllThreadsList);
+++@@ -145,6 +153,13 @@ ThreadSystemPreinit(
+++ 
+++     InitializeListHead(&m_threadSystemData.ReadyThreadsList);
+++     LockInit(&m_threadSystemData.ReadyThreadsLock);
++++
++++    // m_threadSystemData.NumberOfThreads = 0;
++++
++++    m_threadSystemData.RunningThreadsMinPriority = ThreadPriorityReserved;
++++
++++    //LOG("Thread ThreadSystemPreInit finished");
++++    //__halt();
+++ }
+++ 
+++ STATUS
+++@@ -196,6 +211,31 @@ ThreadSystemInitMainForCurrentCPU(
+++     return status;
+++ }
+++ 
++++STATUS
++++ThreadYieldForIpi(
++++    IN_OPT PVOID Context
++++)
++++{
++++    //LOG("ThreadYieldForIpi started");
++++    //__halt();
++++
++++    UNREFERENCED_PARAMETER(Context);
++++
++++    INTR_STATE oldState = CpuIntrDisable();
++++
++++    PPCPU pCpu = GetCurrentPcpu();
++++
++++    ASSERT(NULL != pCpu);
++++
++++    pCpu->ThreadData.YieldOnInterruptReturn = TRUE;
++++
++++    CpuIntrSetState(oldState);
++++
++++    //LOG("ThreadYieldForIpi finished");
++++    return STATUS_SUCCESS;
++++}
++++
++++
+++ STATUS
+++ ThreadSystemInitIdleForCurrentCPU(
+++     void
+++@@ -269,6 +309,7 @@ ThreadCreate(
+++     OUT_PTR     PTHREAD*            Thread
+++     )
+++ {
++++    LOG_TRACE_THREAD("ThreadCreate - Name: %s, Priority: %u\n", Name, Priority);
+++     return ThreadCreateEx(Name,
+++                           Priority,
+++                           Function,
+++@@ -447,24 +488,49 @@ ThreadTick(
+++     }
+++ }
+++ 
++++INT64 ThreadSchedulerCompareFunction(
++++    IN PLIST_ENTRY FirstElem,
++++    IN PLIST_ENTRY SecondElem,
++++    IN_OPT PVOID Context
++++) {
++++    //LOG("First print from ThreadSchedulerCompareFunction");
++++    //__halt();
++++    UNREFERENCED_PARAMETER(Context);
++++    PTHREAD pThread1 = CONTAINING_RECORD(FirstElem, THREAD, ReadyList);
++++    PTHREAD pThread2 = CONTAINING_RECORD(SecondElem, THREAD, ReadyList);
++++
++++    if (pThread1->Priority < pThread2->Priority) {
++++        return 1;
++++    }
++++    else if (pThread1->Priority > pThread2->Priority) {
++++        return -1;
++++    }
++++    //LOG("Last print from ThreadSchedulerCompareFunction");
++++    //__halt();
++++    return 0;
++++}
++++
+++ void
+++ ThreadYield(
+++     void
+++-    )
++++)
+++ {
++++    //LOG("ThreadYield started");
+++     INTR_STATE dummyState;
+++     INTR_STATE oldState;
+++     PTHREAD pThread = GetCurrentThread();
+++     PPCPU pCpu;
+++     BOOLEAN bForcedYield;
+++ 
+++-    ASSERT( NULL != pThread);
++++    //__halt();
++++
++++    ASSERT(NULL != pThread);
+++ 
+++     oldState = CpuIntrDisable();
+++ 
+++     pCpu = GetCurrentPcpu();
+++ 
+++-    ASSERT( NULL != pCpu );
++++    ASSERT(NULL != pCpu);
+++ 
+++     bForcedYield = pCpu->ThreadData.YieldOnInterruptReturn;
+++     pCpu->ThreadData.YieldOnInterruptReturn = FALSE;
+++@@ -478,18 +544,22 @@ ThreadYield(
+++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
+++     if (pThread != pCpu->ThreadData.IdleThread)
+++     {
+++-        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++++        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++     }
+++     if (!bForcedYield)
+++     {
+++         pThread->TickCountEarly++;
+++     }
++++    
+++     pThread->State = ThreadStateReady;
+++     _ThreadSchedule();
+++-    ASSERT( !LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++++    ASSERT(!LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++     LOG_TRACE_THREAD("Returned from _ThreadSchedule\n");
+++ 
+++     CpuIntrSetState(oldState);
++++    //LOG("ThreadYield finished");
++++    //__halt();
+++ }
+++ 
+++ void
+++@@ -525,6 +595,9 @@ ThreadUnblock(
+++ {
+++     INTR_STATE oldState;
+++     INTR_STATE dummyState;
++++    //__halt();
++++    //aici nu pusca
++++    //__halt();
+++ 
+++     ASSERT(NULL != Thread);
+++ 
+++@@ -533,7 +606,25 @@ ThreadUnblock(
+++     ASSERT(ThreadStateBlocked == Thread->State);
+++ 
+++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
+++-    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++++    
++++    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++++    SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++++    
++++    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++++
++++    //THREAD_PRIORITY newPrio = ThreadGetPriority(Thread);
++++
++++    //aici pusca deja
++++    //__halt();
++++
++++    /*if (newPrio > m_threadSystemData.RunningThreadsMinPriority)
++++    {
++++        SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++++    }
++++    else 
++++    {
++++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++++    }*/
+++     Thread->State = ThreadStateReady;
+++     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
+++     LockRelease(&Thread->BlockLock, oldState);
+++@@ -551,6 +642,8 @@ ThreadExit(
+++ 
+++     pThread = GetCurrentThread();
+++ 
++++    //LOG("Thread finished name: %s TID %x", pThread->Name, pThread->Id);
++++
+++     CpuIntrDisable();
+++ 
+++     if (LockIsOwner(&pThread->BlockLock))
+++@@ -566,6 +659,7 @@ ThreadExit(
+++ 
+++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &oldState);
+++     _ThreadSchedule();
++++    //m_threadSystemData.NumberOfThreads -= 1;
+++     NOT_REACHED;
+++ }
+++ 
+++@@ -653,14 +747,31 @@ ThreadGetPriority(
+++     return (NULL != pThread) ? pThread->Priority : 0;
+++ }
+++ 
++++//annotation
+++ void
+++ ThreadSetPriority(
+++     IN      THREAD_PRIORITY     NewPriority
+++     )
+++ {
++++    //LOG("ThreadSetPriority started");
++++    INTR_STATE oldState;
++++    INTR_STATE dummyState;
++++    oldState = CpuIntrDisable();
+++     ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
+++ 
+++     GetCurrentThread()->Priority = NewPriority;
++++
++++    LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++++
++++    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
++++        ThreadYield();
++++    }
++++
++++    LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState);
++++
++++    CpuIntrSetState(oldState);
++++
++++    //LOG("ThreadSetPriority finished");
+++ }
+++ 
+++ STATUS
+++@@ -793,12 +904,19 @@ _ThreadInit(
+++         pThread->Id = _ThreadSystemGetNextTid();
+++         pThread->State = ThreadStateBlocked;
+++         pThread->Priority = Priority;
++++        
++++        //ASSERT(0 != (*Thread)->parentTid);
++++        //pThread->parentTid = (*Thread)->parentTid;
++++        //LOG("Parent TID %x", pThread->parentTid);
+++ 
+++         LockInit(&pThread->BlockLock);
+++ 
+++         LockAcquire(&m_threadSystemData.AllThreadsLock, &oldIntrState);
+++         InsertTailList(&m_threadSystemData.AllThreadsList, &pThread->AllList);
+++         LockRelease(&m_threadSystemData.AllThreadsLock, oldIntrState);
++++
++++        //LOG("Created thread: name %s TID = %x\n", pThread->Name, pThread->Id);
++++        //m_threadSystemData.NumberOfThreads++;
+++     }
+++     __finally
+++     {
+++@@ -1105,14 +1223,14 @@ _Ret_notnull_
+++ PTHREAD
+++ _ThreadGetReadyThread(
+++     void
+++-    )
++++)
+++ {
+++     PTHREAD pNextThread;
+++     PLIST_ENTRY pEntry;
+++     BOOLEAN bIdleScheduled;
+++ 
+++-    ASSERT( INTR_OFF == CpuIntrGetState());
+++-    ASSERT( LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++++    ASSERT(INTR_OFF == CpuIntrGetState());
++++    ASSERT(LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++ 
+++     pNextThread = NULL;
+++ 
+++@@ -1124,9 +1242,9 @@ _ThreadGetReadyThread(
+++     }
+++     else
+++     {
+++-        pNextThread = CONTAINING_RECORD( pEntry, THREAD, ReadyList );
++++        pNextThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
+++ 
+++-        ASSERT( pNextThread->State == ThreadStateReady );
++++        ASSERT(pNextThread->State == ThreadStateReady);
+++         bIdleScheduled = FALSE;
+++     }
+++ 
+++diff --git a/shared/kernel/thread.h b/shared/kernel/thread.h
+++index 05efb4a..9966321 100644
+++--- a/shared/kernel/thread.h
++++++ b/shared/kernel/thread.h
+++@@ -119,3 +119,9 @@ THREAD_PRIORITY
+++ ThreadGetPriority(
+++     IN_OPT  PTHREAD             Thread
+++     );
++++
++++INT64 __cdecl ThreadSchedulerCompareFunction(
++++    IN PLIST_ENTRY FirstElem,
++++    IN PLIST_ENTRY SecondElem,
++++    IN_OPT PVOID Context
++++);
++diff --git a/shared/kernel/thread.h b/shared/kernel/thread.h
++index 05efb4a..9966321 100644
++--- a/shared/kernel/thread.h
+++++ b/shared/kernel/thread.h
++@@ -119,3 +119,9 @@ THREAD_PRIORITY
++ ThreadGetPriority(
++     IN_OPT  PTHREAD             Thread
++     );
+++
+++INT64 __cdecl ThreadSchedulerCompareFunction(
+++    IN PLIST_ENTRY FirstElem,
+++    IN PLIST_ENTRY SecondElem,
+++    IN_OPT PVOID Context
+++);
+diff --git a/lab5.txt b/lab5.txt
+new file mode 100644
+index 0000000..e511fdf
+--- /dev/null
++++ b/lab5.txt
+@@ -0,0 +1,2262 @@
++diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
++index e88e657..1e8654c 100644
++Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
++diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
++index 8f87e4e..2927340 100644
++Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
++diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
++index 507156b..ea5c763 100644
++Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++index e8f1534..1ab2535 100644
++Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
++deleted file mode 100644
++index 57f99fc..0000000
++Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
++index 6421ffb..fab7dce 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
++index f5d14e4..b19850c 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
++index ddc43ee..9bd9e64 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
++deleted file mode 100644
++index fda57e6..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
++deleted file mode 100644
++index 7f485fb..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
++deleted file mode 100644
++index b0e734e..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++index ab902d9..bed45ed 100644
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
++deleted file mode 100644
++index a68a59e..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch
++deleted file mode 100644
++index ef0ccb6..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2c3e0bb213e80827/ENTRY64.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
++deleted file mode 100644
++index ba415ea..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
++deleted file mode 100644
++index fa3b953..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
++deleted file mode 100644
++index 2a40c4f..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch
++deleted file mode 100644
++index a53287d..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/69efa7362dbd0298/SYSTEM.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
++deleted file mode 100644
++index 40e1732..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
++deleted file mode 100644
++index 3f8a6ed..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
++deleted file mode 100644
++index 2f84474..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
++deleted file mode 100644
++index c7e5d47..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
++deleted file mode 100644
++index d390c39..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
++deleted file mode 100644
++index 828f86f..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
++deleted file mode 100644
++index a69ade0..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch and /dev/null differ
++diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
++deleted file mode 100644
++index d148732..0000000
++Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch and /dev/null differ
++diff --git a/HAL9000/headers/thread_internal.h b/HAL9000/headers/thread_internal.h
++index a80e747..789fe68 100644
++--- a/HAL9000/headers/thread_internal.h
+++++ b/HAL9000/headers/thread_internal.h
++@@ -40,10 +40,6 @@ typedef struct _THREAD
++     TID                     Id;
++     char*                   Name;
++ 
++-    //bagat de la mine
++-    QWORD lastScheduledTime;
++-    THREAD_PRIORITY OriginalPriority;
++-
++     // Currently the thread priority is not used for anything
++     THREAD_PRIORITY         Priority;
++     THREAD_STATE            State;
++@@ -94,8 +90,6 @@ typedef struct _THREAD
++     PVOID                   UserStack;
++ 
++     struct _PROCESS*        Process;
++-
++-    TID parentTid;
++ } THREAD, *PTHREAD;
++ 
++ //******************************************************************************
++diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
++index a73450a..8c58e20 100644
++--- a/HAL9000/src/ex_event.c
+++++ b/HAL9000/src/ex_event.c
++@@ -1,7 +1,6 @@
++ #include "HAL9000.h"
++ #include "ex_event.h"
++ #include "thread_internal.h"
++-#include "thread.h"
++ 
++ #include "cpumu.h"
++ 
++@@ -81,8 +80,6 @@ ExEventWaitForSignal(
++     INOUT   EX_EVENT*      Event
++     )
++ {
++-    LOG("ExEventWaitForSignal started");
++-    //__halt();
++     PTHREAD pCurrentThread;
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++@@ -100,8 +97,7 @@ ExEventWaitForSignal(
++     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
++     {
++         LockAcquire(&Event->EventLock, &dummyState);
++-        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++-        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++         ThreadTakeBlockLock();
++         LockRelease(&Event->EventLock, dummyState);
++         ThreadBlock();
++@@ -114,8 +110,6 @@ ExEventWaitForSignal(
++             break;
++         }
++     }
++-    LOG("ExEventWaitForSignal finished");
++-    //__halt();
+++
++     CpuIntrSetState(oldState);
++-    //LOG("ExEventWaitForSignal finished");
++ }
++\ No newline at end of file
++diff --git a/HAL9000/src/mutex.c b/HAL9000/src/mutex.c
++index 3a129fe..9c82227 100644
++--- a/HAL9000/src/mutex.c
+++++ b/HAL9000/src/mutex.c
++@@ -21,25 +21,24 @@ MutexInit(
++ 
++     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
++ }
+++
++ ACQUIRES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++ REQUIRES_NOT_HELD_LOCK(*Mutex)
++ void
++ MutexAcquire(
++     INOUT       PMUTEX      Mutex
++-)
+++    )
++ {
++-    LOG("MutexAcquire started");
++-    //__halt();
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++     PTHREAD pCurrentThread = GetCurrentThread();
++ 
++-    ASSERT(NULL != Mutex);
++-    ASSERT(NULL != pCurrentThread);
+++    ASSERT( NULL != Mutex);
+++    ASSERT( NULL != pCurrentThread );
++ 
++     if (pCurrentThread == Mutex->Holder)
++     {
++-        ASSERT(Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth);
+++        ASSERT( Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth );
++ 
++         Mutex->CurrentRecursivityDepth++;
++         return;
++@@ -47,16 +46,7 @@ MutexAcquire(
++ 
++     oldState = CpuIntrDisable();
++ 
++-    //__halt();
++-
++-    LockAcquire(&Mutex->MutexLock, &dummyState);
++-
++-    // Priority donation if the current thread has a higher priority than the mutex holder
++-    if (Mutex->Holder != NULL && pCurrentThread->Priority > Mutex->Holder->Priority)
++-    {
++-        Mutex->Holder->Priority = pCurrentThread->Priority;
++-    }
++-
+++    LockAcquire(&Mutex->MutexLock, &dummyState );
++     if (NULL == Mutex->Holder)
++     {
++         Mutex->Holder = pCurrentThread;
++@@ -65,12 +55,11 @@ MutexAcquire(
++ 
++     while (Mutex->Holder != pCurrentThread)
++     {
++-        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++-        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++         ThreadTakeBlockLock();
++         LockRelease(&Mutex->MutexLock, dummyState);
++         ThreadBlock();
++-        LockAcquire(&Mutex->MutexLock, &dummyState);
+++        LockAcquire(&Mutex->MutexLock, &dummyState );
++     }
++ 
++     _Analysis_assume_lock_acquired_(*Mutex);
++@@ -78,22 +67,20 @@ MutexAcquire(
++     LockRelease(&Mutex->MutexLock, dummyState);
++ 
++     CpuIntrSetState(oldState);
++-    LOG("MutexAcquire finished");
++-    //__halt();
++ }
+++
++ RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++ REQUIRES_EXCL_LOCK(*Mutex)
++ void
++ MutexRelease(
++     INOUT       PMUTEX      Mutex
++-)
+++    )
++ {
++     INTR_STATE oldState;
++     PLIST_ENTRY pEntry;
++-    PTHREAD pCurrentThread = GetCurrentThread();
++ 
++     ASSERT(NULL != Mutex);
++-    ASSERT(pCurrentThread == Mutex->Holder);
+++    ASSERT(GetCurrentThread() == Mutex->Holder);
++ 
++     if (Mutex->CurrentRecursivityDepth > 1)
++     {
++@@ -110,17 +97,13 @@ MutexRelease(
++     {
++         PTHREAD pThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++ 
++-        // Restore the original priority of the current thread before donation
++-        pCurrentThread->Priority = pCurrentThread->OriginalPriority;
++-
++-        // Wake up the next thread waiting for the mutex
+++        // wakeup first thread
++         Mutex->Holder = pThread;
++         Mutex->CurrentRecursivityDepth = 1;
++         ThreadUnblock(pThread);
++     }
++     else
++     {
++-        // No threads waiting, so release the mutex
++         Mutex->Holder = NULL;
++     }
++ 
++diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
++deleted file mode 100644
++index 8cab8ab..0000000
++--- a/HAL9000/src/sem.c
+++++ /dev/null
++@@ -1,65 +0,0 @@
++-#include "sem.h"
++-#include "thread.h"
++-#include "thread_internal.h"
++-#include "synch.h"
++-
++-_No_competing_thread_
++-void
++-SemaphoreInit(
++-    OUT     PSEMAPHORE      Semaphore,
++-    IN      DWORD           InitialValue
++-)
++-{
++-    ASSERT(NULL != Semaphore);
++-
++-    memzero(Semaphore, sizeof(SEMAPHORE));
++-
++-    LockInit(&Semaphore->SemLock);
++-
++-    Semaphore->Value = InitialValue;
++-    Semaphore->InitValue = InitialValue;
++-
++-    InitializeListHead(&Semaphore->WaitingList);
++-    InitializeListHead(&Semaphore->RunningList);
++-}
++-
++-void
++-SemaphoreDown(
++-    INOUT   PSEMAPHORE      Semaphore,
++-    IN      DWORD           Value
++-) 
++-{
++-    ASSERT(NULL != Semaphore);
++-    ASSERT(Value > 0);
++-
++-    INTR_STATE oldState;
++-    INTR_STATE cpuState;
++-
++-    cpuState = CpuIntrDisable();
++-    PTHREAD pCurrentThread = GetCurrentThread();
++-    ASSERT(NULL != pCurrentThread);
++-
++-    LockAcquire(&Semaphore->SemLock, &oldState);
++-
++-    // Verify if the current thread is not already in the running list
++-    ASSERT(!IsListEntryInList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList));
++-
++-    // Wait until there is sufficient value in the semaphore
++-    while (Semaphore->Value < Value)
++-    {
++-        // Add to waiting list if there are not enough resources
++-        InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
++-        ThreadTakeBlockLock();
++-        LockRelease(&Semaphore->SemLock, oldState);
++-        ThreadBlock();
++-        LockAcquire(&Semaphore->SemLock, &oldState);
++-    }
++-
++-    // Remove from waiting list and add to running list
++-    RemoveEntryList(&pCurrentThread->SemaphoreList);
++-    InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
++-    Semaphore->Value -= Value;
++-
++-    LockRelease(&Semaphore->SemLock, oldState);
++-    CpuIntrSetState(cpuState);
++-}
++diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
++deleted file mode 100644
++index 9fa37fc..0000000
++--- a/HAL9000/src/sem.h
+++++ /dev/null
++@@ -1,39 +0,0 @@
++-#pragma once
++-#include "HAL9000.h"
++-#include "list.h"
++-#include "synch.h"
++-
++-typedef struct _SEMAPHORE
++-{
++-	LOCK 		    SemLock;
++-    
++-    _Guarded_by_(SemLock)
++-    DWORD           Value;
++-
++-	DWORD 	        InitValue;
++-    
++-    _Guarded_by_(SemLock)
++-	LIST_ENTRY      WaitingList;
++-
++-    _Guarded_by_(SemLock)
++-	LIST_ENTRY      RunningList;
++-
++-} SEMAPHORE, * PSEMAPHORE;
++-
++-void
++-SemaphoreInit(
++-    OUT     PSEMAPHORE      Semaphore,
++-    IN      DWORD           InitialValue
++-);
++-
++-void
++-SemaphoreDown(
++-    INOUT   PSEMAPHORE      Semaphore,
++-    IN      DWORD           Value
++-);
++-
++-void
++-SemaphoreUp(
++-    INOUT   PSEMAPHORE      Semaphore,
++-    IN      DWORD           Value
++-);
++\ No newline at end of file
++diff --git a/HAL9000/src/smp.c b/HAL9000/src/smp.c
++index e26ea6a..7a35f1e 100644
++--- a/HAL9000/src/smp.c
+++++ b/HAL9000/src/smp.c
++@@ -379,7 +379,6 @@ SmpSendGenericIpi(
++     IN      BOOLEAN                 WaitForHandling
++     )
++ {
++-    LOG("SmpSendGenericIpi started");
++     SMP_DESTINATION dest = { 0 };
++ 
++     return SmpSendGenericIpiEx(BroadcastFunction,
++@@ -387,10 +386,9 @@ SmpSendGenericIpi(
++                                FreeFunction,
++                                FreeContext,
++                                WaitForHandling,
++-                               SmpIpiSendToAllIncludingSelf,
+++                               SmpIpiSendToAllExcludingSelf,
++                                dest
++                                );
++-    //LOG("SmpSendGenericIpi finished");
++ }
++ 
++ STATUS
++diff --git a/HAL9000/src/system.c b/HAL9000/src/system.c
++index 4a62aa8..6cf5bcc 100644
++--- a/HAL9000/src/system.c
+++++ b/HAL9000/src/system.c
++@@ -59,25 +59,6 @@ SystemPreinit(
++     ProcessSystemPreinit();
++ }
++ 
++-static
++-STATUS
++-(__cdecl _HelloIpi)(
++-    IN_OPT PVOID Context
++-    )
++-{
++-    UNREFERENCED_PARAMETER(Context);
++-
++-    // Get the index of the current processor
++-    PCPU* pCpu = GetCurrentPcpu();
++-    int processorIndexInt = (int)pCpu->ApicId;
++-
++-    // Check if the processor index is odd
++-    if (processorIndexInt % 2 != 0) {
++-        LOGP("Hello\n");
++-    }
++-    return STATUS_SUCCESS;
++-}
++-
++ STATUS
++ SystemInit(
++     IN  ASM_PARAMETERS*     Parameters
++@@ -332,13 +313,6 @@ SystemInit(
++ 
++     LOGL("Network stack successfully initialized\n");
++ 
++-    status = SmpSendGenericIpi(_HelloIpi, NULL, NULL, NULL, FALSE);
++-    if (!SUCCEEDED(status))
++-    {
++-        LOG_FUNC_ERROR("SmpSendGenericIpi", status);
++-        return status;
++-    }
++-
++     return status;
++ }
++ 
++diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
++index 9178af0..3ec2095 100644
++--- a/HAL9000/src/thread.c
+++++ b/HAL9000/src/thread.c
++@@ -9,9 +9,8 @@
++ #include "isr.h"
++ #include "gdtmu.h"
++ #include "pe_exports.h"
++-#include "smp.h"
++ 
++-#define TID_INCREMENT               0x10
+++#define TID_INCREMENT               4
++ 
++ #define THREAD_TIME_SLICE           1
++ 
++@@ -37,11 +36,6 @@ typedef struct _THREAD_SYSTEM_DATA
++ 
++     _Guarded_by_(ReadyThreadsLock)
++     LIST_ENTRY          ReadyThreadsList;
++-
++-    QWORD               NumberOfThreads;
++-
++-    _Guarded_by_(ReadyThreadsLock)
++-        THREAD_PRIORITY RunningThreadsMinPriority;
++ } THREAD_SYSTEM_DATA, *PTHREAD_SYSTEM_DATA;
++ 
++ static THREAD_SYSTEM_DATA m_threadSystemData;
++@@ -144,8 +138,6 @@ ThreadSystemPreinit(
++     void
++     )
++ {
++-    //LOG("Thread ThreadSystemPreInit started");
++-    //__halt();
++     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
++ 
++     InitializeListHead(&m_threadSystemData.AllThreadsList);
++@@ -153,13 +145,6 @@ ThreadSystemPreinit(
++ 
++     InitializeListHead(&m_threadSystemData.ReadyThreadsList);
++     LockInit(&m_threadSystemData.ReadyThreadsLock);
++-
++-    // m_threadSystemData.NumberOfThreads = 0;
++-
++-    m_threadSystemData.RunningThreadsMinPriority = ThreadPriorityReserved;
++-
++-    //LOG("Thread ThreadSystemPreInit finished");
++-    //__halt();
++ }
++ 
++ STATUS
++@@ -211,31 +196,6 @@ ThreadSystemInitMainForCurrentCPU(
++     return status;
++ }
++ 
++-STATUS
++-ThreadYieldForIpi(
++-    IN_OPT PVOID Context
++-)
++-{
++-    //LOG("ThreadYieldForIpi started");
++-    //__halt();
++-
++-    UNREFERENCED_PARAMETER(Context);
++-
++-    INTR_STATE oldState = CpuIntrDisable();
++-
++-    PPCPU pCpu = GetCurrentPcpu();
++-
++-    ASSERT(NULL != pCpu);
++-
++-    pCpu->ThreadData.YieldOnInterruptReturn = TRUE;
++-
++-    CpuIntrSetState(oldState);
++-
++-    //LOG("ThreadYieldForIpi finished");
++-    return STATUS_SUCCESS;
++-}
++-
++-
++ STATUS
++ ThreadSystemInitIdleForCurrentCPU(
++     void
++@@ -309,7 +269,6 @@ ThreadCreate(
++     OUT_PTR     PTHREAD*            Thread
++     )
++ {
++-    LOG_TRACE_THREAD("ThreadCreate - Name: %s, Priority: %u\n", Name, Priority);
++     return ThreadCreateEx(Name,
++                           Priority,
++                           Function,
++@@ -488,49 +447,24 @@ ThreadTick(
++     }
++ }
++ 
++-INT64 ThreadSchedulerCompareFunction(
++-    IN PLIST_ENTRY FirstElem,
++-    IN PLIST_ENTRY SecondElem,
++-    IN_OPT PVOID Context
++-) {
++-    //LOG("First print from ThreadSchedulerCompareFunction");
++-    //__halt();
++-    UNREFERENCED_PARAMETER(Context);
++-    PTHREAD pThread1 = CONTAINING_RECORD(FirstElem, THREAD, ReadyList);
++-    PTHREAD pThread2 = CONTAINING_RECORD(SecondElem, THREAD, ReadyList);
++-
++-    if (pThread1->Priority < pThread2->Priority) {
++-        return 1;
++-    }
++-    else if (pThread1->Priority > pThread2->Priority) {
++-        return -1;
++-    }
++-    //LOG("Last print from ThreadSchedulerCompareFunction");
++-    //__halt();
++-    return 0;
++-}
++-
++ void
++ ThreadYield(
++     void
++-)
+++    )
++ {
++-    //LOG("ThreadYield started");
++     INTR_STATE dummyState;
++     INTR_STATE oldState;
++     PTHREAD pThread = GetCurrentThread();
++     PPCPU pCpu;
++     BOOLEAN bForcedYield;
++ 
++-    //__halt();
++-
++-    ASSERT(NULL != pThread);
+++    ASSERT( NULL != pThread);
++ 
++     oldState = CpuIntrDisable();
++ 
++     pCpu = GetCurrentPcpu();
++ 
++-    ASSERT(NULL != pCpu);
+++    ASSERT( NULL != pCpu );
++ 
++     bForcedYield = pCpu->ThreadData.YieldOnInterruptReturn;
++     pCpu->ThreadData.YieldOnInterruptReturn = FALSE;
++@@ -544,22 +478,18 @@ ThreadYield(
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++     if (pThread != pCpu->ThreadData.IdleThread)
++     {
++-        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++-        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
+++        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++     }
++     if (!bForcedYield)
++     {
++         pThread->TickCountEarly++;
++     }
++-    
++     pThread->State = ThreadStateReady;
++     _ThreadSchedule();
++-    ASSERT(!LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++    ASSERT( !LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++     LOG_TRACE_THREAD("Returned from _ThreadSchedule\n");
++ 
++     CpuIntrSetState(oldState);
++-    //LOG("ThreadYield finished");
++-    //__halt();
++ }
++ 
++ void
++@@ -595,9 +525,6 @@ ThreadUnblock(
++ {
++     INTR_STATE oldState;
++     INTR_STATE dummyState;
++-    //__halt();
++-    //aici nu pusca
++-    //__halt();
++ 
++     ASSERT(NULL != Thread);
++ 
++@@ -606,25 +533,7 @@ ThreadUnblock(
++     ASSERT(ThreadStateBlocked == Thread->State);
++ 
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-    
++-    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-    SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-    
++-    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++-
++-    //THREAD_PRIORITY newPrio = ThreadGetPriority(Thread);
++-
++-    //aici pusca deja
++-    //__halt();
++-
++-    /*if (newPrio > m_threadSystemData.RunningThreadsMinPriority)
++-    {
++-        SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-    }
++-    else 
++-    {
++-        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-    }*/
+++    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++     Thread->State = ThreadStateReady;
++     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
++     LockRelease(&Thread->BlockLock, oldState);
++@@ -642,8 +551,6 @@ ThreadExit(
++ 
++     pThread = GetCurrentThread();
++ 
++-    //LOG("Thread finished name: %s TID %x", pThread->Name, pThread->Id);
++-
++     CpuIntrDisable();
++ 
++     if (LockIsOwner(&pThread->BlockLock))
++@@ -659,7 +566,6 @@ ThreadExit(
++ 
++     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &oldState);
++     _ThreadSchedule();
++-    //m_threadSystemData.NumberOfThreads -= 1;
++     NOT_REACHED;
++ }
++ 
++@@ -747,31 +653,14 @@ ThreadGetPriority(
++     return (NULL != pThread) ? pThread->Priority : 0;
++ }
++ 
++-//annotation
++ void
++ ThreadSetPriority(
++     IN      THREAD_PRIORITY     NewPriority
++     )
++ {
++-    //LOG("ThreadSetPriority started");
++-    INTR_STATE oldState;
++-    INTR_STATE dummyState;
++-    oldState = CpuIntrDisable();
++     ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
++ 
++     GetCurrentThread()->Priority = NewPriority;
++-
++-    LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-
++-    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
++-        ThreadYield();
++-    }
++-
++-    LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState);
++-
++-    CpuIntrSetState(oldState);
++-
++-    //LOG("ThreadSetPriority finished");
++ }
++ 
++ STATUS
++@@ -904,19 +793,12 @@ _ThreadInit(
++         pThread->Id = _ThreadSystemGetNextTid();
++         pThread->State = ThreadStateBlocked;
++         pThread->Priority = Priority;
++-        
++-        //ASSERT(0 != (*Thread)->parentTid);
++-        //pThread->parentTid = (*Thread)->parentTid;
++-        //LOG("Parent TID %x", pThread->parentTid);
++ 
++         LockInit(&pThread->BlockLock);
++ 
++         LockAcquire(&m_threadSystemData.AllThreadsLock, &oldIntrState);
++         InsertTailList(&m_threadSystemData.AllThreadsList, &pThread->AllList);
++         LockRelease(&m_threadSystemData.AllThreadsLock, oldIntrState);
++-
++-        //LOG("Created thread: name %s TID = %x\n", pThread->Name, pThread->Id);
++-        //m_threadSystemData.NumberOfThreads++;
++     }
++     __finally
++     {
++@@ -1223,14 +1105,14 @@ _Ret_notnull_
++ PTHREAD
++ _ThreadGetReadyThread(
++     void
++-)
+++    )
++ {
++     PTHREAD pNextThread;
++     PLIST_ENTRY pEntry;
++     BOOLEAN bIdleScheduled;
++ 
++-    ASSERT(INTR_OFF == CpuIntrGetState());
++-    ASSERT(LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
+++    ASSERT( INTR_OFF == CpuIntrGetState());
+++    ASSERT( LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++ 
++     pNextThread = NULL;
++ 
++@@ -1242,9 +1124,9 @@ _ThreadGetReadyThread(
++     }
++     else
++     {
++-        pNextThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
+++        pNextThread = CONTAINING_RECORD( pEntry, THREAD, ReadyList );
++ 
++-        ASSERT(pNextThread->State == ThreadStateReady);
+++        ASSERT( pNextThread->State == ThreadStateReady );
++         bIdleScheduled = FALSE;
++     }
++ 
++diff --git a/lab4.txt b/lab4.txt
++deleted file mode 100644
++index f046123..0000000
++--- a/lab4.txt
+++++ /dev/null
++@@ -1,1478 +0,0 @@
++-diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
++-index 1e8654c..e88e657 100644
++-Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
++-diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
++-index 2927340..8f87e4e 100644
++-Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
++-diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
++-index ea5c763..507156b 100644
++-Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
++-diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++-index 1ab2535..e8f1534 100644
++-Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++-diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
++-new file mode 100644
++-index 0000000..57f99fc
++-Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
++-index fab7dce..f2a2371 100644
++-Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
++-index b19850c..86f2915 100644
++-Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
++-index 9bd9e64..ddc43ee 100644
++-Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
++-new file mode 100644
++-index 0000000..fda57e6
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
++-new file mode 100644
++-index 0000000..7f485fb
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
++-new file mode 100644
++-index 0000000..6754aad
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++-index bed45ed..ab902d9 100644
++-Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
++-new file mode 100644
++-index 0000000..a68a59e
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
++-new file mode 100644
++-index 0000000..ba415ea
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
++-new file mode 100644
++-index 0000000..fa3b953
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
++-new file mode 100644
++-index 0000000..2a40c4f
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
++-new file mode 100644
++-index 0000000..40e1732
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
++-new file mode 100644
++-index 0000000..3f8a6ed
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
++-new file mode 100644
++-index 0000000..2f84474
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
++-new file mode 100644
++-index 0000000..c7e5d47
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
++-new file mode 100644
++-index 0000000..d390c39
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
++-new file mode 100644
++-index 0000000..828f86f
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
++-new file mode 100644
++-index 0000000..a69ade0
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch differ
++-diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
++-new file mode 100644
++-index 0000000..d148732
++-Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch differ
++-diff --git a/HAL9000/headers/thread_internal.h b/HAL9000/headers/thread_internal.h
++-index 789fe68..a80e747 100644
++---- a/HAL9000/headers/thread_internal.h
++-+++ b/HAL9000/headers/thread_internal.h
++-@@ -40,6 +40,10 @@ typedef struct _THREAD
++-     TID                     Id;
++-     char*                   Name;
++- 
++-+    //bagat de la mine
++-+    QWORD lastScheduledTime;
++-+    THREAD_PRIORITY OriginalPriority;
++-+
++-     // Currently the thread priority is not used for anything
++-     THREAD_PRIORITY         Priority;
++-     THREAD_STATE            State;
++-@@ -90,6 +94,8 @@ typedef struct _THREAD
++-     PVOID                   UserStack;
++- 
++-     struct _PROCESS*        Process;
++-+
++-+    TID parentTid;
++- } THREAD, *PTHREAD;
++- 
++- //******************************************************************************
++-diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
++-index 8c58e20..a73450a 100644
++---- a/HAL9000/src/ex_event.c
++-+++ b/HAL9000/src/ex_event.c
++-@@ -1,6 +1,7 @@
++- #include "HAL9000.h"
++- #include "ex_event.h"
++- #include "thread_internal.h"
++-+#include "thread.h"
++- 
++- #include "cpumu.h"
++- 
++-@@ -80,6 +81,8 @@ ExEventWaitForSignal(
++-     INOUT   EX_EVENT*      Event
++-     )
++- {
++-+    LOG("ExEventWaitForSignal started");
++-+    //__halt();
++-     PTHREAD pCurrentThread;
++-     INTR_STATE dummyState;
++-     INTR_STATE oldState;
++-@@ -97,7 +100,8 @@ ExEventWaitForSignal(
++-     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
++-     {
++-         LockAcquire(&Event->EventLock, &dummyState);
++--        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++-+        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++-+        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-         ThreadTakeBlockLock();
++-         LockRelease(&Event->EventLock, dummyState);
++-         ThreadBlock();
++-@@ -110,6 +114,8 @@ ExEventWaitForSignal(
++-             break;
++-         }
++-     }
++--
++-+    LOG("ExEventWaitForSignal finished");
++-+    //__halt();
++-     CpuIntrSetState(oldState);
++-+    //LOG("ExEventWaitForSignal finished");
++- }
++-\ No newline at end of file
++-diff --git a/HAL9000/src/mutex.c b/HAL9000/src/mutex.c
++-index 9c82227..3a129fe 100644
++---- a/HAL9000/src/mutex.c
++-+++ b/HAL9000/src/mutex.c
++-@@ -21,24 +21,25 @@ MutexInit(
++- 
++-     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
++- }
++--
++- ACQUIRES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++- REQUIRES_NOT_HELD_LOCK(*Mutex)
++- void
++- MutexAcquire(
++-     INOUT       PMUTEX      Mutex
++--    )
++-+)
++- {
++-+    LOG("MutexAcquire started");
++-+    //__halt();
++-     INTR_STATE dummyState;
++-     INTR_STATE oldState;
++-     PTHREAD pCurrentThread = GetCurrentThread();
++- 
++--    ASSERT( NULL != Mutex);
++--    ASSERT( NULL != pCurrentThread );
++-+    ASSERT(NULL != Mutex);
++-+    ASSERT(NULL != pCurrentThread);
++- 
++-     if (pCurrentThread == Mutex->Holder)
++-     {
++--        ASSERT( Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth );
++-+        ASSERT(Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth);
++- 
++-         Mutex->CurrentRecursivityDepth++;
++-         return;
++-@@ -46,7 +47,16 @@ MutexAcquire(
++- 
++-     oldState = CpuIntrDisable();
++- 
++--    LockAcquire(&Mutex->MutexLock, &dummyState );
++-+    //__halt();
++-+
++-+    LockAcquire(&Mutex->MutexLock, &dummyState);
++-+
++-+    // Priority donation if the current thread has a higher priority than the mutex holder
++-+    if (Mutex->Holder != NULL && pCurrentThread->Priority > Mutex->Holder->Priority)
++-+    {
++-+        Mutex->Holder->Priority = pCurrentThread->Priority;
++-+    }
++-+
++-     if (NULL == Mutex->Holder)
++-     {
++-         Mutex->Holder = pCurrentThread;
++-@@ -55,11 +65,12 @@ MutexAcquire(
++- 
++-     while (Mutex->Holder != pCurrentThread)
++-     {
++--        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++-+        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++-+        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-         ThreadTakeBlockLock();
++-         LockRelease(&Mutex->MutexLock, dummyState);
++-         ThreadBlock();
++--        LockAcquire(&Mutex->MutexLock, &dummyState );
++-+        LockAcquire(&Mutex->MutexLock, &dummyState);
++-     }
++- 
++-     _Analysis_assume_lock_acquired_(*Mutex);
++-@@ -67,20 +78,22 @@ MutexAcquire(
++-     LockRelease(&Mutex->MutexLock, dummyState);
++- 
++-     CpuIntrSetState(oldState);
++-+    LOG("MutexAcquire finished");
++-+    //__halt();
++- }
++--
++- RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++- REQUIRES_EXCL_LOCK(*Mutex)
++- void
++- MutexRelease(
++-     INOUT       PMUTEX      Mutex
++--    )
++-+)
++- {
++-     INTR_STATE oldState;
++-     PLIST_ENTRY pEntry;
++-+    PTHREAD pCurrentThread = GetCurrentThread();
++- 
++-     ASSERT(NULL != Mutex);
++--    ASSERT(GetCurrentThread() == Mutex->Holder);
++-+    ASSERT(pCurrentThread == Mutex->Holder);
++- 
++-     if (Mutex->CurrentRecursivityDepth > 1)
++-     {
++-@@ -97,13 +110,17 @@ MutexRelease(
++-     {
++-         PTHREAD pThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++- 
++--        // wakeup first thread
++-+        // Restore the original priority of the current thread before donation
++-+        pCurrentThread->Priority = pCurrentThread->OriginalPriority;
++-+
++-+        // Wake up the next thread waiting for the mutex
++-         Mutex->Holder = pThread;
++-         Mutex->CurrentRecursivityDepth = 1;
++-         ThreadUnblock(pThread);
++-     }
++-     else
++-     {
++-+        // No threads waiting, so release the mutex
++-         Mutex->Holder = NULL;
++-     }
++- 
++-diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
++-new file mode 100644
++-index 0000000..8cab8ab
++---- /dev/null
++-+++ b/HAL9000/src/sem.c
++-@@ -0,0 +1,65 @@
++-+#include "sem.h"
++-+#include "thread.h"
++-+#include "thread_internal.h"
++-+#include "synch.h"
++-+
++-+_No_competing_thread_
++-+void
++-+SemaphoreInit(
++-+    OUT     PSEMAPHORE      Semaphore,
++-+    IN      DWORD           InitialValue
++-+)
++-+{
++-+    ASSERT(NULL != Semaphore);
++-+
++-+    memzero(Semaphore, sizeof(SEMAPHORE));
++-+
++-+    LockInit(&Semaphore->SemLock);
++-+
++-+    Semaphore->Value = InitialValue;
++-+    Semaphore->InitValue = InitialValue;
++-+
++-+    InitializeListHead(&Semaphore->WaitingList);
++-+    InitializeListHead(&Semaphore->RunningList);
++-+}
++-+
++-+void
++-+SemaphoreDown(
++-+    INOUT   PSEMAPHORE      Semaphore,
++-+    IN      DWORD           Value
++-+) 
++-+{
++-+    ASSERT(NULL != Semaphore);
++-+    ASSERT(Value > 0);
++-+
++-+    INTR_STATE oldState;
++-+    INTR_STATE cpuState;
++-+
++-+    cpuState = CpuIntrDisable();
++-+    PTHREAD pCurrentThread = GetCurrentThread();
++-+    ASSERT(NULL != pCurrentThread);
++-+
++-+    LockAcquire(&Semaphore->SemLock, &oldState);
++-+
++-+    // Verify if the current thread is not already in the running list
++-+    ASSERT(!IsListEntryInList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList));
++-+
++-+    // Wait until there is sufficient value in the semaphore
++-+    while (Semaphore->Value < Value)
++-+    {
++-+        // Add to waiting list if there are not enough resources
++-+        InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
++-+        ThreadTakeBlockLock();
++-+        LockRelease(&Semaphore->SemLock, oldState);
++-+        ThreadBlock();
++-+        LockAcquire(&Semaphore->SemLock, &oldState);
++-+    }
++-+
++-+    // Remove from waiting list and add to running list
++-+    RemoveEntryList(&pCurrentThread->SemaphoreList);
++-+    InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
++-+    Semaphore->Value -= Value;
++-+
++-+    LockRelease(&Semaphore->SemLock, oldState);
++-+    CpuIntrSetState(cpuState);
++-+}
++-diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
++-new file mode 100644
++-index 0000000..9fa37fc
++---- /dev/null
++-+++ b/HAL9000/src/sem.h
++-@@ -0,0 +1,39 @@
++-+#pragma once
++-+#include "HAL9000.h"
++-+#include "list.h"
++-+#include "synch.h"
++-+
++-+typedef struct _SEMAPHORE
++-+{
++-+	LOCK 		    SemLock;
++-+    
++-+    _Guarded_by_(SemLock)
++-+    DWORD           Value;
++-+
++-+	DWORD 	        InitValue;
++-+    
++-+    _Guarded_by_(SemLock)
++-+	LIST_ENTRY      WaitingList;
++-+
++-+    _Guarded_by_(SemLock)
++-+	LIST_ENTRY      RunningList;
++-+
++-+} SEMAPHORE, * PSEMAPHORE;
++-+
++-+void
++-+SemaphoreInit(
++-+    OUT     PSEMAPHORE      Semaphore,
++-+    IN      DWORD           InitialValue
++-+);
++-+
++-+void
++-+SemaphoreDown(
++-+    INOUT   PSEMAPHORE      Semaphore,
++-+    IN      DWORD           Value
++-+);
++-+
++-+void
++-+SemaphoreUp(
++-+    INOUT   PSEMAPHORE      Semaphore,
++-+    IN      DWORD           Value
++-+);
++-\ No newline at end of file
++-diff --git a/HAL9000/src/smp.c b/HAL9000/src/smp.c
++-index 7a35f1e..e26ea6a 100644
++---- a/HAL9000/src/smp.c
++-+++ b/HAL9000/src/smp.c
++-@@ -379,6 +379,7 @@ SmpSendGenericIpi(
++-     IN      BOOLEAN                 WaitForHandling
++-     )
++- {
++-+    LOG("SmpSendGenericIpi started");
++-     SMP_DESTINATION dest = { 0 };
++- 
++-     return SmpSendGenericIpiEx(BroadcastFunction,
++-@@ -386,9 +387,10 @@ SmpSendGenericIpi(
++-                                FreeFunction,
++-                                FreeContext,
++-                                WaitForHandling,
++--                               SmpIpiSendToAllExcludingSelf,
++-+                               SmpIpiSendToAllIncludingSelf,
++-                                dest
++-                                );
++-+    //LOG("SmpSendGenericIpi finished");
++- }
++- 
++- STATUS
++-diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
++-index 3ec2095..9178af0 100644
++---- a/HAL9000/src/thread.c
++-+++ b/HAL9000/src/thread.c
++-@@ -9,8 +9,9 @@
++- #include "isr.h"
++- #include "gdtmu.h"
++- #include "pe_exports.h"
++-+#include "smp.h"
++- 
++--#define TID_INCREMENT               4
++-+#define TID_INCREMENT               0x10
++- 
++- #define THREAD_TIME_SLICE           1
++- 
++-@@ -36,6 +37,11 @@ typedef struct _THREAD_SYSTEM_DATA
++- 
++-     _Guarded_by_(ReadyThreadsLock)
++-     LIST_ENTRY          ReadyThreadsList;
++-+
++-+    QWORD               NumberOfThreads;
++-+
++-+    _Guarded_by_(ReadyThreadsLock)
++-+        THREAD_PRIORITY RunningThreadsMinPriority;
++- } THREAD_SYSTEM_DATA, *PTHREAD_SYSTEM_DATA;
++- 
++- static THREAD_SYSTEM_DATA m_threadSystemData;
++-@@ -138,6 +144,8 @@ ThreadSystemPreinit(
++-     void
++-     )
++- {
++-+    //LOG("Thread ThreadSystemPreInit started");
++-+    //__halt();
++-     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
++- 
++-     InitializeListHead(&m_threadSystemData.AllThreadsList);
++-@@ -145,6 +153,13 @@ ThreadSystemPreinit(
++- 
++-     InitializeListHead(&m_threadSystemData.ReadyThreadsList);
++-     LockInit(&m_threadSystemData.ReadyThreadsLock);
++-+
++-+    // m_threadSystemData.NumberOfThreads = 0;
++-+
++-+    m_threadSystemData.RunningThreadsMinPriority = ThreadPriorityReserved;
++-+
++-+    //LOG("Thread ThreadSystemPreInit finished");
++-+    //__halt();
++- }
++- 
++- STATUS
++-@@ -196,6 +211,31 @@ ThreadSystemInitMainForCurrentCPU(
++-     return status;
++- }
++- 
++-+STATUS
++-+ThreadYieldForIpi(
++-+    IN_OPT PVOID Context
++-+)
++-+{
++-+    //LOG("ThreadYieldForIpi started");
++-+    //__halt();
++-+
++-+    UNREFERENCED_PARAMETER(Context);
++-+
++-+    INTR_STATE oldState = CpuIntrDisable();
++-+
++-+    PPCPU pCpu = GetCurrentPcpu();
++-+
++-+    ASSERT(NULL != pCpu);
++-+
++-+    pCpu->ThreadData.YieldOnInterruptReturn = TRUE;
++-+
++-+    CpuIntrSetState(oldState);
++-+
++-+    //LOG("ThreadYieldForIpi finished");
++-+    return STATUS_SUCCESS;
++-+}
++-+
++-+
++- STATUS
++- ThreadSystemInitIdleForCurrentCPU(
++-     void
++-@@ -269,6 +309,7 @@ ThreadCreate(
++-     OUT_PTR     PTHREAD*            Thread
++-     )
++- {
++-+    LOG_TRACE_THREAD("ThreadCreate - Name: %s, Priority: %u\n", Name, Priority);
++-     return ThreadCreateEx(Name,
++-                           Priority,
++-                           Function,
++-@@ -447,24 +488,49 @@ ThreadTick(
++-     }
++- }
++- 
++-+INT64 ThreadSchedulerCompareFunction(
++-+    IN PLIST_ENTRY FirstElem,
++-+    IN PLIST_ENTRY SecondElem,
++-+    IN_OPT PVOID Context
++-+) {
++-+    //LOG("First print from ThreadSchedulerCompareFunction");
++-+    //__halt();
++-+    UNREFERENCED_PARAMETER(Context);
++-+    PTHREAD pThread1 = CONTAINING_RECORD(FirstElem, THREAD, ReadyList);
++-+    PTHREAD pThread2 = CONTAINING_RECORD(SecondElem, THREAD, ReadyList);
++-+
++-+    if (pThread1->Priority < pThread2->Priority) {
++-+        return 1;
++-+    }
++-+    else if (pThread1->Priority > pThread2->Priority) {
++-+        return -1;
++-+    }
++-+    //LOG("Last print from ThreadSchedulerCompareFunction");
++-+    //__halt();
++-+    return 0;
++-+}
++-+
++- void
++- ThreadYield(
++-     void
++--    )
++-+)
++- {
++-+    //LOG("ThreadYield started");
++-     INTR_STATE dummyState;
++-     INTR_STATE oldState;
++-     PTHREAD pThread = GetCurrentThread();
++-     PPCPU pCpu;
++-     BOOLEAN bForcedYield;
++- 
++--    ASSERT( NULL != pThread);
++-+    //__halt();
++-+
++-+    ASSERT(NULL != pThread);
++- 
++-     oldState = CpuIntrDisable();
++- 
++-     pCpu = GetCurrentPcpu();
++- 
++--    ASSERT( NULL != pCpu );
++-+    ASSERT(NULL != pCpu);
++- 
++-     bForcedYield = pCpu->ThreadData.YieldOnInterruptReturn;
++-     pCpu->ThreadData.YieldOnInterruptReturn = FALSE;
++-@@ -478,18 +544,22 @@ ThreadYield(
++-     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-     if (pThread != pCpu->ThreadData.IdleThread)
++-     {
++--        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++-+        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++-+        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-     }
++-     if (!bForcedYield)
++-     {
++-         pThread->TickCountEarly++;
++-     }
++-+    
++-     pThread->State = ThreadStateReady;
++-     _ThreadSchedule();
++--    ASSERT( !LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-+    ASSERT(!LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-     LOG_TRACE_THREAD("Returned from _ThreadSchedule\n");
++- 
++-     CpuIntrSetState(oldState);
++-+    //LOG("ThreadYield finished");
++-+    //__halt();
++- }
++- 
++- void
++-@@ -525,6 +595,9 @@ ThreadUnblock(
++- {
++-     INTR_STATE oldState;
++-     INTR_STATE dummyState;
++-+    //__halt();
++-+    //aici nu pusca
++-+    //__halt();
++- 
++-     ASSERT(NULL != Thread);
++- 
++-@@ -533,7 +606,25 @@ ThreadUnblock(
++-     ASSERT(ThreadStateBlocked == Thread->State);
++- 
++-     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++--    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++-+    
++-+    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-+    SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-+    
++-+    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++-+
++-+    //THREAD_PRIORITY newPrio = ThreadGetPriority(Thread);
++-+
++-+    //aici pusca deja
++-+    //__halt();
++-+
++-+    /*if (newPrio > m_threadSystemData.RunningThreadsMinPriority)
++-+    {
++-+        SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-+    }
++-+    else 
++-+    {
++-+        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-+    }*/
++-     Thread->State = ThreadStateReady;
++-     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
++-     LockRelease(&Thread->BlockLock, oldState);
++-@@ -551,6 +642,8 @@ ThreadExit(
++- 
++-     pThread = GetCurrentThread();
++- 
++-+    //LOG("Thread finished name: %s TID %x", pThread->Name, pThread->Id);
++-+
++-     CpuIntrDisable();
++- 
++-     if (LockIsOwner(&pThread->BlockLock))
++-@@ -566,6 +659,7 @@ ThreadExit(
++- 
++-     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &oldState);
++-     _ThreadSchedule();
++-+    //m_threadSystemData.NumberOfThreads -= 1;
++-     NOT_REACHED;
++- }
++- 
++-@@ -653,14 +747,31 @@ ThreadGetPriority(
++-     return (NULL != pThread) ? pThread->Priority : 0;
++- }
++- 
++-+//annotation
++- void
++- ThreadSetPriority(
++-     IN      THREAD_PRIORITY     NewPriority
++-     )
++- {
++-+    //LOG("ThreadSetPriority started");
++-+    INTR_STATE oldState;
++-+    INTR_STATE dummyState;
++-+    oldState = CpuIntrDisable();
++-     ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
++- 
++-     GetCurrentThread()->Priority = NewPriority;
++-+
++-+    LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-+
++-+    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
++-+        ThreadYield();
++-+    }
++-+
++-+    LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState);
++-+
++-+    CpuIntrSetState(oldState);
++-+
++-+    //LOG("ThreadSetPriority finished");
++- }
++- 
++- STATUS
++-@@ -793,12 +904,19 @@ _ThreadInit(
++-         pThread->Id = _ThreadSystemGetNextTid();
++-         pThread->State = ThreadStateBlocked;
++-         pThread->Priority = Priority;
++-+        
++-+        //ASSERT(0 != (*Thread)->parentTid);
++-+        //pThread->parentTid = (*Thread)->parentTid;
++-+        //LOG("Parent TID %x", pThread->parentTid);
++- 
++-         LockInit(&pThread->BlockLock);
++- 
++-         LockAcquire(&m_threadSystemData.AllThreadsLock, &oldIntrState);
++-         InsertTailList(&m_threadSystemData.AllThreadsList, &pThread->AllList);
++-         LockRelease(&m_threadSystemData.AllThreadsLock, oldIntrState);
++-+
++-+        //LOG("Created thread: name %s TID = %x\n", pThread->Name, pThread->Id);
++-+        //m_threadSystemData.NumberOfThreads++;
++-     }
++-     __finally
++-     {
++-@@ -1105,14 +1223,14 @@ _Ret_notnull_
++- PTHREAD
++- _ThreadGetReadyThread(
++-     void
++--    )
++-+)
++- {
++-     PTHREAD pNextThread;
++-     PLIST_ENTRY pEntry;
++-     BOOLEAN bIdleScheduled;
++- 
++--    ASSERT( INTR_OFF == CpuIntrGetState());
++--    ASSERT( LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-+    ASSERT(INTR_OFF == CpuIntrGetState());
++-+    ASSERT(LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++- 
++-     pNextThread = NULL;
++- 
++-@@ -1124,9 +1242,9 @@ _ThreadGetReadyThread(
++-     }
++-     else
++-     {
++--        pNextThread = CONTAINING_RECORD( pEntry, THREAD, ReadyList );
++-+        pNextThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++- 
++--        ASSERT( pNextThread->State == ThreadStateReady );
++-+        ASSERT(pNextThread->State == ThreadStateReady);
++-         bIdleScheduled = FALSE;
++-     }
++- 
++-diff --git a/lab4.txt b/lab4.txt
++-new file mode 100644
++-index 0000000..aa2c758
++---- /dev/null
++-+++ b/lab4.txt
++-@@ -0,0 +1,746 @@
++-+diff --git a/.vs/HAL9000/v16/.suo b/.vs/HAL9000/v16/.suo
++-+index 1e8654c..e88e657 100644
++-+Binary files a/.vs/HAL9000/v16/.suo and b/.vs/HAL9000/v16/.suo differ
++-+diff --git a/.vs/HAL9000/v16/Browse.VC.db b/.vs/HAL9000/v16/Browse.VC.db
++-+index 2927340..8f87e4e 100644
++-+Binary files a/.vs/HAL9000/v16/Browse.VC.db and b/.vs/HAL9000/v16/Browse.VC.db differ
++-+diff --git a/.vs/HAL9000/v16/Solution.VC.db b/.vs/HAL9000/v16/Solution.VC.db
++-+index ea5c763..507156b 100644
++-+Binary files a/.vs/HAL9000/v16/Solution.VC.db and b/.vs/HAL9000/v16/Solution.VC.db differ
++-+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++-+index 1ab2535..e8f1534 100644
++-+Binary files a/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++-+diff --git a/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch
++-+new file mode 100644
++-+index 0000000..57f99fc
++-+Binary files /dev/null and b/.vs/HAL9000/v16/ipch/AutoPCH/3504819d756ddbe9/THREAD.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/.suo b/.vs/HAL9000_WithoutApplications/v16/.suo
++-+index fab7dce..1adc540 100644
++-+Binary files a/.vs/HAL9000_WithoutApplications/v16/.suo and b/.vs/HAL9000_WithoutApplications/v16/.suo differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db
++-+index b19850c..3159025 100644
++-+Binary files a/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Browse.VC.db differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db
++-+index 9bd9e64..ddc43ee 100644
++-+Binary files a/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db and b/.vs/HAL9000_WithoutApplications/v16/Solution.VC.db differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch
++-+new file mode 100644
++-+index 0000000..fda57e6
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/1ef05c8314040276/MUTEX.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch
++-+new file mode 100644
++-+index 0000000..7f485fb
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2357e4494828d1be/SPINLOCK.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch
++-+new file mode 100644
++-+index 0000000..6754aad
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2371012fc45db0e5/THREAD.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch
++-+index bed45ed..ab902d9 100644
++-+Binary files a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2702ab20af2261fd/THREAD.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch
++-+new file mode 100644
++-+index 0000000..a68a59e
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/2a818a5d2cfd32ae/ACPI_INTERFACE.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch
++-+new file mode 100644
++-+index 0000000..ba415ea
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/4a2cad7545002cd8/IDT_HANDLERS.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch
++-+new file mode 100644
++-+index 0000000..fa3b953
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/5177c890ace0e7cd/SMP.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch
++-+new file mode 100644
++-+index 0000000..2a40c4f
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/64b347674aaff517/LOG.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch
++-+new file mode 100644
++-+index 0000000..40e1732
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/6b47ada2dc567d6b/ISR.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch
++-+new file mode 100644
++-+index 0000000..3f8a6ed
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/705c3ff52df7407f/ENTRY64.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch
++-+new file mode 100644
++-+index 0000000..2f84474
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/7ee9b6bb5176d52c/TEST_THREAD.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch
++-+new file mode 100644
++-+index 0000000..c7e5d47
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/a186d121de9bcbbb/ASSERT.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch
++-+new file mode 100644
++-+index 0000000..d390c39
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ac0dbac2f758ccf6/ACPI_INTERFACE.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch
++-+new file mode 100644
++-+index 0000000..828f86f
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/b604a6d970aa58b/TEST_TIMER.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch
++-+new file mode 100644
++-+index 0000000..a69ade0
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/ce1d13151b21ceb0/LOCK_COMMON.ipch differ
++-+diff --git a/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch
++-+new file mode 100644
++-+index 0000000..d148732
++-+Binary files /dev/null and b/.vs/HAL9000_WithoutApplications/v16/ipch/AutoPCH/f7d7cc9ccc14f827/EX_EVENT.ipch differ
++-+diff --git a/HAL9000/headers/thread_internal.h b/HAL9000/headers/thread_internal.h
++-+index 789fe68..a80e747 100644
++-+--- a/HAL9000/headers/thread_internal.h
++-++++ b/HAL9000/headers/thread_internal.h
++-+@@ -40,6 +40,10 @@ typedef struct _THREAD
++-+     TID                     Id;
++-+     char*                   Name;
++-+ 
++-++    //bagat de la mine
++-++    QWORD lastScheduledTime;
++-++    THREAD_PRIORITY OriginalPriority;
++-++
++-+     // Currently the thread priority is not used for anything
++-+     THREAD_PRIORITY         Priority;
++-+     THREAD_STATE            State;
++-+@@ -90,6 +94,8 @@ typedef struct _THREAD
++-+     PVOID                   UserStack;
++-+ 
++-+     struct _PROCESS*        Process;
++-++
++-++    TID parentTid;
++-+ } THREAD, *PTHREAD;
++-+ 
++-+ //******************************************************************************
++-+diff --git a/HAL9000/src/ex_event.c b/HAL9000/src/ex_event.c
++-+index 8c58e20..a73450a 100644
++-+--- a/HAL9000/src/ex_event.c
++-++++ b/HAL9000/src/ex_event.c
++-+@@ -1,6 +1,7 @@
++-+ #include "HAL9000.h"
++-+ #include "ex_event.h"
++-+ #include "thread_internal.h"
++-++#include "thread.h"
++-+ 
++-+ #include "cpumu.h"
++-+ 
++-+@@ -80,6 +81,8 @@ ExEventWaitForSignal(
++-+     INOUT   EX_EVENT*      Event
++-+     )
++-+ {
++-++    LOG("ExEventWaitForSignal started");
++-++    //__halt();
++-+     PTHREAD pCurrentThread;
++-+     INTR_STATE dummyState;
++-+     INTR_STATE oldState;
++-+@@ -97,7 +100,8 @@ ExEventWaitForSignal(
++-+     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
++-+     {
++-+         LockAcquire(&Event->EventLock, &dummyState);
++-+-        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++-++        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
++-++        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-+         ThreadTakeBlockLock();
++-+         LockRelease(&Event->EventLock, dummyState);
++-+         ThreadBlock();
++-+@@ -110,6 +114,8 @@ ExEventWaitForSignal(
++-+             break;
++-+         }
++-+     }
++-+-
++-++    LOG("ExEventWaitForSignal finished");
++-++    //__halt();
++-+     CpuIntrSetState(oldState);
++-++    //LOG("ExEventWaitForSignal finished");
++-+ }
++-+\ No newline at end of file
++-+diff --git a/HAL9000/src/mutex.c b/HAL9000/src/mutex.c
++-+index 9c82227..3a129fe 100644
++-+--- a/HAL9000/src/mutex.c
++-++++ b/HAL9000/src/mutex.c
++-+@@ -21,24 +21,25 @@ MutexInit(
++-+ 
++-+     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
++-+ }
++-+-
++-+ ACQUIRES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++-+ REQUIRES_NOT_HELD_LOCK(*Mutex)
++-+ void
++-+ MutexAcquire(
++-+     INOUT       PMUTEX      Mutex
++-+-    )
++-++)
++-+ {
++-++    LOG("MutexAcquire started");
++-++    //__halt();
++-+     INTR_STATE dummyState;
++-+     INTR_STATE oldState;
++-+     PTHREAD pCurrentThread = GetCurrentThread();
++-+ 
++-+-    ASSERT( NULL != Mutex);
++-+-    ASSERT( NULL != pCurrentThread );
++-++    ASSERT(NULL != Mutex);
++-++    ASSERT(NULL != pCurrentThread);
++-+ 
++-+     if (pCurrentThread == Mutex->Holder)
++-+     {
++-+-        ASSERT( Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth );
++-++        ASSERT(Mutex->CurrentRecursivityDepth < Mutex->MaxRecursivityDepth);
++-+ 
++-+         Mutex->CurrentRecursivityDepth++;
++-+         return;
++-+@@ -46,7 +47,16 @@ MutexAcquire(
++-+ 
++-+     oldState = CpuIntrDisable();
++-+ 
++-+-    LockAcquire(&Mutex->MutexLock, &dummyState );
++-++    //__halt();
++-++
++-++    LockAcquire(&Mutex->MutexLock, &dummyState);
++-++
++-++    // Priority donation if the current thread has a higher priority than the mutex holder
++-++    if (Mutex->Holder != NULL && pCurrentThread->Priority > Mutex->Holder->Priority)
++-++    {
++-++        Mutex->Holder->Priority = pCurrentThread->Priority;
++-++    }
++-++
++-+     if (NULL == Mutex->Holder)
++-+     {
++-+         Mutex->Holder = pCurrentThread;
++-+@@ -55,11 +65,12 @@ MutexAcquire(
++-+ 
++-+     while (Mutex->Holder != pCurrentThread)
++-+     {
++-+-        InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++-++        //InsertTailList(&Mutex->WaitingList, &pCurrentThread->ReadyList);
++-++        InsertOrderedList(&Mutex->WaitingList, &pCurrentThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-+         ThreadTakeBlockLock();
++-+         LockRelease(&Mutex->MutexLock, dummyState);
++-+         ThreadBlock();
++-+-        LockAcquire(&Mutex->MutexLock, &dummyState );
++-++        LockAcquire(&Mutex->MutexLock, &dummyState);
++-+     }
++-+ 
++-+     _Analysis_assume_lock_acquired_(*Mutex);
++-+@@ -67,20 +78,22 @@ MutexAcquire(
++-+     LockRelease(&Mutex->MutexLock, dummyState);
++-+ 
++-+     CpuIntrSetState(oldState);
++-++    LOG("MutexAcquire finished");
++-++    //__halt();
++-+ }
++-+-
++-+ RELEASES_EXCL_AND_REENTRANT_LOCK(*Mutex)
++-+ REQUIRES_EXCL_LOCK(*Mutex)
++-+ void
++-+ MutexRelease(
++-+     INOUT       PMUTEX      Mutex
++-+-    )
++-++)
++-+ {
++-+     INTR_STATE oldState;
++-+     PLIST_ENTRY pEntry;
++-++    PTHREAD pCurrentThread = GetCurrentThread();
++-+ 
++-+     ASSERT(NULL != Mutex);
++-+-    ASSERT(GetCurrentThread() == Mutex->Holder);
++-++    ASSERT(pCurrentThread == Mutex->Holder);
++-+ 
++-+     if (Mutex->CurrentRecursivityDepth > 1)
++-+     {
++-+@@ -97,13 +110,17 @@ MutexRelease(
++-+     {
++-+         PTHREAD pThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++-+ 
++-+-        // wakeup first thread
++-++        // Restore the original priority of the current thread before donation
++-++        pCurrentThread->Priority = pCurrentThread->OriginalPriority;
++-++
++-++        // Wake up the next thread waiting for the mutex
++-+         Mutex->Holder = pThread;
++-+         Mutex->CurrentRecursivityDepth = 1;
++-+         ThreadUnblock(pThread);
++-+     }
++-+     else
++-+     {
++-++        // No threads waiting, so release the mutex
++-+         Mutex->Holder = NULL;
++-+     }
++-+ 
++-+diff --git a/HAL9000/src/sem.c b/HAL9000/src/sem.c
++-+new file mode 100644
++-+index 0000000..c6f4886
++-+--- /dev/null
++-++++ b/HAL9000/src/sem.c
++-+@@ -0,0 +1,84 @@
++-++#include "sem.h"
++-++#include "thread.h"
++-++#include "thread_internal.h"
++-++#include "synch.h"
++-++
++-++_No_competing_thread_
++-++void
++-++SemaphoreInit(
++-++    OUT     PSEMAPHORE      Semaphore,
++-++    IN      DWORD           InitialValue
++-++)
++-++{
++-++
++-++	ASSERT(NULL != Semaphore);
++-++
++-++	memzero(Semaphore, sizeof(SEMAPHORE));
++-++
++-++	LockInit(&Semaphore->SemLock);
++-++
++-++	Semaphore->Value = InitialValue;
++-++
++-++	InitializeListHead(&Semaphore->WaitingList);
++-++	InitializeListHead(&Semaphore->RunningList);
++-++
++-++	Semaphore->InitValue = InitialValue;
++-++}
++-++
++-++
++-++void
++-++SemaphoreDown(
++-++	INOUT   PSEMAPHORE      Semaphore,
++-++	IN      DWORD           Value
++-++) 
++-++{
++-++	UNREFERENCED_PARAMETER(Value);
++-++	UNREFERENCED_PARAMETER(Semaphore);
++-++
++-++	PTHREAD pCurrentThread = GetCurrentThread();
++-++
++-++	ASSERT(NULL != Semaphore);
++-++	ASSERT(NULL != pCurrentThread);
++-++
++-++	INTR_STATE oldState;
++-++	INTR_STATE CpuState;
++-++
++-++	CpuState = CpuIntrDisable();
++-++
++-++	LockAcquire(&Semaphore->SemLock, &oldState);
++-++	
++-++	//verify if the current thread is already in the running list
++-++	//ASSERT(pCurrentThread->SemaphoreList is NOT in Sem->RunningList)
++-++
++-++	while (Semaphore->Value  >= Value)
++-++	{
++-++		InsertTailList(&Semaphore->WaitingList, &pCurrentThread->SemaphoreList);
++-++		ThreadTakeBlockLock();
++-++		LockRelease(&Semaphore->SemLock, oldState);
++-++		ThreadBlock();
++-++		//after thread is unblocked
++-++		LockAcquire(&Semaphore->SemLock, &oldState);
++-++	}
++-++
++-++	RemoveEntryList(&pCurrentThread->SemaphoreList);
++-++	InsertTailList(&Semaphore->RunningList, &pCurrentThread->SemaphoreList);
++-++	Semaphore->Value-=Value;
++-++
++-++
++-++	LockRelease(&Semaphore->SemLock, oldState);
++-++	CpuIntrSetState(CpuState);
++-++
++-++}
++-++void
++-++SemaphoreUp(
++-++    INOUT   PSEMAPHORE      Semaphore,
++-++    IN      DWORD           Value
++-++)
++-++{
++-++	UNREFERENCED_PARAMETER(Value);
++-++	UNREFERENCED_PARAMETER(Semaphore);
++-++
++-++	//verify if the current thread is already in the running 
++-++	//ASSERT(pCurrentThread->SemaphoreList is NOT in Sem)
++-++	// if sem->value + Value > sem->InitValue then sem->value = sem->InitValue
++-++}
++-+\ No newline at end of file
++-+diff --git a/HAL9000/src/sem.h b/HAL9000/src/sem.h
++-+new file mode 100644
++-+index 0000000..9fa37fc
++-+--- /dev/null
++-++++ b/HAL9000/src/sem.h
++-+@@ -0,0 +1,39 @@
++-++#pragma once
++-++#include "HAL9000.h"
++-++#include "list.h"
++-++#include "synch.h"
++-++
++-++typedef struct _SEMAPHORE
++-++{
++-++	LOCK 		    SemLock;
++-++    
++-++    _Guarded_by_(SemLock)
++-++    DWORD           Value;
++-++
++-++	DWORD 	        InitValue;
++-++    
++-++    _Guarded_by_(SemLock)
++-++	LIST_ENTRY      WaitingList;
++-++
++-++    _Guarded_by_(SemLock)
++-++	LIST_ENTRY      RunningList;
++-++
++-++} SEMAPHORE, * PSEMAPHORE;
++-++
++-++void
++-++SemaphoreInit(
++-++    OUT     PSEMAPHORE      Semaphore,
++-++    IN      DWORD           InitialValue
++-++);
++-++
++-++void
++-++SemaphoreDown(
++-++    INOUT   PSEMAPHORE      Semaphore,
++-++    IN      DWORD           Value
++-++);
++-++
++-++void
++-++SemaphoreUp(
++-++    INOUT   PSEMAPHORE      Semaphore,
++-++    IN      DWORD           Value
++-++);
++-+\ No newline at end of file
++-+diff --git a/HAL9000/src/smp.c b/HAL9000/src/smp.c
++-+index 7a35f1e..e26ea6a 100644
++-+--- a/HAL9000/src/smp.c
++-++++ b/HAL9000/src/smp.c
++-+@@ -379,6 +379,7 @@ SmpSendGenericIpi(
++-+     IN      BOOLEAN                 WaitForHandling
++-+     )
++-+ {
++-++    LOG("SmpSendGenericIpi started");
++-+     SMP_DESTINATION dest = { 0 };
++-+ 
++-+     return SmpSendGenericIpiEx(BroadcastFunction,
++-+@@ -386,9 +387,10 @@ SmpSendGenericIpi(
++-+                                FreeFunction,
++-+                                FreeContext,
++-+                                WaitForHandling,
++-+-                               SmpIpiSendToAllExcludingSelf,
++-++                               SmpIpiSendToAllIncludingSelf,
++-+                                dest
++-+                                );
++-++    //LOG("SmpSendGenericIpi finished");
++-+ }
++-+ 
++-+ STATUS
++-+diff --git a/HAL9000/src/thread.c b/HAL9000/src/thread.c
++-+index 3ec2095..9178af0 100644
++-+--- a/HAL9000/src/thread.c
++-++++ b/HAL9000/src/thread.c
++-+@@ -9,8 +9,9 @@
++-+ #include "isr.h"
++-+ #include "gdtmu.h"
++-+ #include "pe_exports.h"
++-++#include "smp.h"
++-+ 
++-+-#define TID_INCREMENT               4
++-++#define TID_INCREMENT               0x10
++-+ 
++-+ #define THREAD_TIME_SLICE           1
++-+ 
++-+@@ -36,6 +37,11 @@ typedef struct _THREAD_SYSTEM_DATA
++-+ 
++-+     _Guarded_by_(ReadyThreadsLock)
++-+     LIST_ENTRY          ReadyThreadsList;
++-++
++-++    QWORD               NumberOfThreads;
++-++
++-++    _Guarded_by_(ReadyThreadsLock)
++-++        THREAD_PRIORITY RunningThreadsMinPriority;
++-+ } THREAD_SYSTEM_DATA, *PTHREAD_SYSTEM_DATA;
++-+ 
++-+ static THREAD_SYSTEM_DATA m_threadSystemData;
++-+@@ -138,6 +144,8 @@ ThreadSystemPreinit(
++-+     void
++-+     )
++-+ {
++-++    //LOG("Thread ThreadSystemPreInit started");
++-++    //__halt();
++-+     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
++-+ 
++-+     InitializeListHead(&m_threadSystemData.AllThreadsList);
++-+@@ -145,6 +153,13 @@ ThreadSystemPreinit(
++-+ 
++-+     InitializeListHead(&m_threadSystemData.ReadyThreadsList);
++-+     LockInit(&m_threadSystemData.ReadyThreadsLock);
++-++
++-++    // m_threadSystemData.NumberOfThreads = 0;
++-++
++-++    m_threadSystemData.RunningThreadsMinPriority = ThreadPriorityReserved;
++-++
++-++    //LOG("Thread ThreadSystemPreInit finished");
++-++    //__halt();
++-+ }
++-+ 
++-+ STATUS
++-+@@ -196,6 +211,31 @@ ThreadSystemInitMainForCurrentCPU(
++-+     return status;
++-+ }
++-+ 
++-++STATUS
++-++ThreadYieldForIpi(
++-++    IN_OPT PVOID Context
++-++)
++-++{
++-++    //LOG("ThreadYieldForIpi started");
++-++    //__halt();
++-++
++-++    UNREFERENCED_PARAMETER(Context);
++-++
++-++    INTR_STATE oldState = CpuIntrDisable();
++-++
++-++    PPCPU pCpu = GetCurrentPcpu();
++-++
++-++    ASSERT(NULL != pCpu);
++-++
++-++    pCpu->ThreadData.YieldOnInterruptReturn = TRUE;
++-++
++-++    CpuIntrSetState(oldState);
++-++
++-++    //LOG("ThreadYieldForIpi finished");
++-++    return STATUS_SUCCESS;
++-++}
++-++
++-++
++-+ STATUS
++-+ ThreadSystemInitIdleForCurrentCPU(
++-+     void
++-+@@ -269,6 +309,7 @@ ThreadCreate(
++-+     OUT_PTR     PTHREAD*            Thread
++-+     )
++-+ {
++-++    LOG_TRACE_THREAD("ThreadCreate - Name: %s, Priority: %u\n", Name, Priority);
++-+     return ThreadCreateEx(Name,
++-+                           Priority,
++-+                           Function,
++-+@@ -447,24 +488,49 @@ ThreadTick(
++-+     }
++-+ }
++-+ 
++-++INT64 ThreadSchedulerCompareFunction(
++-++    IN PLIST_ENTRY FirstElem,
++-++    IN PLIST_ENTRY SecondElem,
++-++    IN_OPT PVOID Context
++-++) {
++-++    //LOG("First print from ThreadSchedulerCompareFunction");
++-++    //__halt();
++-++    UNREFERENCED_PARAMETER(Context);
++-++    PTHREAD pThread1 = CONTAINING_RECORD(FirstElem, THREAD, ReadyList);
++-++    PTHREAD pThread2 = CONTAINING_RECORD(SecondElem, THREAD, ReadyList);
++-++
++-++    if (pThread1->Priority < pThread2->Priority) {
++-++        return 1;
++-++    }
++-++    else if (pThread1->Priority > pThread2->Priority) {
++-++        return -1;
++-++    }
++-++    //LOG("Last print from ThreadSchedulerCompareFunction");
++-++    //__halt();
++-++    return 0;
++-++}
++-++
++-+ void
++-+ ThreadYield(
++-+     void
++-+-    )
++-++)
++-+ {
++-++    //LOG("ThreadYield started");
++-+     INTR_STATE dummyState;
++-+     INTR_STATE oldState;
++-+     PTHREAD pThread = GetCurrentThread();
++-+     PPCPU pCpu;
++-+     BOOLEAN bForcedYield;
++-+ 
++-+-    ASSERT( NULL != pThread);
++-++    //__halt();
++-++
++-++    ASSERT(NULL != pThread);
++-+ 
++-+     oldState = CpuIntrDisable();
++-+ 
++-+     pCpu = GetCurrentPcpu();
++-+ 
++-+-    ASSERT( NULL != pCpu );
++-++    ASSERT(NULL != pCpu);
++-+ 
++-+     bForcedYield = pCpu->ThreadData.YieldOnInterruptReturn;
++-+     pCpu->ThreadData.YieldOnInterruptReturn = FALSE;
++-+@@ -478,18 +544,22 @@ ThreadYield(
++-+     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-+     if (pThread != pCpu->ThreadData.IdleThread)
++-+     {
++-+-        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++-++        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
++-++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-+     }
++-+     if (!bForcedYield)
++-+     {
++-+         pThread->TickCountEarly++;
++-+     }
++-++    
++-+     pThread->State = ThreadStateReady;
++-+     _ThreadSchedule();
++-+-    ASSERT( !LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-++    ASSERT(!LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-+     LOG_TRACE_THREAD("Returned from _ThreadSchedule\n");
++-+ 
++-+     CpuIntrSetState(oldState);
++-++    //LOG("ThreadYield finished");
++-++    //__halt();
++-+ }
++-+ 
++-+ void
++-+@@ -525,6 +595,9 @@ ThreadUnblock(
++-+ {
++-+     INTR_STATE oldState;
++-+     INTR_STATE dummyState;
++-++    //__halt();
++-++    //aici nu pusca
++-++    //__halt();
++-+ 
++-+     ASSERT(NULL != Thread);
++-+ 
++-+@@ -533,7 +606,25 @@ ThreadUnblock(
++-+     ASSERT(ThreadStateBlocked == Thread->State);
++-+ 
++-+     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-+-    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++-++    
++-++    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-++    SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-++    
++-++    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
++-++
++-++    //THREAD_PRIORITY newPrio = ThreadGetPriority(Thread);
++-++
++-++    //aici pusca deja
++-++    //__halt();
++-++
++-++    /*if (newPrio > m_threadSystemData.RunningThreadsMinPriority)
++-++    {
++-++        SmpSendGenericIpi(ThreadYieldForIpi, NULL, NULL, NULL, FALSE);
++-++    }
++-++    else 
++-++    {
++-++        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadSchedulerCompareFunction, NULL);
++-++    }*/
++-+     Thread->State = ThreadStateReady;
++-+     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
++-+     LockRelease(&Thread->BlockLock, oldState);
++-+@@ -551,6 +642,8 @@ ThreadExit(
++-+ 
++-+     pThread = GetCurrentThread();
++-+ 
++-++    //LOG("Thread finished name: %s TID %x", pThread->Name, pThread->Id);
++-++
++-+     CpuIntrDisable();
++-+ 
++-+     if (LockIsOwner(&pThread->BlockLock))
++-+@@ -566,6 +659,7 @@ ThreadExit(
++-+ 
++-+     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &oldState);
++-+     _ThreadSchedule();
++-++    //m_threadSystemData.NumberOfThreads -= 1;
++-+     NOT_REACHED;
++-+ }
++-+ 
++-+@@ -653,14 +747,31 @@ ThreadGetPriority(
++-+     return (NULL != pThread) ? pThread->Priority : 0;
++-+ }
++-+ 
++-++//annotation
++-+ void
++-+ ThreadSetPriority(
++-+     IN      THREAD_PRIORITY     NewPriority
++-+     )
++-+ {
++-++    //LOG("ThreadSetPriority started");
++-++    INTR_STATE oldState;
++-++    INTR_STATE dummyState;
++-++    oldState = CpuIntrDisable();
++-+     ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
++-+ 
++-+     GetCurrentThread()->Priority = NewPriority;
++-++
++-++    LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
++-++
++-++    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
++-++        ThreadYield();
++-++    }
++-++
++-++    LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState);
++-++
++-++    CpuIntrSetState(oldState);
++-++
++-++    //LOG("ThreadSetPriority finished");
++-+ }
++-+ 
++-+ STATUS
++-+@@ -793,12 +904,19 @@ _ThreadInit(
++-+         pThread->Id = _ThreadSystemGetNextTid();
++-+         pThread->State = ThreadStateBlocked;
++-+         pThread->Priority = Priority;
++-++        
++-++        //ASSERT(0 != (*Thread)->parentTid);
++-++        //pThread->parentTid = (*Thread)->parentTid;
++-++        //LOG("Parent TID %x", pThread->parentTid);
++-+ 
++-+         LockInit(&pThread->BlockLock);
++-+ 
++-+         LockAcquire(&m_threadSystemData.AllThreadsLock, &oldIntrState);
++-+         InsertTailList(&m_threadSystemData.AllThreadsList, &pThread->AllList);
++-+         LockRelease(&m_threadSystemData.AllThreadsLock, oldIntrState);
++-++
++-++        //LOG("Created thread: name %s TID = %x\n", pThread->Name, pThread->Id);
++-++        //m_threadSystemData.NumberOfThreads++;
++-+     }
++-+     __finally
++-+     {
++-+@@ -1105,14 +1223,14 @@ _Ret_notnull_
++-+ PTHREAD
++-+ _ThreadGetReadyThread(
++-+     void
++-+-    )
++-++)
++-+ {
++-+     PTHREAD pNextThread;
++-+     PLIST_ENTRY pEntry;
++-+     BOOLEAN bIdleScheduled;
++-+ 
++-+-    ASSERT( INTR_OFF == CpuIntrGetState());
++-+-    ASSERT( LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-++    ASSERT(INTR_OFF == CpuIntrGetState());
++-++    ASSERT(LockIsOwner(&m_threadSystemData.ReadyThreadsLock));
++-+ 
++-+     pNextThread = NULL;
++-+ 
++-+@@ -1124,9 +1242,9 @@ _ThreadGetReadyThread(
++-+     }
++-+     else
++-+     {
++-+-        pNextThread = CONTAINING_RECORD( pEntry, THREAD, ReadyList );
++-++        pNextThread = CONTAINING_RECORD(pEntry, THREAD, ReadyList);
++-+ 
++-+-        ASSERT( pNextThread->State == ThreadStateReady );
++-++        ASSERT(pNextThread->State == ThreadStateReady);
++-+         bIdleScheduled = FALSE;
++-+     }
++-+ 
++-+diff --git a/shared/kernel/thread.h b/shared/kernel/thread.h
++-+index 05efb4a..9966321 100644
++-+--- a/shared/kernel/thread.h
++-++++ b/shared/kernel/thread.h
++-+@@ -119,3 +119,9 @@ THREAD_PRIORITY
++-+ ThreadGetPriority(
++-+     IN_OPT  PTHREAD             Thread
++-+     );
++-++
++-++INT64 __cdecl ThreadSchedulerCompareFunction(
++-++    IN PLIST_ENTRY FirstElem,
++-++    IN PLIST_ENTRY SecondElem,
++-++    IN_OPT PVOID Context
++-++);
++-diff --git a/shared/kernel/thread.h b/shared/kernel/thread.h
++-index 05efb4a..9966321 100644
++---- a/shared/kernel/thread.h
++-+++ b/shared/kernel/thread.h
++-@@ -119,3 +119,9 @@ THREAD_PRIORITY
++- ThreadGetPriority(
++-     IN_OPT  PTHREAD             Thread
++-     );
++-+
++-+INT64 __cdecl ThreadSchedulerCompareFunction(
++-+    IN PLIST_ENTRY FirstElem,
++-+    IN PLIST_ENTRY SecondElem,
++-+    IN_OPT PVOID Context
++-+);
++diff --git a/shared/kernel/thread.h b/shared/kernel/thread.h
++index 9966321..05efb4a 100644
++--- a/shared/kernel/thread.h
+++++ b/shared/kernel/thread.h
++@@ -119,9 +119,3 @@ THREAD_PRIORITY
++ ThreadGetPriority(
++     IN_OPT  PTHREAD             Thread
++     );
++-
++-INT64 __cdecl ThreadSchedulerCompareFunction(
++-    IN PLIST_ENTRY FirstElem,
++-    IN PLIST_ENTRY SecondElem,
++-    IN_OPT PVOID Context
++-);
