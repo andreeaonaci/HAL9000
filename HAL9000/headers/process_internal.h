@@ -5,9 +5,17 @@
 #include "process.h"
 #include "synch.h"
 #include "ex_event.h"
+#include "thread_defs.h"
 
 #define PROCESS_MAX_PHYSICAL_FRAMES     16
 #define PROCESS_MAX_OPEN_FILES          16
+
+#define MAX_NO_OF_THREADS 100
+
+//create struct for handle
+typedef struct THREAD_HANDLE {
+    PTHREAD threadPointer;
+} THREAD_HANDLE, * PTHREAD_HANDLE;
 
 typedef struct _PROCESS
 {
@@ -16,12 +24,12 @@ typedef struct _PROCESS
     // The PIDs will also be used for the CR3 PCID
     PID                             Id;
 
-    char*                           ProcessName;
+    char* ProcessName;
 
     // Command line related
 
     // The command line also contains the ProcessName
-    char*                           FullCommandLine;
+    char* FullCommandLine;
     DWORD                           NumberOfArguments;
 
     // Signaled when the last thread is removed from the
@@ -36,29 +44,36 @@ typedef struct _PROCESS
     LOCK                            ThreadListLock;
 
     _Guarded_by_(ThreadListLock)
-    LIST_ENTRY                      ThreadList;
+        LIST_ENTRY                      ThreadList;
 
     _Guarded_by_(ThreadListLock)
-    volatile DWORD                  NumberOfThreads;
+        volatile DWORD                  NumberOfThreads;
 
     // The difference between NumberOfThreads and ActiveThreads is the following
     // ActiveThreads represents number of threads in process which have not died have
     // NumberOfThreads includes the threads which died but have not yet been destroyed
     _Interlocked_
-    volatile DWORD                  ActiveThreads;
+        volatile DWORD                  ActiveThreads;
 
     // Links all the processes in the global process list
     LIST_ENTRY                      NextProcess;
 
     // Pointer to the process' paging structures
-    struct _PAGING_LOCK_DATA*       PagingData;
+    struct _PAGING_LOCK_DATA* PagingData;
 
     // Pointer to the process' NT header information
-    struct _PE_NT_HEADER_INFO*      HeaderInfo;
+    struct _PE_NT_HEADER_INFO* HeaderInfo;
 
     // VaSpace used only for UM virtual memory allocations
-    struct _VMM_RESERVATION_SPACE*  VaSpace;
-} PROCESS, *PPROCESS;
+    struct _VMM_RESERVATION_SPACE* VaSpace;
+
+    int noOfThreadHandle;
+
+    //array of thread handles
+    LOCK threadHandleTablesLock;
+    _Guarded_by_(threadHandleTablesLock)
+        THREAD_HANDLE threadHandleTables[100];
+} PROCESS, * PPROCESS;
 
 //******************************************************************************
 // Function:     ProcessSystemPreinit
@@ -71,7 +86,7 @@ _No_competing_thread_
 void
 ProcessSystemPreinit(
     void
-    );
+);
 
 //******************************************************************************
 // Function:     ProcessSystemInitSystemProcess
@@ -83,7 +98,7 @@ _No_competing_thread_
 STATUS
 ProcessSystemInitSystemProcess(
     void
-    );
+);
 
 //******************************************************************************
 // Function:     ProcessRetrieveSystemProcess
@@ -94,7 +109,7 @@ ProcessSystemInitSystemProcess(
 PPROCESS
 ProcessRetrieveSystemProcess(
     void
-    );
+);
 
 //******************************************************************************
 // Function:     ProcessInsertThreadInList
@@ -106,8 +121,8 @@ ProcessRetrieveSystemProcess(
 void
 ProcessInsertThreadInList(
     INOUT   PPROCESS            Process,
-    INOUT   struct _THREAD*     Thread
-    );
+    INOUT   struct _THREAD* Thread
+);
 
 //******************************************************************************
 // Function:     ProcessNotifyThreadTermination
@@ -119,8 +134,8 @@ ProcessInsertThreadInList(
 //******************************************************************************
 void
 ProcessNotifyThreadTermination(
-    IN      struct _THREAD*     Thread
-    );
+    IN      struct _THREAD* Thread
+);
 
 //******************************************************************************
 // Function:     ProcessRemoveThreadFromList
@@ -131,8 +146,8 @@ ProcessNotifyThreadTermination(
 //******************************************************************************
 void
 ProcessRemoveThreadFromList(
-    INOUT   struct _THREAD*     Thread
-    );
+    INOUT   struct _THREAD* Thread
+);
 
 //******************************************************************************
 // Function:     ProcessExecuteForEachProcessEntry
@@ -146,7 +161,7 @@ STATUS
 ProcessExecuteForEachProcessEntry(
     IN      PFUNC_ListFunction  Function,
     IN_OPT  PVOID               Context
-    );
+);
 
 //******************************************************************************
 // Function:     ProcessActivatePagingTables
@@ -162,4 +177,4 @@ void
 ProcessActivatePagingTables(
     IN      PPROCESS            Process,
     IN      BOOLEAN             InvalidateAddressSpace
-    );
+);

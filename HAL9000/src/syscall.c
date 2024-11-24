@@ -85,6 +85,44 @@ SyscallHandler(
     }
 }
 
+STATUS
+SyscallThreadGetTid(
+    IN_OPT  UM_HANDLE ThreadHandle,
+    OUT TID* ThreadId
+)
+{
+    PTHREAD Thread;
+    PPROCESS Process;
+
+    Process = GetCurrentProcess();
+
+    if (GetCurrentThread() == NULL) {
+        return STATUS_UNSUCCESSFUL;
+    }
+
+    if (ThreadHandle == 0) {
+        Thread = GetCurrentThread();
+
+        //*ThreadId = Thread->Id;
+        return STATUS_SUCCESS;
+    }
+
+    if (ThreadId == NULL)
+    {
+        LOG_ERROR("Invalid pointer for ThreadId.");
+        return STATUS_INVALID_PARAMETER2;
+    }
+
+    INTR_STATE inState;
+    LockAcquire(&Process->threadHandleTablesLock, &inState);
+    Thread = Process->threadHandleTables[ThreadHandle].threadPointer;
+    LockRelease(&Process->threadHandleTablesLock, inState);
+
+    *ThreadId = ThreadGetId(Thread);
+
+    return STATUS_SUCCESS;
+}
+
 void
 SyscallPreinitSystem(
     void
