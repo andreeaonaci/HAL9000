@@ -3,6 +3,7 @@
 #include "synch.h"
 #include "pmm.h"
 #include "bitmap.h"
+#include "synch.h"
 #include "cpumu.h"
 #include "mtrr.h"
 #include "io.h"
@@ -10,6 +11,8 @@
 #include "thread_internal.h"
 #include "process_internal.h"
 #include "mdl.h"
+#include "../../CommonLibUnitTests/headers/ut_log.h"
+#include "../../Usermode/UsermodeLibrary/inc/um_lib_helper.h"
 
 #define VMM_SIZE_FOR_RESERVATION_METADATA            (5*TB_SIZE)
 
@@ -712,6 +715,8 @@ VmmFreeRegionEx(
                                  FreeType,
                                  &alignedAddress,
                                  &alignedSize);
+    LOG("Allocating for VaSpace at 0x%X, a memory region from 0x%X of size 0x%X\n",
+        pVaSpace, pBaseAddress, alignedSize);
 
     if (IsFlagOn(FreeType, VMM_FREE_TYPE_DECOMMIT | VMM_FREE_TYPE_RELEASE ))
     {
