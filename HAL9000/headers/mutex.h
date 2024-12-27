@@ -13,7 +13,15 @@ typedef struct _MUTEX
     _Guarded_by_(MutexLock)
     LIST_ENTRY          WaitingList;
     struct _THREAD*     Holder;
+
+    // Threads. 5
+    LIST_ENTRY          mutexList;
 } MUTEX, *PMUTEX;
+
+// Threads. 5
+
+LIST_ENTRY mutexHead;
+LOCK mutexLock;
 
 //******************************************************************************
 // Function:     MutexInit
@@ -60,3 +68,20 @@ void
 MutexRelease(
     INOUT       PMUTEX      Mutex
     );
+
+// Threads. 5
+void
+MutexDestroy(
+    INOUT	PMUTEX		Mutex
+);
+
+void
+MutexSystemPreinit(
+    void
+);
+
+STATUS
+DisplayMutexForEach(
+    IN      PFUNC_ListFunction  Function,
+    IN_OPT  PVOID               Context
+);

@@ -107,8 +107,11 @@ static const COMMAND_DEFINITION COMMANDS[] =
     { "rangefail", "Causes a range check failure to assert", CmdRangeFail, 0, 0},
     { "bitecookie", "Causes a GS cookie corruption to assert", CmdBiteCookie, 0, 0},
     { "cmdSwapOut", "Swap out 1 page", CmdSwapOut, 0, 0},
-
+    // Threads. 4
     { "threadinfo", "Display ready, existing and blocked threads ", CmdDisplayThreadInfo, 0, 0},
+
+    // Threads.5
+	{ "displaymutex", "Display mutexes for each thread", CmdDisplayMutexInfo, 0, 0},
 
     { "help", "Displays this help menu", _CmdPrintHelp, 0, 0}
 };

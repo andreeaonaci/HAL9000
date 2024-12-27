@@ -3,24 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\conditional_variables.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\conditional_variables.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\ex_event.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\ex_event.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\conditional_variables.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HAL9000\\headers\\conditional_variables.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\smp.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\smp.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\barrier.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\barrier.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\shared\\kernel\\ex_event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:shared\\kernel\\ex_event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\USERS\\OANA\\OSD\\LAB_PROBLEMS\\SRC\\HAL9000\\HEADERS\\BARRIER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\HEADERS\\BARRIER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\smp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\smp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\USERS\\OANA\\OSD\\LAB_PROBLEMS\\SRC\\COMMONLIB\\INC\\LIST.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:COMMONLIB\\INC\\LIST.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_thread_helper.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\cmd_thread_helper.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\cmd_thread_helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\cmd_thread_helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\mutex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\mutex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\mutex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\mutex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_interpreter.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\cmd_interpreter.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\cmd_thread_helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\cmd_thread_helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\system.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\system.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\process.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\src\\process.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79A21DCA-19AF-4F8E-9B83-62D7CF504104}|HAL9000\\HAL9000.vcxproj|solutionrelative:HAL9000\\headers\\thread_internal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +82,235 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "conditional_variables.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\conditional_variables.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\conditional_variables.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\conditional_variables.c",
+              "RelativeToolTip": "HAL9000\\src\\conditional_variables.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T21:04:46.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ex_event.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\ex_event.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\ex_event.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\ex_event.c",
+              "RelativeToolTip": "HAL9000\\src\\ex_event.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T19:39:58.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "list.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\CommonLib\\inc\\list.h",
+              "RelativeDocumentMoniker": "CommonLib\\inc\\list.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\CommonLib\\inc\\list.h",
+              "RelativeToolTip": "CommonLib\\inc\\list.h",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T19:28:40.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ex_event.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\shared\\kernel\\ex_event.h",
+              "RelativeDocumentMoniker": "shared\\kernel\\ex_event.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\shared\\kernel\\ex_event.h",
+              "RelativeToolTip": "shared\\kernel\\ex_event.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T19:23:43.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "smp.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\smp.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\smp.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\smp.h",
+              "RelativeToolTip": "HAL9000\\headers\\smp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T19:14:08.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "smp.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\smp.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\smp.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\smp.c",
+              "RelativeToolTip": "HAL9000\\src\\smp.c",
+              "ViewState": "AgIAAF4CAAAAAAAAAAAMwG0CAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T19:10:45.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "conditional_variables.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\conditional_variables.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\conditional_variables.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\conditional_variables.h",
+              "RelativeToolTip": "HAL9000\\headers\\conditional_variables.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T19:08:45.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "barrier.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\barrier.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\barrier.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\barrier.h",
+              "RelativeToolTip": "HAL9000\\headers\\barrier.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T19:03:57.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "barrier.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\barrier.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\barrier.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\barrier.c",
+              "RelativeToolTip": "HAL9000\\src\\barrier.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T19:03:39.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "process.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\process.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\process.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\process.c",
+              "RelativeToolTip": "HAL9000\\src\\process.c",
+              "ViewState": "AgIAAOgCAAAAAAAAAAAAAAIDAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T18:19:14.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "system.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\system.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\system.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\system.c",
+              "RelativeToolTip": "HAL9000\\src\\system.c",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T18:17:54.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "mutex.c",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\mutex.c",
+              "RelativeDocumentMoniker": "HAL9000\\src\\mutex.c",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\mutex.c",
+              "RelativeToolTip": "HAL9000\\src\\mutex.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-27T17:55:52.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "mutex.h",
+              "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\mutex.h",
+              "RelativeDocumentMoniker": "HAL9000\\headers\\mutex.h",
+              "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\mutex.h",
+              "RelativeToolTip": "HAL9000\\headers\\mutex.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-27T17:17:40.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "cmd_interpreter.c",
               "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_interpreter.c",
               "RelativeDocumentMoniker": "HAL9000\\src\\cmd_interpreter.c",
               "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_interpreter.c",
               "RelativeToolTip": "HAL9000\\src\\cmd_interpreter.c",
-              "ViewState": "AgIAAFoAAAAAAAAAAIAwwG4AAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAIAwwHEAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-27T13:54:58.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T13:54:58.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "cmd_thread_helper.c",
               "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_thread_helper.c",
               "RelativeDocumentMoniker": "HAL9000\\src\\cmd_thread_helper.c",
               "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\cmd_thread_helper.c",
               "RelativeToolTip": "HAL9000\\src\\cmd_thread_helper.c",
-              "ViewState": "AgIAAHoAAAAAAAAAAIAwwIcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAHMDAAAAAAAAAAAAAIADAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-26T15:22:30.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "cmd_thread_helper.h",
               "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\cmd_thread_helper.h",
               "RelativeDocumentMoniker": "HAL9000\\headers\\cmd_thread_helper.h",
               "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\cmd_thread_helper.h",
               "RelativeToolTip": "HAL9000\\headers\\cmd_thread_helper.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-26T15:22:26.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
               "Title": "thread_internal.h",
               "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\thread_internal.h",
               "RelativeDocumentMoniker": "HAL9000\\headers\\thread_internal.h",
               "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\headers\\thread_internal.h",
               "RelativeToolTip": "HAL9000\\headers\\thread_internal.h",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-26T15:11:46.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T15:11:46.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "thread.c",
               "DocumentMoniker": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\thread.c",
               "RelativeDocumentMoniker": "HAL9000\\src\\thread.c",
               "ToolTip": "C:\\Users\\Oana\\OSD\\lab_problems\\src\\HAL9000\\src\\thread.c",
               "RelativeToolTip": "HAL9000\\src\\thread.c",
-              "ViewState": "AgIAAE4BAAAAAAAAAIAwwGQBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMcCAAAAAAAAAAAAANACAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-26T14:12:53.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T14:12:53.954Z"
             }
           ]
         }

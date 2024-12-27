@@ -8,9 +8,12 @@
 #include "pit.h"
 #include "io.h"
 #include "ex_event.h"
+#include "barrier.h"
 #include "hw_fpu.h"
 
 extern void ApAsmStub();
+
+//static BARRIER m_globalBarrier;
 
 #define SIPI_VECTOR_SHIFT                       12
 
@@ -192,6 +195,8 @@ SmpInit(
         return status;
     }
 
+    //BarrierInit(&m_globalBarrier, 1);
+
     // install ISRs
     status = _SmpInstallInterruptRoutines();
     if (!SUCCEEDED(status))
@@ -227,6 +232,8 @@ SmpInit(
     }
 
     m_smpData.NoOfCpus = noOfCpus;
+
+    //BarrierInit(&m_globalBarrier, m_smpData.NoOfCpus);
 
     LOGL("The system has %u CPUs\n", m_smpData.NoOfCpus );
 
@@ -342,6 +349,8 @@ SmpWakeupAps(
         LOGL("APs were signaled\n");
 
         ExEventWaitForSignal(&m_smpData.ApStartupEvent);
+
+        //BarrierWait(&m_globalBarrier);
 
         LOGL("Aps have waken UP\n");
     }
@@ -610,6 +619,8 @@ SmpNotifyCpuWakeup(
     {
         LOGPL("All CPUs woke up, will signal BSP\n");
         ExEventSignal(&m_smpData.ApStartupEvent);
+		//BarrierInit(&m_globalBarrier, m_smpData.NoOfCpus);
+        //BarrierWait(&m_globalBarrier);
     }
 
     LOG_FUNC_END_CPU;
@@ -826,22 +837,23 @@ BOOLEAN
     pCpuEvent = NULL;
 
     pCpu = GetCurrentPcpu();
-    ASSERT( NULL != pCpu );
+    ASSERT(NULL != pCpu);
 
     LockAcquire(&pCpu->EventListLock, &dummy);
     if (pCpu->NoOfEventsInList > 0)
     {
-        LOG_TRACE_CPU("Will remove event from list at 0x%X\n", &pCpu->EventList);
+        LOG_TRACE_CPU("Removing event from list at 0x%X\n", &pCpu->EventList);
+        ASSERT(!IsListEmpty(&pCpu->EventList)); // Validate the list
         pListEntry = RemoveHeadList(&pCpu->EventList);
-        ASSERT( pListEntry != &pCpu->EventList );
+        ASSERT(pListEntry != &pCpu->EventList); // Validate the removed entry
         pCpu->NoOfEventsInList--;
     }
     LockRelease(&pCpu->EventListLock, INTR_OFF);
 
-    ASSERT(NULL != pListEntry);
+    ASSERT(pListEntry != NULL); // Ensure a valid entry was retrieved
 
     pCpuEvent = CONTAINING_RECORD(pListEntry, IPC_EVENT_CPU, ListEntry);
-    LOG_TRACE_CPU("Removed element at 0x%X\n", pCpuEvent);
+    LOG_TRACE_CPU("Removed event at 0x%X\n", pCpuEvent);
 
     __try
     {

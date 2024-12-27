@@ -91,8 +91,10 @@ typedef struct _THREAD
 
     struct _PROCESS*        Process;
 
+    // Threads. 2
     UINT32				  TimesYielded;
 
+    // Threads. 3
 	LIST_ENTRY ChildrenList;
     LIST_ENTRY ChildrenParent;
 	LOCK ChildrenLock;

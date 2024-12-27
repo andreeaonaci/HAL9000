@@ -45,6 +45,7 @@ static FUNC_ThreadStart     _ThreadCpuBound;
 static FUNC_ThreadStart     _ThreadIoBound;
 
 static FUNC_ListFunction _CmdThreadInfoPrint;
+static FUNC_ListFunction _CmdMutexInfoPrint;
 
 static
 void
@@ -140,6 +141,7 @@ void
     LOG("%10s", "Prt ticks|");
     LOG("%10s", "Ttl ticks|");
     LOG("%10s", "Process|");
+    // Threads. 3
     LOG("%10s", "Children|");
     LOG("\n");
 
@@ -698,6 +700,7 @@ STATUS
     LOG("%9U%c", pThread->TickCountCompleted + pThread->TickCountEarly, '|');
     LOG("%9x%c", pThread->Process->Id, '|');
 
+    // Threads. 3
 	// Print the children of the current thread
     LIST_ENTRY *pChild = pThread->ChildrenParent.Flink;
     while (pChild != &pThread->ChildrenParent)
@@ -804,6 +807,8 @@ void
     ((QWORD*)memory)[5];
 }
 
+// Threads. 4
+
 void
 (__cdecl CmdDisplayThreadInfo)(
     IN          QWORD       NumberOfParameters
@@ -817,6 +822,7 @@ void
 
 	ASSERT(SUCCEEDED(status));
 }
+// Threads. 4
 
 static
 STATUS
@@ -834,6 +840,64 @@ STATUS
 
 	return STATUS_SUCCESS;
 }
+
+// Threads. 5
+
+void
+(__cdecl CmdDisplayMutexInfo)(
+	IN          QWORD       NumberOfParameters
+	)
+{
+	ASSERT(NumberOfParameters == 0);
+
+	STATUS status;
+
+    LOG("sunt acolo");
+
+	status = DisplayMutexForEach(_CmdMutexInfoPrint, NULL);
+
+	LOG("sunt dupa for each");
+
+	LOG("status = %d", status);
+
+	ASSERT(SUCCEEDED(status));
+}
+
+// Threads. 5
+
+static
+STATUS
+(__cdecl _CmdMutexInfoPrint) (
+	IN      PLIST_ENTRY     ListEntry,
+	IN_OPT  PVOID           FunctionContext
+	)
+{
+	PMUTEX pMutex;
+
+	LOG("sunt inainte de asserturi");
+
+	ASSERT(NULL != ListEntry);
+	ASSERT(NULL == FunctionContext);
+
+	LOG("sunt dupa asserturi");
+
+	pMutex = CONTAINING_RECORD(ListEntry, MUTEX, mutexList);
+
+    LOG("sunt aici");
+
+    LIST_ENTRY* pWait = pMutex->WaitingList.Flink;
+    while (pWait != &pMutex->WaitingList)
+    {
+		PTHREAD pThread = CONTAINING_RECORD(pWait, THREAD, ReadyList);
+		LOG("Thread %s is waiting for mutex %p\n", pThread->Id, pMutex);
+
+		pWait = pWait->Flink;
+    }
+
+	return STATUS_SUCCESS;
+}
+
+
 
 
 #pragma warning(pop)

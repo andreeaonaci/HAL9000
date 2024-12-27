@@ -3,6 +3,8 @@
 #include "list.h"
 #include "ipc.h"
 
+//#include "barrier.h"
+
 typedef BYTE CPU_AFFINITY;
 
 typedef union _SMP_DESTINATION

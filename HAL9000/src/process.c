@@ -765,4 +765,8 @@ _ProcessDestroy(
     }
 
     ExFreePoolWithTag(Process, HEAP_PROCESS_TAG);
+
+    // Threads. 5
+	MutexDestroy(&m_processData.PidBitmapLock);
+	MutexDestroy(&m_processData.ProcessListLock);
 }

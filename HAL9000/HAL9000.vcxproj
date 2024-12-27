@@ -184,9 +184,11 @@
     <ClCompile Include="src\acpi_interface.c" />
     <ClCompile Include="src\acpi_osl.c" />
     <ClCompile Include="src\ap_tramp.c" />
+    <ClCompile Include="src\barrier.c" />
     <ClCompile Include="src\boot_module.c" />
     <ClCompile Include="src\cmd_basic.c" />
     <ClCompile Include="src\cmd_proc_helper.c" />
+    <ClCompile Include="src\conditional_variables.c" />
     <ClCompile Include="src\dmp_process.c" />
     <ClCompile Include="src\process.c" />
     <ClCompile Include="src\cmd_fs_helper.c" />
