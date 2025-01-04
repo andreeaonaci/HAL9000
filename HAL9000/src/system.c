@@ -56,8 +56,11 @@ SystemPreinit(
     PciSystemPreinit();
     CorePreinit();
     NetworkStackPreinit();
+    // Threads. 5
+    MutexSystemPreinit();
     ProcessSystemPreinit();
-	MutexSystemPreinit();
+    // Userprog. 7
+    // SyscallPreinitSystem();
 }
 
 STATUS
@@ -328,4 +331,30 @@ SystemUninit(
 
     // disable interrupts
     CpuIntrDisable();
+}
+
+// Threads. 8
+static
+STATUS
+MakeInfiniteLoop(
+	IN_OPT		PVOID		Context
+)
+{
+	UNREFERENCED_PARAMETER(Context);
+    
+    LOG("Hello world\n");
+
+	for (;;)
+	{
+		// Infinite loop
+	}
+}
+
+// Threads. 8
+void
+MakeCPUNonPreeemptible(
+	void
+)
+{
+    SmpSendGenericIpiIncluding(MakeInfiniteLoop, NULL, NULL, NULL, FALSE);
 }

@@ -1895,13 +1895,15 @@ _MmuInitializeHeap(
         VMM_ALLOC_TYPE_RESERVE | VMM_ALLOC_TYPE_COMMIT,
         PAGE_RIGHTS_READWRITE
     );
+    LOG("sunt aici");
     if (heapBaseAddress == NULL)
     {
         LOG_ERROR("VmmAlloc failed to reserve & commit a heap of size %U!\n", heapSize);
         return STATUS_MEMORY_CANNOT_BE_RESERVED;
     }
-
+	LOG("sunt aici 2");
     status = ClHeapInit(heapBaseAddress, heapSize, &Heap->Heap);
+	LOG("sunt aici 3");
     if (!SUCCEEDED(status))
     {
         LOG_FUNC_ERROR("ClHeapInit", status);

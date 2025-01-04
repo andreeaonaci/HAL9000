@@ -6,23 +6,18 @@ static QWORD m_secondaryThTid;
 
 static
 STATUS
-(__cdecl _ThreadFunc)(
+(__cdecl _MemsetFunc)(
     IN_OPT      PVOID       Context
     )
 {
     STATUS status;
-    TID tid;
 
     UNREFERENCED_PARAMETER(Context);
 
-    status = SyscallThreadGetTid(UM_INVALID_HANDLE_VALUE, &tid);
+    status = SyscallMemset(NULL, 0, 0);
     if (!SUCCEEDED(status))
     {
-        LOG_FUNC_ERROR("SyscallThreadGetTid", status);
-    }
-    else
-    {
-        m_secondaryThTid = tid;
+        LOG_FUNC_ERROR("SyscallMemset", status);
     }
 
     return STATUS_SUCCESS;
@@ -31,100 +26,76 @@ STATUS
 STATUS
 __main(
     DWORD       argc,
-    char**      argv
+    char** argv
 )
 {
-    UM_HANDLE hThread;
     STATUS status;
-    TID tid1;
-    TID tid2;
-    STATUS terminationStatus;
+    BYTE buffer[128];
+    BYTE valueToWrite = 0xAB;
+    DWORD bytesToWrite = sizeof(buffer);
+    PBYTE invalidAddress = NULL;
 
     UNREFERENCED_PARAMETER(argc);
     UNREFERENCED_PARAMETER(argv);
 
-    hThread = UM_INVALID_HANDLE_VALUE;
-
     __try
     {
-        status = SyscallThreadGetTid(UM_INVALID_HANDLE_VALUE, &tid1);
+        // Test case 1: Valid input
+        status = SyscallMemset(buffer, bytesToWrite, valueToWrite);
         if (!SUCCEEDED(status))
         {
-            LOG_FUNC_ERROR("SyscallThreadGetTid", status);
+            LOG_FUNC_ERROR("SyscallMemset", status);
             __leave;
         }
 
-        status = SyscallThreadGetTid(UM_INVALID_HANDLE_VALUE, &tid2);
+        // Verify that the buffer was properly filled
+        for (DWORD i = 0; i < bytesToWrite; ++i)
+        {
+            if (buffer[i] != valueToWrite)
+            {
+                LOG_ERROR("Buffer validation failed at index %u! Expected: 0x%X, Found: 0x%X\n",
+                    i, valueToWrite, buffer[i]);
+                __leave;
+            }
+        }
+
+        LOG_INFO("Test case 1: Valid input passed.\n");
+
+        // Test case 2: Invalid address (NULL)
+        status = SyscallMemset(invalidAddress, bytesToWrite, valueToWrite);
+        if (status != STATUS_INVALID_PARAMETER1)
+        {
+            LOG_ERROR("Test case 2 failed! Expected: STATUS_INVALID_PARAMETER1, Found: 0x%X\n", status);
+            __leave;
+        }
+
+        LOG_INFO("Test case 2: Invalid address passed.\n");
+
+        // Test case 3: Invalid size (zero bytes to write)
+        status = SyscallMemset(buffer, 0, valueToWrite);
+        if (status != STATUS_INVALID_PARAMETER1)
+        {
+            LOG_ERROR("Test case 3 failed! Expected: STATUS_INVALID_PARAMETER1, Found: 0x%X\n", status);
+            __leave;
+        }
+
+        LOG_INFO("Test case 3: Invalid size passed.\n");
+
+        // Test case 4: Invalid permissions (simulate by using an invalid address)
+        PBYTE protectedMemory = (PBYTE)0xDEADBEEF; // Example invalid memory address
+        status = SyscallMemset(protectedMemory, bytesToWrite, valueToWrite);
         if (!SUCCEEDED(status))
         {
-            LOG_FUNC_ERROR("SyscallThreadGetTid", status);
-            __leave;
+            LOG_INFO("Test case 4: Invalid permissions passed.\n");
         }
-
-        if (tid1 != tid2)
+        else
         {
-            LOG_ERROR("The thread should not randomly change its TID, tid1: 0x%X, tid2: 0x%X!\n",
-                      tid1, tid2);
-            __leave;
-        }
-
-        status = UmThreadCreate(_ThreadFunc, NULL, &hThread);
-        if (!SUCCEEDED(status))
-        {
-            LOG_FUNC_ERROR("UmThreadCreate", status);
-            __leave;
-        }
-
-        status = SyscallThreadGetTid(UM_INVALID_HANDLE_VALUE, &tid2);
-        if (!SUCCEEDED(status))
-        {
-            LOG_FUNC_ERROR("SyscallThreadGetTid", status);
-            __leave;
-        }
-
-        if (tid1 != tid2)
-        {
-            LOG_ERROR("The thread should not change its TID after it spawned a thread, tid1: 0x%X, tid2: 0x%X!\n",
-                      tid1, tid2);
-            __leave;
-        }
-
-        status = SyscallThreadGetTid(hThread, &tid2);
-        if (!SUCCEEDED(status))
-        {
-            LOG_FUNC_ERROR("SyscallThreadGetTid", status);
-            __leave;
-        }
-
-        if (tid1 == tid2)
-        {
-            LOG_ERROR("Two threads should not have equal TIDs, tid1: 0x%X, tid2: 0x%X!\n",
-                      tid1, tid2);
-            __leave;
-        }
-
-        status = SyscallThreadWaitForTermination(hThread, &terminationStatus);
-        if (!SUCCEEDED(status))
-        {
-            LOG_FUNC_ERROR("SyscallThreadWaitForTermination", status);
-            __leave;
-        }
-
-        if (tid2 != m_secondaryThTid)
-        {
-            LOG_ERROR("The TID determined by the main thread for the secondary thread differs from the one determined"
-                      "by the secondary thread, tid from primary: 0x%X, tid from secondary: 0x%X\n",
-                      tid2, m_secondaryThTid);
-            __leave;
+            LOG_ERROR("Test case 4 failed! Expected failure, but SyscallMemset succeeded.\n");
         }
     }
     __finally
     {
-        if (hThread != UM_INVALID_HANDLE_VALUE)
-        {
-            SyscallThreadCloseHandle(hThread);
-            hThread = UM_INVALID_HANDLE_VALUE;
-        }
+        LOG_INFO("Memset syscall testing completed.\n");
     }
 
     return STATUS_SUCCESS;

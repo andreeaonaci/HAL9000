@@ -48,6 +48,8 @@ _IoAllocateFileObject(
     pFileObject->FileSystemDevice = StackLocation->DeviceObject;
 
     StackLocation->FileObject = pFileObject;
+
+	LOG_TRACE_IO("Allocated file object for file %s\n", FileName);
 }
 
 __forceinline
@@ -104,6 +106,8 @@ IoCreateFile(
     char driveLetter;
     PDEVICE_OBJECT pFileSystemDevice;
     PIO_STACK_LOCATION pStackLocation;
+
+    LOG("sunt aici in IoCreateFile\n");
 
     ASSERT(NULL != Handle);
     ASSERT(NULL != FileName);

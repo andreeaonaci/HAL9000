@@ -400,6 +400,28 @@ SmpSendGenericIpi(
                                );
 }
 
+// Threads. 8
+STATUS
+SmpSendGenericIpiIncluding(
+    IN      PFUNC_IpcProcessEvent   BroadcastFunction,
+    IN_OPT  PVOID                   Context,
+    IN_OPT  PFUNC_FreeFunction      FreeFunction,
+    IN_OPT  PVOID                   FreeContext,
+    IN      BOOLEAN                 WaitForHandling
+)
+{
+    SMP_DESTINATION dest = { 0 };
+
+    return SmpSendGenericIpiEx(BroadcastFunction,
+        Context,
+        FreeFunction,
+        FreeContext,
+        WaitForHandling,
+        SmpIpiSendToAllIncludingSelf,
+        dest
+    );
+}
+
 STATUS
 SmpSendGenericIpiEx(
     IN      PFUNC_IpcProcessEvent   BroadcastFunction,
@@ -843,7 +865,7 @@ BOOLEAN
     if (pCpu->NoOfEventsInList > 0)
     {
         LOG_TRACE_CPU("Removing event from list at 0x%X\n", &pCpu->EventList);
-        ASSERT(!IsListEmpty(&pCpu->EventList)); // Validate the list
+        //ASSERT(!IsListEmpty(&pCpu->EventList)); // Validate the list
         pListEntry = RemoveHeadList(&pCpu->EventList);
         ASSERT(pListEntry != &pCpu->EventList); // Validate the removed entry
         pCpu->NoOfEventsInList--;

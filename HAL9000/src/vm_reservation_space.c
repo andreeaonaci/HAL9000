@@ -5,44 +5,6 @@
 #include "lock_common.h"
 #include "io.h"
 
-typedef enum _VMM_RESERVATION_STATE
-{
-    VmmReservationStateFree     = 0x0,
-    VmmReservationStateUsed     = 0x1,
-    VmmReservationStateLast     = 0x2,
-} VMM_RESERVATION_STATE;
-
-// A reservation is allocated each time a process reserves an area of
-// virtual memory. The commit bitmap is used to distinguish between the
-// reserved memory and the committed memory.
-typedef struct _VMM_RESERVATION
-{
-    // Starting addresses of the virtual memory allocation
-    PVOID                   StartVa;
-
-    // Size of the allocation
-    QWORD                   Size;
-
-    // The rights with which the memory was allocated
-    PAGE_RIGHTS             PageRights;
-
-    // The state of the this structure, this is used for finding the
-    // next free slot
-    VMM_RESERVATION_STATE   State;
-
-    // If TRUE memory will be set as strong uncacheable (UC)
-    // If FALSE the memory will be set as write back (WB)
-    BOOLEAN                 Uncacheable;
-
-    // Used for memory backed up by files
-    // Indicates the file which holds the data
-    PFILE_OBJECT            BackingFile;
-
-    // Describes which pages of the virtual memory reserved are actually
-    // committed, i.e. which are valid when a #PF occurs
-    BITMAP                  CommitBitmap;
-} VMM_RESERVATION, *PVMM_RESERVATION;
-
 // 20% Will go for the list of reservations
 // 80% Will go for the bitmaps describing the memory committed by those reservations
 #define RESERVATION_LIST_PERCENTAGE_IN_HUNDREDS     (20 * 100)
@@ -338,12 +300,20 @@ _VmInitializeReservation(
 
     ASSERT( noOfPages <= MAX_DWORD);
 
+    LOG("am ajuns in VmInitializeReservation\n");
+
+	LOG("printez noOfPages 0x%X\n", noOfPages);
+
     bitmapSize = BitmapPreinit( &VmmReservation->CommitBitmap, (DWORD) noOfPages +1 );
     ASSERT( 0 != bitmapSize );
+
+    LOG("am trecut de assert\n");
 
     LOG_TRACE_VMM("BitmapSize: 0x%X\n", bitmapSize );
     LOG_TRACE_VMM("NoOfPages: 0x%X\n", noOfPages );
     LOG_TRACE_VMM("Bitmap->BitCount: 0x%x\n", BitmapGetMaxElementCount(&VmmReservation->CommitBitmap) );
+
+    LOG("trec de logurile de bitmap\n");
 
     /// TODO: Check if there's a reason in which we advance the bitmap buffers from page to page - it seems rather
     /// wasteful (most reservations will probably be under 8 pages - this could be described by a BYTE, not a PAGE)
@@ -354,6 +324,8 @@ _VmInitializeReservation(
     /// bitmap if the pages described fit in the buffer (i.e. 64 pages or 256KB which will cover 99,99% cases)
     ASSERT( IsAddressAligned(ReservationSpace->FreeBitmapAddress, PAGE_SIZE ));
     BitmapInit(&VmmReservation->CommitBitmap, ReservationSpace->FreeBitmapAddress );
+
+    LOG("am trecut de BitmapInit\n");
 
     // Make sure we're not exceeding our bitmap buffers VA space
     ASSERT(CHECK_BOUNDS(ReservationSpace->FreeBitmapAddress,
@@ -398,6 +370,7 @@ _VmChangeVaReservationState(
                                 Size,
                                 &pReservation
                                 );
+    LOG("am iesit din _VmFindReservation\n");
     if (STATUS_ELEMENT_NOT_FOUND == status)
     {
         if (VMM_ALLOC_TYPE_RESERVE != AllocationType)
@@ -426,6 +399,7 @@ _VmChangeVaReservationState(
     {
     case VMM_ALLOC_TYPE_RESERVE:
         pReservation = _VmFindFirstFreeReservation(ReservationSpace);
+		LOG("am iesit din _VmFindFirstFreeReservation\n");
         ASSERT( NULL != pReservation );
 
         // _VmChangeVaReservationState is called with the lock taken exclusively and no function to release
@@ -441,6 +415,7 @@ _VmChangeVaReservationState(
                                 FileObject,
                                 pReservation
                                 );
+        LOG("am iesit din _VmInitializeReservation\n");
         break;
     case VMM_ALLOC_TYPE_COMMIT:
         ASSERT( NULL != pReservation );
@@ -466,11 +441,12 @@ _VmChangeVaReservationState(
                              Size,
                              pReservation
                              );
+        LOG("am iesit din _VmCommitReservation\n");
         break;
     default:
         status = STATUS_UNSUPPORTED;
     }
-
+	LOG("am iesit din switch\n");   
     return status;
 }
 
@@ -770,6 +746,8 @@ VmReservationSpaceAllocRegion(
     QWORD alignedSize;
     PPCPU pCpu;
 
+    LOG("intru in VmReservationSpaceAllocRegion\n");
+
     ASSERT(ReservationSpace != NULL);
     ASSERT(Size != 0);
     ASSERT(MappedAddress != NULL);
@@ -801,6 +779,8 @@ VmReservationSpaceAllocRegion(
         pBaseAddress = VmReservationSpaceDetermineNextFreeVirtualAddress(ReservationSpace, alignedSize);
     }
 
+    LOG("am iesit din VmReservationSpaceDetermineNextFreeVirtualAddress\n");
+
     RwSpinlockAcquireExclusive(&ReservationSpace->ReservationLock, &oldState);
     pCpu = GetCurrentPcpu();
 
@@ -822,6 +802,7 @@ VmReservationSpaceAllocRegion(
                                                 Uncacheable,
                                                 FileObject
             );
+            LOG("am iesit din _VmChangeVaReservationState 1\n");
             if (!SUCCEEDED(status))
             {
                 LOG_FUNC_ERROR("_VmChangeVaReservationState", status);
@@ -842,6 +823,7 @@ VmReservationSpaceAllocRegion(
                                                  Uncacheable,
                                                  FileObject
             );
+            LOG("am iesit din _VmChangeVaReservationState 2\n");
             if (!SUCCEEDED(status))
             {
                 LOG_FUNC_ERROR("_VmChangeVaReservationState", status);
@@ -863,6 +845,8 @@ VmReservationSpaceAllocRegion(
             *MappedSize = alignedSize;
         }
     }
+
+	LOG("ies din VmReservationSpaceAllocRegion\n");
 
     return status;
 }

@@ -9,6 +9,17 @@ typedef struct _VMM_RESERVATION_SPACE* PVMM_RESERVATION_SPACE;
 
 typedef struct _MDL *PMDL;
 
+// Virtual Memory. 4
+typedef struct _ALLOCATION_MAPPING
+{
+	PHYSICAL_ADDRESS	PhysicalAddress;
+	PVOID				VirtualAddress;
+	QWORD				Size;
+	LIST_ENTRY		    ListEntry;
+    // Virtual Memory. 8
+	BOOLEAN			 IsMapped;
+} ALLOCATION_MAPPING, * PALLOCATION_MAPPING;
+
 _No_competing_thread_
 void
 VmmPreinit(
@@ -307,3 +318,46 @@ VmmIsBufferValid(
     IN          PVMM_RESERVATION_SPACE              ReservationSpace,
     IN          BOOLEAN                             KernelAccess
     );
+
+// Virtual Memory. 5
+STATUS
+VmmSwapOut(
+	IN PPAGING_LOCK_DATA PagingData,
+	IN PVOID VirtualAddress
+);
+
+// Virtual Memory. 6
+void
+VmmDisplayDirtyAccessedPages(
+    void
+);
+
+// Virtual Memory. 7
+void
+VmmMakePageUsable(
+    PVMM_RESERVATION_SPACE ReservationSpace
+    );
+
+void
+VmmMakePageUnusable(
+    PVMM_RESERVATION_SPACE ReservationSpace
+    );
+
+// Virtual Memory. 8
+PVOID 
+VmmGetRandomUnmappedAddress(
+    PPROCESS pProcess
+);
+
+static
+PALLOCATION_MAPPING
+VmmFindAllocationMappingForAddress(
+    PPROCESS pProcess,
+    PVOID virtualAdd
+);
+
+void
+UnmapPageAndMakeItNotMapped(
+    PALLOCATION_MAPPING pMapping,
+    PPAGING_LOCK_DATA PagingData
+);

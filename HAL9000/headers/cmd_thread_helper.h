@@ -18,5 +18,9 @@ FUNC_GenericCommand CmdSpawnThreads;
 FUNC_GenericCommand CmdDisplayThreadInfo;
 // Threads. 5
 FUNC_GenericCommand CmdDisplayMutexInfo;
+// Threads. 7
+//FUNC_GenericCommand CmdDisplayCondVariableInfo;
+// Threads. 9
+FUNC_GenericCommand CmdCalculateSum;
 FUNC_GenericCommand CmdSwapOut;
 

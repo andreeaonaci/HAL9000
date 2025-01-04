@@ -306,3 +306,24 @@ SyscallFileWrite(
     IN  QWORD                       BytesToWrite,
     OUT QWORD*                      BytesWritten
     );
+
+// Userprog. 8
+STATUS
+SyscallMutexInit(
+    OUT     UM_HANDLE* MutexHandle
+);
+
+STATUS
+SyscallMutexAcquire(
+    IN      UM_HANDLE   MutexHandle
+);
+
+STATUS
+SyscallMutexRelease(
+    IN      UM_HANDLE   MutexHandle
+);
+
+STATUS
+SyscallMutexDestroy(
+    IN      UM_HANDLE   MutexHandle
+);

@@ -3,6 +3,8 @@
 #include "int15.h"
 #include "bitmap.h"
 #include "synch.h"
+#include "thread_internal.h"
+#include "process.h"
 
 typedef struct _MEMORY_REGION_LIST
 {
@@ -154,6 +156,13 @@ PmmReserveMemoryEx(
 
     INTR_STATE oldState;
 
+    // Virtual Memory. 2
+    // Log the physical range allocated each time a physical frame is reserved. If the reservation asked, for example, is 3 frames, then something like this should appear in the logs: "Physical range allocated: (0x1000 - 0x3FFF)!\n". Denote that this reservation started with the first frame starting from 0x1000.
+	
+    LOG_FUNC_START;
+    LOG("Physical range allocated: (0x%X - 0x%X)!\n", MinPhysAddr, (QWORD)MinPhysAddr + NoOfFrames * PAGE_SIZE - 1);
+    LOG_FUNC_END;
+
     if( 0 == NoOfFrames )
     {
         return NULL;
@@ -179,6 +188,21 @@ PmmReserveMemoryEx(
     }
 
     LockRelease( &m_pmmData.AllocationLock, oldState);
+
+	PTHREAD thread = GetCurrentThread();
+    PPROCESS process = NULL;
+	BOOLEAN systemProcess;
+
+	if (NULL != thread)
+	{
+        process = thread->Process;
+	}
+
+	systemProcess = (NULL == process) || ProcessIsSystem(process);
+
+    LOG("Reserved physical frames from 0x%X of size 0x%X on behalf of [%s] process\n",
+        idx * PAGE_SIZE, ((QWORD)NoOfFrames * PAGE_SIZE),
+        systemProcess ? "SYSTEM" : ProcessGetName(process));
 
     return (PHYSICAL_ADDRESS) ( (QWORD) idx * PAGE_SIZE );
 }

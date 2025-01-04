@@ -159,13 +159,14 @@ TestProcessFunctionality(
                  "%s%s\\%s.exe", pSystemPartition, "APPLICATIONS",
                  ProcessTest->ProcessName);
 
-        printf("Full path is [%s]\n", fullPath);
+        //printf("Full path is [%s]\n", fullPath);
 
         for (DWORD i = 0; i < noOfProcesses; ++i)
         {
             status = ProcessCreate(fullPath,
                                    ProcessTest->ProcessCommandLine,
                                    &pProcesses[i]);
+
             if (!SUCCEEDED(status))
             {
                 LOG_FUNC_ERROR("ProcessCreate", status);

@@ -1,4 +1,5 @@
 #include "list.h"
+#include "mutex.h"
 
 typedef struct _CONDITIONAL_VARIABLE
 {

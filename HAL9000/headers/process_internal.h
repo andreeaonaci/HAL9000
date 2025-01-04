@@ -72,6 +72,16 @@ typedef struct _PROCESS
     _Guarded_by_(MappingListLock)
 	LIST_ENTRY                      MappingList;
 
+    // Userprog. 5  
+	LIST_ENTRY					  ChildrenList;
+    _Guarded_by_(FrameMapLock)
+	LIST_ENTRY					  ChildrenListHead;
+	LOCK 						ChildrenListLock;
+
+    // Virtual Memory. 4
+    _Guarded_by_(FrameMapLock)
+    LIST_ENTRY AddressMappingsHead;
+	LOCK AddressMappingsLock;
 
 } PROCESS, *PPROCESS;
 

@@ -142,3 +142,12 @@ void
 SmpNotifyCpuWakeup(
     void
     );
+
+STATUS
+SmpSendGenericIpiIncluding(
+    IN      PFUNC_IpcProcessEvent   BroadcastFunction,
+    IN_OPT  PVOID                   Context,
+    IN_OPT  PFUNC_FreeFunction      FreeFunction,
+    IN_OPT  PVOID                   FreeContext,
+    IN      BOOLEAN                 WaitForHandling
+);

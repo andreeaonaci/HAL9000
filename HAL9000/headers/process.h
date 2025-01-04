@@ -112,3 +112,8 @@ PPROCESS
 GetCurrentProcess(
     void
     );
+
+BOOLEAN
+ProcessIsSystem(
+    IN_OPT      PPROCESS    Process
+);

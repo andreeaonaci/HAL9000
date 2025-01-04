@@ -11,5 +11,7 @@ __main(
     UNREFERENCED_PARAMETER(argc);
     UNREFERENCED_PARAMETER(argv);
 
+    LOG("Dummy process started!\n");
+
     return STATUS_SUCCESS;
 }

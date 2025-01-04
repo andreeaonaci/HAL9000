@@ -376,8 +376,33 @@ ProcessTerminate(
     ASSERT(Process != NULL);
     ASSERT(!ProcessIsSystem(Process));
 
+    // Userprog. 5
+	// Maintain the list of children for each process. If the parent of a process dies, 
+    // //move the dying process children to have as the parent the system process.
+    PPROCESS pSystemProcess = m_processData.SystemProcess;
+    if (pSystemProcess == NULL)
+	{
+		LOG_ERROR("System process is not initialized!\n");
+		return;
+	}
+
+	LockAcquire(&pSystemProcess->ChildrenListLock, &oldState);
+	pSystemProcess->ChildrenListHead = Process->ChildrenListHead;
+	LockRelease(&pSystemProcess->ChildrenListLock, oldState);
+
     pCurrentThread = GetCurrentThread();
     bFoundCurThreadInProcess = FALSE;
+
+    // Virtual Memory. 4
+    // Maintain a list of physical to virtual address mappings for each process. Log this list each time a process is destroyed.
+
+	PLIST_ENTRY pEntryVM = Process->AddressMappingsHead.Flink;
+	while (pEntryVM != &Process->AddressMappingsHead)
+	{
+        PALLOCATION_MAPPING pMappingEntry = CONTAINING_RECORD(pEntryVM, ALLOCATION_MAPPING, ListEntry);
+		LOG_TRACE_PROCESS("Process [%s] has physical to virtual address mapping on 0x%X with virtual address 0x%X\n", ProcessGetId(Process), pMappingEntry->PhysicalAddress, pMappingEntry->VirtualAddress);
+        pEntryVM = pEntryVM->Flink;
+	}
 
     // Go through the list of threads and notify each thread of termination
     // For the current thread (if it belongs to the process being terminated)
@@ -521,6 +546,13 @@ _ProcessInit(
         InitializeListHead(&pProcess->MappingList);
         LockInit(&pProcess->MappingListLock);
 
+        // Userprog. 5
+        InitializeListHead(&pProcess->ChildrenListHead);
+		LockInit(&pProcess->ChildrenListLock);
+
+		// Virtual Memory. 4
+		InitializeListHead(&pProcess->AddressMappingsHead);
+		LockInit(&pProcess->AddressMappingsLock);
     }
     __finally
     {
@@ -767,6 +799,16 @@ _ProcessDestroy(
     ExFreePoolWithTag(Process, HEAP_PROCESS_TAG);
 
     // Threads. 5
-	MutexDestroy(&m_processData.PidBitmapLock);
-	MutexDestroy(&m_processData.ProcessListLock);
+	//MutexDestroy(&m_processData.PidBitmapLock);
+	//MutexDestroy(&m_processData.ProcessListLock);
 }
+
+//BOOLEAN
+//ProcessIsSystem(
+//    IN_OPT      PPROCESS    Process
+//)
+//{
+//    PID pid = (Process == NULL) ? GetCurrentThread()->Process->Id : Process->Id;
+//
+//    return m_processData.SystemProcess->Id == pid;
+//}

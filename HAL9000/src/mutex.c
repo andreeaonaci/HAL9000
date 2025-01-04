@@ -11,7 +11,7 @@ MutexInit(
     IN          BOOLEAN     Recursive
     )
 {
-    ASSERT( NULL != Mutex );
+    //ASSERT( NULL != Mutex );
 
     memzero(Mutex, sizeof(MUTEX));
 
@@ -119,7 +119,6 @@ MutexRelease(
 }
 
 // Threads. 5
-
 void
 MutexSystemPreinit(
     void

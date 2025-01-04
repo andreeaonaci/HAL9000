@@ -16,7 +16,8 @@
 #include "ex_timer.h"
 #include "vmm.h"
 #include "pit.h"
-
+#include "conditional_variables.h"
+#include "rtc.h"
 
 #pragma warning(push)
 
@@ -31,6 +32,13 @@ static FUNC_IpcProcessEvent _CmdIpiCmd;
 #define CPU_BOUND_CPU_USAGE         (100 * MS_IN_US)
 #define IO_BOUND_CPU_USAGE          (0 * MS_IN_US)
 #define IO_BOUND_EVENT_TIMES        25
+
+// Threads. 7
+//typedef struct _THREAD_WITH_CONDITIONAL_VARIABLE
+//{
+//	PMUTEX Mutex;
+//	PCONDITIONAL_VARIABLE CondVar;
+//} THREAD_WITH_CONDITIONAL_VARIABLE, * PTHREAD_WITH_CONDITIONAL_VARIABLE;
 
 typedef struct _BOUND_THREAD_CTX
 {
@@ -897,7 +905,256 @@ STATUS
 	return STATUS_SUCCESS;
 }
 
+// Threads. 7
+//DWORD
+//(__cdecl _CmdCondVarInfoPrint) (
+//    IN_OPT 	PVOID       Context
+//    )
+//{
+//    PTHREAD_WITH_CONDITIONAL_VARIABLE thread = (PTHREAD_WITH_CONDITIONAL_VARIABLE)Context;
+//	PMUTEX pMutex = thread->Mutex;
+//	PCONDITIONAL_VARIABLE pCondVar = thread->CondVar;
+//
+//	MutexAcquire(pMutex);
+//	CondVariableBroadcast(pCondVar, pMutex);
+//	MutexRelease(pMutex);
+//
+//	LOG("Thread %s finished\n", GetCurrentThread()->Id);
+//
+//    return 0;
+//}
+//
+//// Threads. 7
+//
+//void
+//(__cdecl CmdDisplayCondVariableInfo)(
+//	IN          QWORD       NumberOfParameters
+//	)
+//{
+//	UNREFERENCED_PARAMETER(NumberOfParameters);
+//
+//	STATUS status;
+//    PMUTEX mutex = (PMUTEX)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(MUTEX), 'mtxT', PAGE_SIZE);
+//    if (mutex == NULL)
+//    {
+//        LOG("ExAllocatePoolWithTag failed\n");
+//        return;
+//    }
+//	MutexInit(mutex, FALSE);
+//
+//    PCONDITIONAL_VARIABLE condVar = (PCONDITIONAL_VARIABLE)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(CONDITIONAL_VARIABLE), 'cvTg', PAGE_SIZE);
+//    if (condVar == NULL)
+//    {
+//        LOG("ExAllocatePoolWithTag failed\n");
+//        ExFreePoolWithTag(mutex, 'mtxT');
+//        return;
+//    }
+//	CondVariableInit(condVar);
+//
+//	THREAD_WITH_CONDITIONAL_VARIABLE thread;
+//	thread.Mutex = mutex;
+//	thread.CondVar = condVar;
+//
+//	DWORD noOfThreads = 5;
+//	PTHREAD threads[5];
+//
+//	for (DWORD i = 0; i < noOfThreads; ++i)
+//	{
+//		char thName[20];
+//		snprintf(thName, 20, "CondVar-%u", i);
+//
+//		status = ThreadCreate(thName,
+//			ThreadPriorityDefault,
+//            _CmdCondVarInfoPrint,
+//			condVar,
+//			&threads[i]);
+//	}
+//
+//	if (!SUCCEEDED(status))
+//	{
+//		LOG_FUNC_ERROR("ThreadCreate", status);
+//        return;
+//	}
+//
+//    //some wait???
+//
+//    for (DWORD i = 0; i < noOfThreads; ++i)
+//    {
+//        // some stuff
+//    }
+//
+//	MutexAcquire(mutex);
+//	CondVariableBroadcast(condVar, mutex);
+//	MutexRelease(mutex);
+//
+//	for (DWORD i = 0; i < noOfThreads; ++i)
+//	{
+//		ThreadWaitForTermination(threads[i], &status);
+//	}
+//
+//	MutexDestroy(mutex);    
+//}
+
+// Threads. 9
+typedef struct _SUM_THREAD_CTX
+{
+	PFILE_OBJECT	FileObject;
+	QWORD   Start;
+	QWORD   End;
+	QWORD   Sum;
+} SUM_THREAD_CTX, * PSUM_THREAD_CTX;
+
+QWORD size;
+
+/*Create N threads to perform the sum of bytes of a file. You should implement a command "/calculatesum $N $FILE" where both parameters are mandatory.
+The formula for calculating the sum is:
+
+    QWORD sum = 0;
+    for each byte_i in file:
+        sum += file[byte_i]
+
+However, this sum should be done in parallel on N threads, and only after each has done their part should their sums be added together.
+
+Example: /calculatesum 4 C:\Applications\ARGS.EXE*/
+
+// Threads. 10
+_Interlocked_
+volatile DWORD gSum = 0;
+
+STATUS
+(__cdecl _CmdCalculateSumAux) (
+	IN_OPT 	PVOID       Context
+	)
+{
+	PSUM_THREAD_CTX pCtx = (PSUM_THREAD_CTX)Context;
+	PVOID buffer = ExAllocatePoolWithTag(PoolAllocateZeroMemory, (DWORD)size, HEAP_TEST_TAG, PAGE_SIZE);
+	QWORD bytesRead = 0;
+
+	if (buffer == NULL)
+	{
+		LOG("ExAllocatePoolWithTag failed\n");
+		return STATUS_HEAP_INSUFFICIENT_RESOURCES;
+	}
+
+    STATUS readStatus = IoReadFile(pCtx->FileObject, size, &pCtx->Start, buffer, &bytesRead);
+
+	if (!SUCCEEDED(readStatus))
+	{
+		LOG("IoReadFile failed with status 0x%x\n", readStatus);
+		ExFreePoolWithTag(buffer, HEAP_TEST_TAG);
+		return readStatus;
+	}
+
+	QWORD sum = 0;
+	for (QWORD i = 0; i < bytesRead; ++i)
+	{
+		sum += ((BYTE*)buffer)[i];
+	}
+
+	pCtx->Sum = sum;
+
+	for (QWORD i = 0; i < sum; ++i)
+	{
+        _InterlockedIncrement(&gSum);
+	}
+
+	ExFreePoolWithTag(buffer, HEAP_TEST_TAG);
+
+	return STATUS_SUCCESS;
+}
+
+void
+(__cdecl CmdCalculateSum)(
+	IN          QWORD       NumberOfParameters,
+	IN          DWORD       NumberOfThreads,
+	IN_Z        char* FileName
+	)
+{
+	ASSERT(NumberOfParameters == 2);
+
+	PFILE_OBJECT fileObject;
+	STATUS status = IoCreateFile(&fileObject, FileName, FALSE, FALSE, 0);
+	if (!SUCCEEDED(status))
+	{
+		LOG("IoCreateFile failed with status 0x%x\n", status);
+		return;
+	}
+
+	QWORD fileSize = 0;
+    fileSize = fileObject->FileSize;
+	size = fileSize / NumberOfThreads;
+
+	PTHREAD* threads = (PTHREAD*)ExAllocatePoolWithTag(
+		PoolAllocateZeroMemory,
+		sizeof(PTHREAD) * NumberOfThreads,
+		HEAP_TEST_TAG,
+		0
+	);
+
+	SUM_THREAD_CTX* pCtx = (SUM_THREAD_CTX*)ExAllocatePoolWithTag(
+        PoolAllocateZeroMemory, 
+        sizeof(SUM_THREAD_CTX) * NumberOfThreads, 
+        HEAP_TEST_TAG, 
+        0
+    );
+
+	if (pCtx == NULL)
+	{
+		LOG("ExAllocatePoolWithTag failed\n");
+		IoCloseFile(fileObject);
+		return;
+	}
 
 
 
+    QWORD startTime = RtcGetTickCount();
+
+	for (DWORD i = 0; i < NumberOfThreads; ++i)
+	{
+		pCtx[i].FileObject = fileObject;
+		pCtx[i].Start = i * size;
+		pCtx[i].End = (i == size - 1) ? fileSize : (i + 1) * size;
+		pCtx[i].Sum = 0;
+
+		status = ThreadCreate("CalculateSum",
+			ThreadPriorityDefault,
+            _CmdCalculateSumAux,
+			&pCtx[i],
+			&threads[i]);
+
+		if (!SUCCEEDED(status))
+		{
+			LOG_FUNC_ERROR("ThreadCreate", status);
+			ExFreePoolWithTag(pCtx, HEAP_TEST_TAG);
+			IoCloseFile(fileObject);
+			return;
+		}
+	}
+
+    for (DWORD i = 0; i < NumberOfThreads; ++i)
+    {
+        ThreadWaitForTermination(threads[i], &status);
+        if (!SUCCEEDED(status))
+        {
+            LOG_FUNC_ERROR("ThreadWaitForTermination", status);
+            ExFreePoolWithTag(pCtx, HEAP_TEST_TAG);
+            IoCloseFile(fileObject);
+            return;
+        }
+    }
+
+    QWORD totalSum = 0;
+    for (DWORD i = 0; i < NumberOfThreads; ++i)
+    {
+        totalSum += pCtx[i].Sum;
+    }
+
+	QWORD endTime = RtcGetTickCount();
+	LOG("Time to calculate the sum: %U ms\n", endTime - startTime);
+
+    printf("Total sum = %U\n", totalSum);
+	printf("Total sum (gSum) = %U\n", gSum);
+
+    IoCloseFile(fileObject);
+}
 #pragma warning(pop)
