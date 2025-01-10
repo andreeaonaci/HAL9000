@@ -7,6 +7,8 @@
 #include "mmu.h"
 #include "process_internal.h"
 #include "dmp_cpu.h"
+#include "thread_internal.h"
+#include "vmm.h"
 
 extern void SyscallEntry();
 
@@ -67,6 +69,31 @@ SyscallHandler(
         case SyscallIdIdentifyVersion:
             status = SyscallValidateInterface((SYSCALL_IF_VERSION)*pSyscallParameters);
             break;
+		case SyscallIdProcessExit:
+			status = SyscallProcessExit((STATUS)*pSyscallParameters);
+			break;
+		case SyscallIdThreadExit:
+			status = SyscallThreadExit((STATUS)*pSyscallParameters);
+			break;
+		case SyscallIdFileWrite:
+			status = SyscallFileWrite(
+                (QWORD) * (pSyscallParameters + 0),
+				(PVOID) * (pSyscallParameters + 1),
+				(DWORD) * (pSyscallParameters + 2),
+				(PVOID) * (pSyscallParameters + 3)
+            );
+			break;
+        case SyscallIdVirtualAlloc:
+			status = SyscallVirtualAlloc(
+				(PVOID*)*(pSyscallParameters + 0),
+				(QWORD) * (pSyscallParameters + 1),
+				(DWORD) * (pSyscallParameters + 2),
+				(PAGE_RIGHTS) * (pSyscallParameters + 3),
+				(UM_HANDLE) * (pSyscallParameters + 4),
+				(QWORD) * (pSyscallParameters + 5),
+				(PVOID*)*(pSyscallParameters + 6)
+			);
+			break;
         // STUDENT TODO: implement the rest of the syscalls
         default:
             LOG_ERROR("Unimplemented syscall called from User-space!\n");
@@ -83,52 +110,6 @@ SyscallHandler(
 
         CpuIntrSetState(INTR_OFF);
     }
-}
-
-STATUS
-SyscallThreadGetTid(
-    IN_OPT  UM_HANDLE ThreadHandle,
-    OUT TID* ThreadId
-)
-{
-    PTHREAD Thread;
-    PPROCESS Process;
-
-    Process = GetCurrentProcess();
-
-    if (GetCurrentThread() == NULL) {
-        return STATUS_UNSUCCESSFUL;
-    }
-
-    if (ThreadHandle == 0) {
-        Thread = GetCurrentThread();
-
-        //*ThreadId = Thread->Id;
-        return STATUS_SUCCESS;
-    }
-
-    if (ThreadId == NULL)
-    {
-        LOG_ERROR("Invalid pointer for ThreadId.");
-        return STATUS_INVALID_PARAMETER2;
-    }
-
-    INTR_STATE inState;
-    LockAcquire(&Process->threadHandleTablesLock, &inState);
-    Thread = Process->threadHandleTables[ThreadHandle].threadPointer;
-    LockRelease(&Process->threadHandleTablesLock, inState);
-
-    *ThreadId = ThreadGetId(Thread);
-
-    return STATUS_SUCCESS;
-}
-
-void
-SyscallPreinitSystem(
-    void
-    )
-{
-
 }
 
 STATUS
@@ -205,6 +186,163 @@ SyscallValidateInterface(
     }
 
     return STATUS_SUCCESS;
+}
+
+STATUS
+SyscallProcessExit(
+    IN      STATUS                  ExitStatus
+)
+{
+	UNREFERENCED_PARAMETER(ExitStatus);
+    PPROCESS pProcess = GetCurrentProcess();
+    if (pProcess != NULL) {
+        ProcessTerminate(pProcess);
+    }
+    else
+        return STATUS_UNSUCCESSFUL;
+    return STATUS_SUCCESS;
+}
+
+STATUS
+SyscallThreadExit(
+	IN      STATUS                  ExitStatus
+)
+{
+    ThreadExit(ExitStatus);
+	return STATUS_SUCCESS;
+}
+
+STATUS
+SyscallIdentifyVersion(
+	IN SYSCALL_IF_VERSION InterfaceVersion
+)
+{
+    if (InterfaceVersion != SYSCALL_IF_VERSION_KM)
+    {
+        LOG_ERROR("Interface 0x%x invalid!\n", InterfaceVersion);
+        return STATUS_INCOMPATIBLE_INTERFACE;
+    }
+	return STATUS_SUCCESS;
+}
+
+STATUS
+SyscallFileWrite(
+    IN  UM_HANDLE                   FileHandle,
+    IN_READS_BYTES(BytesToWrite)
+    PVOID                       Buffer,
+    IN  QWORD                       BytesToWrite,
+    OUT QWORD* BytesWritten
+)
+{
+    UNREFERENCED_PARAMETER(Buffer);
+	if (BytesWritten == NULL)
+	{
+		return STATUS_UNSUCCESSFUL;
+	}
+
+    if (FileHandle == UM_FILE_HANDLE_STDOUT) {
+		*BytesWritten = BytesToWrite;
+		return STATUS_SUCCESS;
+	}
+    else
+    {
+        return STATUS_UNSUCCESSFUL;
+    }
+}
+
+STATUS
+SyscallGetNumberOfThreadsInInterval(
+    IN                              QWORD   StartCreateTime,
+    IN                              QWORD   EndCreateTime,
+    OUT                          QWORD* NumberOfThreads
+)
+{
+    PPROCESS process = GetCurrentProcess();
+	UNREFERENCED_PARAMETER(StartCreateTime);
+	UNREFERENCED_PARAMETER(EndCreateTime);
+    if (process == NULL)
+    {
+        return STATUS_UNSUCCESSFUL;
+    }
+
+    *NumberOfThreads = 0;
+
+    for (DWORD i = 0; i < process->NumberOfThreads; i++) {
+		//PTHREAD pThread = CONTAINING_RECORD(&process->ThreadList, THREAD, ListEntry);
+		//if (pThread->CreateTime >= StartCreateTime && pThread->CreateTime <= EndCreateTime) {
+		//	(*NumberOfThreads)++;
+		//}
+	}
+	//LOG("Number of threads in interval: %d\n", *NumberOfThreads);
+	return STATUS_SUCCESS;
+}
+
+
+STATUS
+SyscallVirtualAlloc(
+    IN_OPT PVOID* Address,
+    IN      QWORD   Size,
+    IN      DWORD   AllocType,
+    IN      PAGE_RIGHTS Protect,
+    IN_OPT  UM_HANDLE FileHandle,
+    IN_OPT  QWORD   Key,
+    OUT     PVOID* FinalAddress
+)
+{
+    UNREFERENCED_PARAMETER(FileHandle);
+    UNREFERENCED_PARAMETER(Key);
+
+    if (Address == NULL) {
+        return STATUS_INVALID_PARAMETER1;
+    }
+
+    if (Size == 0) {
+        return STATUS_INVALID_PARAMETER2;
+    }
+
+    PPROCESS pProcess = GetCurrentProcess();
+
+    if (pProcess == NULL) {
+        return STATUS_UNSUCCESSFUL;
+    }
+
+    *FinalAddress = VmmAllocRegionEx(
+        *Address,
+        Size,
+        AllocType,
+        Protect,
+        FALSE,
+        NULL,
+        pProcess->VaSpace,
+        pProcess->PagingData,
+        NULL
+    );
+
+    return STATUS_SUCCESS;
+}
+
+STATUS
+SyscallIdSwapOut(
+    IN      PVOID       VirtualAddress
+)
+{
+	if (VirtualAddress == NULL) {
+		return STATUS_INVALID_PARAMETER1;
+	}
+
+	PPROCESS pProcess = GetCurrentProcess();
+	if (pProcess == NULL) {
+		return STATUS_UNSUCCESSFUL;
+	}
+
+	PVMM_RESERVATION_SPACE pVas = pProcess->VaSpace;
+	if (pVas == NULL) {
+		return STATUS_UNSUCCESSFUL;
+	}
+    
+	VmmSwapOutPage(pVas, VirtualAddress);
+
+	return STATUS_SUCCESS;
 }
 
 // STUDENT TODO: implement the rest of the syscalls

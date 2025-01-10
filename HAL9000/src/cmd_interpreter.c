@@ -108,6 +108,8 @@ static const COMMAND_DEFINITION COMMANDS[] =
     { "rangefail", "Causes a range check failure to assert", CmdRangeFail, 0, 0},
     { "bitecookie", "Causes a GS cookie corruption to assert", CmdBiteCookie, 0, 0},
 
+    //{ "testdescendants", "Problem 3 threads", ThreadDescendents, 0, 0},
+
     { "help", "Displays this help menu", _CmdPrintHelp, 0, 0}
 };
 
@@ -214,9 +216,9 @@ CmdRun(
 
         pProcess = NULL;
 
-        status = snprintf(fullPath, MAX_PATH, "%sAPPLIC~1\\VirtualAllocNormal.exe",
-            IomuGetSystemPartitionPath());
-        ASSERT(SUCCEEDED(status));
+        //status = snprintf(fullPath, MAX_PATH, "%sAPPLIC~1\\VirtualAllocNormal.exe",
+        //    IomuGetSystemPartitionPath());
+//        ASSERT(SUCCEEDED(status));
 
         status = ProcessCreate(fullPath, NULL, &pProcess);
         ASSERT(SUCCEEDED(status));

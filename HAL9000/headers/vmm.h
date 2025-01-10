@@ -307,3 +307,9 @@ VmmIsBufferValid(
     IN          PVMM_RESERVATION_SPACE              ReservationSpace,
     IN          BOOLEAN                             KernelAccess
     );
+
+STATUS
+VmmSwapOutPage(
+    IN      PVOID                   VirtualAddress,
+    IN      PPAGING_LOCK_DATA       PagingData
+);

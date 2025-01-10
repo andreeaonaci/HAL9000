@@ -28,6 +28,13 @@
 
 static FUNC_IpcProcessEvent _CmdIpiCmd;
 
+static FUNC_ThreadStart _ThreadDescendants;
+
+//static FUNC_ThreadStart _ThreadDescendants;
+//static FUNC_ThreadStart _ThreadDescendantsAux1;
+//static FUNC_ThreadStart _ThreadDescendantsAux2;
+//static FUNC_ThreadStart _ThreadDescendantsAuxAux2;
+
 #define CPU_BOUND_CPU_USAGE         (100 * MS_IN_US)
 #define IO_BOUND_CPU_USAGE          (0 * MS_IN_US)
 #define IO_BOUND_EVENT_TIMES        25
@@ -137,6 +144,7 @@ void
     LOG("%10s", "Prt ticks|");
     LOG("%10s", "Ttl ticks|");
     LOG("%10s", "Process|");
+	LOG("%10s", "Children|");
     LOG("\n");
 
     status = ThreadExecuteForEachThreadEntry(_CmdThreadPrint, NULL );
@@ -773,5 +781,97 @@ STATUS
 
     return STATUS_SUCCESS;
 }
+
+//static
+//STATUS
+//(__cdecl _ThreadDescendantsAux1)(
+//    void
+//    )
+//{
+//    STATUS status;
+//	PTHREAD pThreads[10];
+//    for (int i = 0; i < 10; i++) {
+//		status = ThreadCreate("Thread desc 1", ThreadPriorityDefault, _ThreadCpuBound, NULL, &pThreads[i]);
+//
+//        if (!SUCCEEDED(status))
+//		{
+//			LOG_FUNC_ERROR("ThreadCreate", status);
+//			return status;
+//		}
+//    }
+//    return status;
+//}
+//
+//static
+//STATUS
+//(__cdecl _ThreadDescendantsAuxAux2)(
+//	IN_OPT 	PVOID       Context
+//    )
+//{
+//    UNREFERENCED_PARAMETER(Context);
+//    //STATUS status;
+//    //PTHREAD pThreadThing;
+//
+//    //status = ThreadCreate("Thread desc aux 2", ThreadPriorityDefault, _ThreadCpuBound, &Context, &pThreadThing);
+//
+//    //if (!SUCCEEDED(status))
+//    //{
+//    //    LOG_FUNC_ERROR("ThreadCreate", status);
+//    //    return status;
+//    //}
+//
+//    return STATUS_SUCCESS;
+//}
+//
+//STATUS
+//(__cdecl _ThreadDescendantsAux2)(
+//	IN_OPT 	PVOID       Context
+//    )
+//{
+//    UNREFERENCED_PARAMETER(Context);
+//    //STATUS status;
+//    //PTHREAD pThread;
+//
+//    //status = ThreadCreate("Thread desc 2", ThreadPriorityDefault, _ThreadDescendantsAuxAux2, &Context, &pThread);
+//
+//    //LOG("Thread desc 2 created [tid = 0%lX]\n", pThread->Id);
+//
+//    //if (!SUCCEEDED(status))
+//    //{
+//    //    LOG_FUNC_ERROR("ThreadCreate", status);
+//    //    return status;
+//    //}
+//    return STATUS_SUCCESS;
+//}
+
+//void
+//(__cdecl ThreadDescendents)(
+//	IN_OPT      PVOID       Context
+//	)
+//{
+//    // Add a new command "/testdescendents" and perform the following:
+//    //-> Create 3 threads:
+//    //a.The first thread should create 10 additional threads
+//    //    b.The second thread should create 1 additional thread :
+//    //i.This additional thread should also create another thread
+//    //    c.The third thread should not create any additional threads
+//
+//	//PTHREAD pThreads[3];
+//
+//    UNREFERENCED_PARAMETER(Context);
+//    LOG("unt aici");
+//
+//    //STATUS status;
+//
+//	//status = ThreadCreate("Thread1", ThreadPriorityDefault, _ThreadDescendantsAux1, NULL, &pThreads[0]);
+// //   status = ThreadCreate("Thread2", ThreadPriorityDefault, _ThreadDescendantsAux2, NULL, &pThreads[1]);
+// //   status = ThreadCreate("Thread3", ThreadPriorityDefault, _ThreadCpuBound, NULL, &pThreads[2]);
+//
+//	//ThreadWaitForTermination(pThreads[0], &status);
+//	//ThreadWaitForTermination(pThreads[1], &status);
+//	//ThreadWaitForTermination(pThreads[2], &status);
+//
+//    //return STATUS_SUCCESS;
+//}
 
 #pragma warning(pop)

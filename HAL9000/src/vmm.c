@@ -11,8 +11,8 @@
 #include "thread_internal.h"
 #include "process_internal.h"
 #include "mdl.h"
-#include "../../CommonLibUnitTests/headers/ut_log.h"
-#include "../../Usermode/UsermodeLibrary/inc/um_lib_helper.h"
+//#include "../../CommonLibUnitTests/headers/ut_log.h"
+//#include "../../Usermode/UsermodeLibrary/inc/um_lib_helper.h"
 
 #define VMM_SIZE_FOR_RESERVATION_METADATA            (5*TB_SIZE)
 
@@ -715,8 +715,8 @@ VmmFreeRegionEx(
                                  FreeType,
                                  &alignedAddress,
                                  &alignedSize);
-    LOG("Allocating for VaSpace at 0x%X, a memory region from 0x%X of size 0x%X\n",
-        pVaSpace, pBaseAddress, alignedSize);
+    //LOG("Allocating for VaSpace at 0x%X, a memory region from 0x%X of size 0x%X\n",
+      //  pVaSpace, pBaseAddress, alignedSize);
 
     if (IsFlagOn(FreeType, VMM_FREE_TYPE_DECOMMIT | VMM_FREE_TYPE_RELEASE ))
     {
@@ -1375,4 +1375,47 @@ BOOLEAN
     }
 
     return bContinue;
+}
+
+STATUS
+VmmSwapOutPage(
+    IN      PVOID                   VirtualAddress,
+    IN      PPAGING_LOCK_DATA       PagingData
+)
+{
+    BOOLEAN bAccessValid;
+    BOOLEAN bKernelAddress;
+    PAGE_RIGHTS pageRights;
+    BOOLEAN uncacheable;
+    PFILE_OBJECT pBackingFile;
+    QWORD fileOffset;
+
+    ASSERT(INTR_OFF == CpuIntrGetState());
+    ASSERT(PagingData != NULL);
+
+    // we will certainly not use the first virtual page of memory
+    if (NULL == (PVOID)AlignAddressLower(VirtualAddress, PAGE_SIZE))
+    {
+        return STATUS_INVALID_PARAMETER1;
+    }
+
+    bKernelAddress = _VmIsKernelAddress(VirtualAddress);
+
+    if (!bKernelAddress) {
+        return STATUS_UNSUCCESSFUL;
+    }
+
+    bAccessValid = VmReservationCanAddressBeAccessed(_VmmRetrieveReservationSpaceForAddress(VirtualAddress),
+        VirtualAddress,
+        PAGE_RIGHTS_READWRITE,
+        &pageRights,
+        &uncacheable,
+        &pBackingFile,
+        &fileOffset);
+
+    if (!bAccessValid)
+    {
+        return STATUS_MEMORY_INSUFFICIENT_ACCESS_RIGHTS;
+    }
+	return STATUS_SUCCESS;
 }

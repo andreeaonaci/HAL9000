@@ -90,6 +90,17 @@ typedef struct _THREAD
     PVOID                   UserStack;
 
     struct _PROCESS*        Process;
+
+	UINT32				  TimesYielded;
+
+    struct _THREAD*       Parent;  
+    LIST_ENTRY      Children;    
+	QWORD TimeCreated;
+    LIST_ENTRY	  ThreadTimeHead;
+    LIST_ENTRY    ThreadTimeList;
+
+	QWORD noOfDecendants;
+    LOCK        ThreadTimeLock;
 } THREAD, *PTHREAD;
 
 //******************************************************************************

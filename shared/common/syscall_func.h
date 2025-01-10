@@ -306,3 +306,10 @@ SyscallFileWrite(
     IN  QWORD                       BytesToWrite,
     OUT QWORD*                      BytesWritten
     );
+
+STATUS
+SyscallGetNumberOfThreadsInInterval(
+    IN                              QWORD   StartCreateTime,
+    IN                              QWORD   EndCreateTime,
+    OUT                          QWORD* NumberOfThreads
+);
