@@ -110,11 +110,11 @@ static const COMMAND_DEFINITION COMMANDS[] =
     // Threads. 4
     { "threadinfo", "Display ready, existing and blocked threads ", CmdDisplayThreadInfo, 0, 0},
 
-    // Threads.5
-	//{ "displaymutex", "Display mutexes for each thread", CmdDisplayMutexInfo, 0, 0},
+    // Threads. 5
+	{ "displaymutex", "Display mutexes for each thread", CmdDisplayMutexInfo, 0, 0},
 
 	// Threads.7
-	//{ "displaycondvar", "Display conditional variables for each thread", CmdDisplayCondVariableInfo, 0, 0},
+	{ "displaycondvar", "Display conditional variables for each thread", CmdDisplayCondVariableInfo, 0, 0},
 
     // Threads. 9
 	{ "calculatesum", "Calculate sum", CmdCalculateSum, 2, 2},

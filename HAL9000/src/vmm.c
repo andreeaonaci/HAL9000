@@ -808,9 +808,6 @@ VmmFreeRegionEx(
     /* Free these allocated FRAME_MAPPING entries in VmmFreeRegionEx(). NOTE: You will probably want to add some additional information in VMM_RESERVATION_SPACE to determine the process to which the structure belongs to. When freeing the FRAME_MAPPING entries, log a message containing the fields of the FRAME_MAPPING being freed.*/
     if (VaSpace != NULL) {
         PPROCESS pProcess;
-        PALLOCATION_MAPPING pMapping;
-        //INTR_STATE intrState;
-
         pProcess = VaSpace->Process;
         if (pProcess) {
             INTR_STATE oldState;
@@ -828,11 +825,11 @@ VmmFreeRegionEx(
             LockRelease(&pProcess->AddressMappingsLock, oldState);
 
             if (Context[1]) {
-				pMapping = (PALLOCATION_MAPPING)Context[1];
-				RemoveEntryList(&pMapping->ListEntry);
-				ExFreePoolWithTag(pMapping, HEAP_TEMP_TAG);
+				PALLOCATION_MAPPING pMappingAux = (PALLOCATION_MAPPING)Context[1];
+				RemoveEntryList(&pMappingAux->ListEntry);
+				ExFreePoolWithTag(pMappingAux, HEAP_TEMP_TAG);
             }
-			ExFreePoolWithTag(Context, HEAP_MMU_TAG);
+			ExFreePoolWithTag(Context, HEAP_TEMP_TAG);
         }
 
     }
@@ -938,24 +935,26 @@ VmmSolvePageFault(
             a. if page zero is marked as usable (i.e. SyscallMapZeroPage was called and no SyscallUnmapZeroPage was called in the meantime) the OS will allocate a physical frame, will zero it, will map the virtual page zero on the allocated physical frame, and will resume transparently the faulty instruction (and process);
             b. if page zero is marked as unusable (i.e. SyscallUnmapZeroPage was called and no SyscallMapZeroPage was called in the meantime) the OS will terminate the calling process.*/
 
-            //PVMM_RESERVATION_SPACE pVmmReservationSpace = _VmmRetrieveReservationSpaceForAddress(FaultingAddress);
+            PVMM_RESERVATION_SPACE pVmmReservationSpace = _VmmRetrieveReservationSpaceForAddress(FaultingAddress);
 
-            //PVMM_RESERVATION pRegion = pVmmReservationSpace->ReservationList;
+            PVMM_RESERVATION pRegion = pVmmReservationSpace->ReservationList;
 
-     //       if (pRegion != NULL) {
-     //           if ((FaultingAddress >= pRegion->StartVa) && (FaultingAddress < (PVOID)((QWORD)pRegion->StartVa + PAGE_SIZE))) {
-     //               //if (pRegion->checkReserved) {
-     //               //    goto page_alloc;
-     //               //}
-     //               //else {
-     //               //    ProcessTerminate(GetCurrentProcess());
-     //               //}
-					//if (!pRegion->checkReserved) {
-					//	ProcessTerminate(GetCurrentProcess());
-     //                   __leave;
-					//}
-     //           }
-     //       }
+            if (pRegion != NULL) {
+                if ((FaultingAddress >= pRegion->StartVa) && (FaultingAddress < (PVOID)((QWORD)pRegion->StartVa + PAGE_SIZE))) {
+                    //               //if (pRegion->checkReserved) {
+                    //               //    goto page_alloc;
+                    //               //}
+                    //               //else {
+                    //               //    ProcessTerminate(GetCurrentProcess());
+                    //               //}
+                                   //if (!pRegion->checkReserved) {
+                                   //	ProcessTerminate(GetCurrentProcess());
+                    //                   __leave;
+                                   //}
+                    //           }
+                    LOG("pana aci ii bine");
+                }
+            }
 
             // Each time a #PF is solved for a user application unmap one 'random' page without releasing the physical memory. When a #PF will occur for that unmapped page remap it to the same physical frame. (Use the lists created at problem 4 for this
 			//PALLOCATION_MAPPING pMapping = VmmFindAllocationMappingForAddress(GetCurrentProcess(), FaultingAddress);

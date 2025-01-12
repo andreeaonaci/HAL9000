@@ -317,6 +317,9 @@ SystemInit(
 
     LOGL("Network stack successfully initialized\n");
 
+    // Threads. 8
+	// MakeCPUNonPreeemptible();
+
     return status;
 }
 
@@ -342,7 +345,7 @@ MakeInfiniteLoop(
 {
 	UNREFERENCED_PARAMETER(Context);
     
-    LOG("Hello world\n");
+    LOG("Hello there!\n");
 
 	for (;;)
 	{

@@ -14,3 +14,14 @@ void
 SystemUninit(
     void
     );
+
+static
+STATUS
+MakeInfiniteLoop(
+    IN_OPT		PVOID		Context
+);
+
+void
+MakeCPUNonPreeemptible(
+    void
+);

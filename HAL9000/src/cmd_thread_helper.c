@@ -34,11 +34,11 @@ static FUNC_IpcProcessEvent _CmdIpiCmd;
 #define IO_BOUND_EVENT_TIMES        25
 
 // Threads. 7
-//typedef struct _THREAD_WITH_CONDITIONAL_VARIABLE
-//{
-//	PMUTEX Mutex;
-//	PCONDITIONAL_VARIABLE CondVar;
-//} THREAD_WITH_CONDITIONAL_VARIABLE, * PTHREAD_WITH_CONDITIONAL_VARIABLE;
+typedef struct _THREAD_WITH_CONDITIONAL_VARIABLE
+{
+	PMUTEX Mutex;
+	PCONDITIONAL_VARIABLE CondVar;
+} THREAD_WITH_CONDITIONAL_VARIABLE, * PTHREAD_WITH_CONDITIONAL_VARIABLE;
 
 typedef struct _BOUND_THREAD_CTX
 {
@@ -849,6 +849,41 @@ STATUS
 	return STATUS_SUCCESS;
 }
 
+
+// Threads. 5
+
+static
+STATUS
+(__cdecl _CmdMutexInfoPrint) (
+    IN      PLIST_ENTRY     ListEntry,
+    IN_OPT  PVOID           FunctionContext
+    )
+{
+    PMUTEX pMutex;
+
+    LOG("sunt inainte de asserturi");
+
+    ASSERT(NULL != ListEntry);
+    ASSERT(NULL == FunctionContext);
+
+    LOG("sunt dupa asserturi");
+
+    pMutex = CONTAINING_RECORD(ListEntry, MUTEX, mutexList);
+
+    LOG("sunt aici");
+
+    LIST_ENTRY* pWait = pMutex->WaitingList.Flink;
+    while (pWait != &pMutex->WaitingList)
+    {
+        PTHREAD pThread = CONTAINING_RECORD(pWait, THREAD, ReadyList);
+        LOG("Thread %s is waiting for mutex %p\n", pThread->Id, pMutex);
+
+        pWait = pWait->Flink;
+    }
+
+    return STATUS_SUCCESS;
+}
+
 // Threads. 5
 
 void
@@ -871,129 +906,101 @@ void
 	ASSERT(SUCCEEDED(status));
 }
 
-// Threads. 5
-
-static
-STATUS
-(__cdecl _CmdMutexInfoPrint) (
-	IN      PLIST_ENTRY     ListEntry,
-	IN_OPT  PVOID           FunctionContext
-	)
+// Threads. 7
+DWORD
+(__cdecl _CmdCondVarInfoPrint) (
+    IN_OPT 	PVOID       Context
+    )
 {
-	PMUTEX pMutex;
+	UNREFERENCED_PARAMETER(Context);    
+	LOG("Am intrat in CmdCondVarInfoPrint\n");
+    //PTHREAD_WITH_CONDITIONAL_VARIABLE thread = (PTHREAD_WITH_CONDITIONAL_VARIABLE)Context;
+	//PMUTEX pMutex = thread->Mutex;
+	//PCONDITIONAL_VARIABLE pCondVar = thread->CondVar;
 
-	LOG("sunt inainte de asserturi");
+	LOG("am trecut de initializare\n");
 
-	ASSERT(NULL != ListEntry);
-	ASSERT(NULL == FunctionContext);
+	//MutexAcquire(pMutex);
+	LOG("am trecut de MutexAcquire\n");
+	//CondVariableBroadcast(pCondVar, pMutex);
+	LOG("am trecut de CondVariableBroadcast\n");
+	//MutexRelease(pMutex);
 
-	LOG("sunt dupa asserturi");
+	LOG("Thread %s finished\n", GetCurrentThread()->Id);
 
-	pMutex = CONTAINING_RECORD(ListEntry, MUTEX, mutexList);
-
-    LOG("sunt aici");
-
-    LIST_ENTRY* pWait = pMutex->WaitingList.Flink;
-    while (pWait != &pMutex->WaitingList)
-    {
-		PTHREAD pThread = CONTAINING_RECORD(pWait, THREAD, ReadyList);
-		LOG("Thread %s is waiting for mutex %p\n", pThread->Id, pMutex);
-
-		pWait = pWait->Flink;
-    }
-
-	return STATUS_SUCCESS;
+    return 0;
 }
 
-// Threads. 7
-//DWORD
-//(__cdecl _CmdCondVarInfoPrint) (
-//    IN_OPT 	PVOID       Context
-//    )
-//{
-//    PTHREAD_WITH_CONDITIONAL_VARIABLE thread = (PTHREAD_WITH_CONDITIONAL_VARIABLE)Context;
-//	PMUTEX pMutex = thread->Mutex;
-//	PCONDITIONAL_VARIABLE pCondVar = thread->CondVar;
-//
-//	MutexAcquire(pMutex);
-//	CondVariableBroadcast(pCondVar, pMutex);
-//	MutexRelease(pMutex);
-//
-//	LOG("Thread %s finished\n", GetCurrentThread()->Id);
-//
-//    return 0;
-//}
-//
 //// Threads. 7
-//
-//void
-//(__cdecl CmdDisplayCondVariableInfo)(
-//	IN          QWORD       NumberOfParameters
-//	)
-//{
-//	UNREFERENCED_PARAMETER(NumberOfParameters);
-//
-//	STATUS status;
-//    PMUTEX mutex = (PMUTEX)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(MUTEX), 'mtxT', PAGE_SIZE);
-//    if (mutex == NULL)
-//    {
-//        LOG("ExAllocatePoolWithTag failed\n");
-//        return;
-//    }
-//	MutexInit(mutex, FALSE);
-//
-//    PCONDITIONAL_VARIABLE condVar = (PCONDITIONAL_VARIABLE)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(CONDITIONAL_VARIABLE), 'cvTg', PAGE_SIZE);
-//    if (condVar == NULL)
-//    {
-//        LOG("ExAllocatePoolWithTag failed\n");
-//        ExFreePoolWithTag(mutex, 'mtxT');
-//        return;
-//    }
-//	CondVariableInit(condVar);
-//
-//	THREAD_WITH_CONDITIONAL_VARIABLE thread;
-//	thread.Mutex = mutex;
-//	thread.CondVar = condVar;
-//
-//	DWORD noOfThreads = 5;
-//	PTHREAD threads[5];
-//
-//	for (DWORD i = 0; i < noOfThreads; ++i)
-//	{
-//		char thName[20];
-//		snprintf(thName, 20, "CondVar-%u", i);
-//
-//		status = ThreadCreate(thName,
-//			ThreadPriorityDefault,
-//            _CmdCondVarInfoPrint,
-//			condVar,
-//			&threads[i]);
-//	}
-//
-//	if (!SUCCEEDED(status))
-//	{
-//		LOG_FUNC_ERROR("ThreadCreate", status);
-//        return;
-//	}
-//
-//    //some wait???
-//
-//    for (DWORD i = 0; i < noOfThreads; ++i)
-//    {
-//        // some stuff
-//    }
-//
-//	MutexAcquire(mutex);
-//	CondVariableBroadcast(condVar, mutex);
-//	MutexRelease(mutex);
-//
-//	for (DWORD i = 0; i < noOfThreads; ++i)
-//	{
-//		ThreadWaitForTermination(threads[i], &status);
-//	}
-//
-//	MutexDestroy(mutex);    
-//}
+
+void
+(__cdecl CmdDisplayCondVariableInfo)(
+	IN          QWORD       NumberOfParameters
+	)
+{
+	UNREFERENCED_PARAMETER(NumberOfParameters);
+
+	//STATUS status;
+    PMUTEX mutex = (PMUTEX)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(MUTEX), 'mtxT', PAGE_SIZE);
+    if (mutex == NULL)
+    {
+        LOG("ExAllocatePoolWithTag failed\n");
+        return;
+    }
+	MutexInit(mutex, FALSE);
+
+    PCONDITIONAL_VARIABLE condVar = (PCONDITIONAL_VARIABLE)ExAllocatePoolWithTag(PoolAllocateZeroMemory, sizeof(CONDITIONAL_VARIABLE), 'cvTg', PAGE_SIZE);
+    if (condVar == NULL)
+    {
+        LOG("ExAllocatePoolWithTag failed\n");
+        ExFreePoolWithTag(mutex, 'mtxT');
+        return;
+    }
+	CondVariableInit(condVar);
+
+	THREAD_WITH_CONDITIONAL_VARIABLE thread;
+	thread.Mutex = mutex;
+	thread.CondVar = condVar;
+
+	//DWORD noOfThreads = 5;
+	//PTHREAD threads[5];
+
+	//for (DWORD i = 0; i < noOfThreads; ++i)
+	//{
+	//	char thName[20];
+	//	snprintf(thName, 20, "CondVar-%u", i);
+
+	//	status = ThreadCreate(thName,
+	//		ThreadPriorityDefault,
+ //           _CmdCondVarInfoPrint,
+	//		condVar,
+	//		&threads[i]);
+	//}
+
+	//if (!SUCCEEDED(status))
+	//{
+	//	LOG_FUNC_ERROR("ThreadCreate", status);
+ //       return;
+	//}
+
+ //   //some wait???
+
+ //   for (DWORD i = 0; i < noOfThreads; ++i)
+ //   {
+ //       // some stuff
+ //   }
+
+	//MutexAcquire(mutex);
+	//CondVariableBroadcast(condVar, mutex);
+	//MutexRelease(mutex);
+
+	//for (DWORD i = 0; i < noOfThreads; ++i)
+	//{
+	//	ThreadWaitForTermination(threads[i], &status);
+	//}
+
+	//MutexDestroy(mutex);    
+}
 
 // Threads. 9
 typedef struct _SUM_THREAD_CTX

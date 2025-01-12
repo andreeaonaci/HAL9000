@@ -754,6 +754,8 @@ VmReservationSpaceAllocRegion(
     ASSERT(MappedSize != NULL);
     ASSERT(IsFlagOn(AllocType, VMM_ALLOC_TYPE_COMMIT | VMM_ALLOC_TYPE_RESERVE));
 
+    LOG("ajung dupa asserturi in VmReservationSpaceAllocRegion\n");
+
     status = STATUS_SUCCESS;
 
     if (NULL != BaseAddress)

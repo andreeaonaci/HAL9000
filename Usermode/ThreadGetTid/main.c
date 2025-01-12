@@ -14,11 +14,11 @@ STATUS
 
     UNREFERENCED_PARAMETER(Context);
 
-    status = SyscallMemset(NULL, 0, 0);
-    if (!SUCCEEDED(status))
-    {
-        LOG_FUNC_ERROR("SyscallMemset", status);
-    }
+    //status = SyscallMemset(NULL, 0, 0);
+    //if (!SUCCEEDED(status))
+    //{
+    //    LOG_FUNC_ERROR("SyscallMemset", status);
+    //}
 
     return STATUS_SUCCESS;
 }

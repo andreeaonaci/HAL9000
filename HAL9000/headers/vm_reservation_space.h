@@ -70,7 +70,7 @@ typedef struct _VMM_RESERVATION_SPACE
     _Guarded_by_(ReservationLock)
     PBYTE               FreeBitmapAddress;
 
-    _Guarded_by_(ReservationLock)
+	_Requires_lock_held_(ReservationLock)
     struct _VMM_RESERVATION*    ReservationList;
 } VMM_RESERVATION_SPACE, *PVMM_RESERVATION_SPACE;
 

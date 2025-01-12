@@ -20,10 +20,16 @@ MutexInit(
     InitializeListHead(&Mutex->WaitingList);
 
 	// Threads. 5
-	//INTR_STATE oldState;
-	//LockAcquire(&mutexLock, &oldState);
-	//InsertTailList(&mutexHead, &Mutex->mutexList);
-	//LockRelease(&mutexLock, oldState);
+	INTR_STATE oldState;
+	InitializeListHead(&mutexHead);
+	LockAcquire(&mutexLock, &oldState);
+	if (&Mutex->mutexList == NULL)
+	{
+		LockRelease(&mutexLock, oldState);
+		return;
+	}
+	InsertTailList(&mutexHead, &Mutex->mutexList);
+	LockRelease(&mutexLock, oldState);
 
     Mutex->MaxRecursivityDepth = Recursive ? MUTEX_MAX_RECURSIVITY_DEPTH : 1;
 }
@@ -124,8 +130,9 @@ MutexSystemPreinit(
     void
 )
 {
-    LockInit(&mutexLock);
+    LOG("Initializing mutex system\n");
     InitializeListHead(&mutexHead);
+    LockInit(&mutexLock);
 }
 
 void

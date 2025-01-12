@@ -152,6 +152,8 @@ ThreadSystemPreinit(
 {
     memzero(&m_threadSystemData, sizeof(THREAD_SYSTEM_DATA));
 
+    LOG("Doamne ajuta");
+
     InitializeListHead(&m_threadSystemData.AllThreadsList);
     LockInit(&m_threadSystemData.AllThreadsLock);
 
