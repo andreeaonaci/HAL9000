@@ -1,0 +1,1 @@
+This repository contains the work developed for Operating System Design laboratory, including the laboratory projects (Priority Scheduler, Thread Management System Calls & Virtual Memory System Calls + Stack Growth) and also all the laboratory works which involved multiple features added to HAL9000 operating system.
